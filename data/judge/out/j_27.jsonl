@@ -1,0 +1,40 @@
+{"jid": "d8ee159c", "label": "correct", "cited_support": "yes", "reason": "Names the perfmon alert and its Action tab Run This Program option, as the cited chunks state."}
+{"jid": "cd7db427", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "4abb0d4c", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and minimal graphics; the extra 2-4GB growth note is cited and harmless."}
+{"jid": "61190ac7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "0960c343", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the du pipelines are in the knowledge base."}
+{"jid": "ef6ed548", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "3ec4734c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "71b8c0af", "label": "correct", "cited_support": "yes", "reason": "Recommends completely separate databases per user, as the reference and cited chunks say."}
+{"jid": "8b00763f", "label": "correct", "cited_support": "yes", "reason": "Gives both reasons (arithmetic coercion too annoying to refuse, 1 + \"1\" ambiguous) directly from the cited chunk."}
+{"jid": "3792b50c", "label": "correct", "cited_support": "yes", "reason": "Gives grep io_uring_setup /proc/kallsyms and the sys_/sys32_ prefixes, both stated in the cited chunks."}
+{"jid": "050d783c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although PrivateTmp and the drop-in fix are in the knowledge base."}
+{"jid": "1d7322a6", "label": "partial", "cited_support": "yes", "reason": "Gives the 900/200 pin priorities but explicitly omits the /usr/local install location."}
+{"jid": "0663ff18", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "4141c5cc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "b634793a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "078eed69", "label": "correct", "cited_support": "yes", "reason": "States /usr/local versus /usr and the squeeze 900 / wheezy 200 pins, all in the cited chunks."}
+{"jid": "8cd7b2a5", "label": "correct", "cited_support": "yes", "reason": "Says no because containers share the host kernel and hardware virtualization is needed, as the cited chunk states."}
+{"jid": "a91f60df", "label": "correct", "cited_support": "yes", "reason": "Gives volatile device storage reloaded at each power-on and the kernel/driver doing the loading, as the cited chunks say."}
+{"jid": "5bf6a477", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the dot1q-tunneling config is in the knowledge base."}
+{"jid": "5bb06ee0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the INSERT permission answer is in the knowledge base."}
+{"jid": "44ab5abd", "label": "partial", "cited_support": "yes", "reason": "Mentions Profiler and the plan cache but omits sys.dm_exec_query_stats, adding other tools from different threads."}
+{"jid": "7b2fb3c8", "label": "correct", "cited_support": "no", "reason": "Matches the reference, but the cited chunks never say XOFF or stty -ixon; they only say Ctrl-S stops output and Ctrl-Q undoes it."}
+{"jid": "d81b1f18", "label": "correct", "cited_support": "yes", "reason": "Gives the native-stack reason on OSes lacking that stack support, as the cited chunk states."}
+{"jid": "4005df76", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "bf451b9c", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor, as the cited chunk states."}
+{"jid": "f5569f85", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "f85b5b23", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "faaff9c3", "label": "partial", "cited_support": "yes", "reason": "SQL Server 2008 is right, but it wrongly says DAC recovers access when the reference says DAC still needs login credentials."}
+{"jid": "0be9f839", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the env -S shebang is in the knowledge base."}
+{"jid": "d25c0266", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table because separate address or church tables add no value, as the cited chunks say."}
+{"jid": "96aeefe7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "cf521924", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the routing-protocol answer is in the knowledge base."}
+{"jid": "bc23349c", "label": "correct", "cited_support": "yes", "reason": "Gives 6000 iterations and extra encryption with a separate key, requiring two compromises, all in the cited chunks."}
+{"jid": "b8c4b8cf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "fad3b83d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "00ee5168", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "1945f699", "label": "correct", "cited_support": "yes", "reason": "Names tcp mss, as the cited chunk states."}
+{"jid": "365a226c", "label": "correct", "cited_support": "yes", "reason": "Recommends one table and calls id-and-name tables overkill, as the cited chunks say."}
+{"jid": "95c1deed", "label": "partial", "cited_support": "yes", "reason": "Gets the background browser/antivirus fetch cause but gives a login-to-confirm guard instead of checking the page actually renders."}
+{"jid": "e09cd477", "label": "correct", "cited_support": "yes", "reason": "Names the GDI(+) crafted-image bug and explains the content-sniffing XSS, both stated in the cited chunks."}

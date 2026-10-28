@@ -1,0 +1,40 @@
+{"jid": "3e354360", "label": "correct", "cited_support": "yes", "reason": "States length extension lets the attacker already compute h(P+B) from h(P), as chunk 886542 says."}
+{"jid": "7cb0c99f", "label": "correct", "cited_support": "yes", "reason": "Names GET as simplest and says response metadata must not encourage caching, both in cited chunks."}
+{"jid": "cc8c81ad", "label": "correct", "cited_support": "yes", "reason": "Gives ignorespace and ignoreboth with ignoreboth's meaning, matching the cited man page text."}
+{"jid": "cb3e57ad", "label": "correct", "cited_support": "yes", "reason": "Cross join with generate_series(1,1000), order by random() limit 10, approximates replacement, poor performance; all cited."}
+{"jid": "b5f148bc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "58470782", "label": "correct", "cited_support": "yes", "reason": "Easy to implement and debug and version clearly visible, stated in chunk 995901."}
+{"jid": "66c51916", "label": "correct", "cited_support": "yes", "reason": "Says no, a newer-version database cannot be attached to an older one regardless of compatibility level, as the cited chunks state."}
+{"jid": "251016a5", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question and the system correctly answered NOT_FOUND."}
+{"jid": "93edaaf8", "label": "correct", "cited_support": "yes", "reason": "Cross join generate_series(1,1000), order by random() limit 10, near-replacement probabilities, horrible performance; all cited."}
+{"jid": "16444516", "label": "correct", "cited_support": "yes", "reason": "States languages want the native stack on OSes lacking non-contiguous stacks, as chunks 653252/653253 say."}
+{"jid": "03f12a71", "label": "incorrect", "cited_support": "yes", "reason": "Describes abstraction generally instead of the reference point that it applies to web APIs/protocols as guaranteed exposed behavior."}
+{"jid": "64aeee28", "label": "correct", "cited_support": "yes", "reason": "Gives grep io_uring_setup /proc/kallsyms and the sys_ prefix; the cited sed command on kallsyms strips sys_ to list syscalls."}
+{"jid": "73cd0c09", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question and the system correctly answered NOT_FOUND."}
+{"jid": "200677ff", "label": "correct", "cited_support": "yes", "reason": "Disable logins on primary plus a per-minute Agent job toggling them by role, as chunk 804764 says."}
+{"jid": "9b57aa71", "label": "correct", "cited_support": "yes", "reason": "Run terraform console and ask for the value's type, which chunk 999748 states; resource caveat is from cited 999750."}
+{"jid": "681e8d74", "label": "correct", "cited_support": "yes", "reason": "Mirroring with 3 servers, one small free, and why the alternatives fall short, all in chunk 86925."}
+{"jid": "1d07eca5", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question and the system correctly answered NOT_FOUND."}
+{"jid": "48aa4a1c", "label": "correct", "cited_support": "yes", "reason": "hp-vsa driver via USB driver disk and inst.dd modprobe.blacklist=ahci on the linuxefi line, both cited."}
+{"jid": "59acc8d4", "label": "correct", "cited_support": "yes", "reason": "No; some telemetry uses a unique ID and some is completely anonymous, as chunk 863954 says."}
+{"jid": "4dc279b6", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question and the system correctly answered NOT_FOUND."}
+{"jid": "27955420", "label": "partial", "cited_support": "yes", "reason": "Double-quote expansion and single quotes are right, but the tcsh part lacks sh -c, ssh host sh ./script.sh, or chsh."}
+{"jid": "5d1943e1", "label": "correct", "cited_support": "yes", "reason": "Same password unlocked the outer volume, which TrueCrypt then formatted, as chunk 848792 says."}
+{"jid": "fcbec944", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "99f27fc6", "label": "partial", "cited_support": "yes", "reason": "Identifies the reply to the client's random port as the filtered packet but not that the ACL lacks that port, so it drops it."}
+{"jid": "cd5c689e", "label": "correct", "cited_support": "yes", "reason": "Harder to unit test and inject IDatabaseService via each data access class's constructor, as chunk 550381 says."}
+{"jid": "c8d767b4", "label": "correct", "cited_support": "yes", "reason": "Error 3910 Transaction context in use by another session, stated in chunk 721354."}
+{"jid": "f269541d", "label": "correct", "cited_support": "yes", "reason": "Harder to unit test and constructor dependency injection of IDatabaseService, as cited chunks 550381/550385 say."}
+{"jid": "689b2b74", "label": "partial", "cited_support": "yes", "reason": "Scanner-triggered cause overlaps, but the guard (GET form plus POST) differs from checking that the verification page actually renders."}
+{"jid": "313b6a5b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "3ec8255f", "label": "correct", "cited_support": "yes", "reason": "Gives the exact env -S sh -c 'exec awk -f \"$0\" -- \"$@\"' shebang from chunk 472052."}
+{"jid": "308f3db6", "label": "correct", "cited_support": "yes", "reason": "/usr/local versus /usr, and squeeze at 900, wheezy at 200, all in cited chunks."}
+{"jid": "5d7ba1de", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "dca3e7be", "label": "correct", "cited_support": "yes", "reason": "All four SonicWall steps match chunks 976307/976308."}
+{"jid": "27340a30", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "42dbe898", "label": "correct", "cited_support": "yes", "reason": "MVC Mini Profiler, stated in chunk 718646."}
+{"jid": "bbf4c3d8", "label": "correct", "cited_support": "yes", "reason": "Gives the stop, attach root EBS, copy key method, plus a cited user-data alternative as harmless extra."}
+{"jid": "6a01d006", "label": "partial", "cited_support": "no", "reason": "MAKEDEV commands are right, but update-initramfs uses an invented kernel version instead of $(uname -r), which the cited text gives."}
+{"jid": "8e19a61f", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question and the system correctly answered NOT_FOUND."}
+{"jid": "4809f322", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the answer exists in the knowledge base."}
+{"jid": "0e403938", "label": "correct", "cited_support": "yes", "reason": "Names the CRIME attack targeting compressed headers and cookies, as chunk 863795 states."}

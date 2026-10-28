@@ -1,0 +1,40 @@
+{"jid": "d6c07aa9", "label": "correct", "cited_support": "yes", "reason": "Says no because containers share the host kernel and a VM is needed; cited chunks state the kernel requirement and VM-based tooling."}
+{"jid": "327c1e74", "label": "correct", "cited_support": "yes", "reason": "Says no, a newer-version database cannot go back to an older version regardless of compatibility level; cited chunks state this."}
+{"jid": "7ae28dc4", "label": "correct", "cited_support": "yes", "reason": "Gives the #! /bin/echo Please-source shebang and says the shebang, not the extension, picks the interpreter; cited chunks state both."}
+{"jid": "334f09bb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "2166bcec", "label": "correct", "cited_support": "no", "reason": "Names the Monitoring plugin and its /monitoring/nodes memory charts, but the cited chunks do not contain that URL or the per-node report."}
+{"jid": "380d6188", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "18c5fb83", "label": "correct", "cited_support": "yes", "reason": "States kernel 2.6.38 in Fedora 15, delete xorg.conf and check /var/log/Xorg.0.log; cited chunks state all three."}
+{"jid": "88a4437e", "label": "correct", "cited_support": "yes", "reason": "Says no, some telemetry uses a unique ID and some is completely anonymous; cited chunk states this."}
+{"jid": "ff2af3b1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "fec7bc3d", "label": "correct", "cited_support": "yes", "reason": "Gives SRP plus tests-first and communication as the benefit of pattern names; cited chunks state both."}
+{"jid": "8762c977", "label": "correct", "cited_support": "yes", "reason": "Names the code bomb, a patch too large to review; cited chunk states it."}
+{"jid": "a87c5f59", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and few images; the added 2-4GB figure for growth is an accurately attributed answer in the cited text."}
+{"jid": "f8690486", "label": "correct", "cited_support": "yes", "reason": "Says not normally possible and gives the gdb attach, call putenv, detach sequence; cited chunks state these."}
+{"jid": "77515a9d", "label": "correct", "cited_support": "yes", "reason": "Distinguishes nscd caching from sssd remote auth and says not to run both except nscd for hosts; cited chunks state this."}
+{"jid": "080bc509", "label": "correct", "cited_support": "yes", "reason": "Names -annotate with %t and -gravity for the corner; cited chunks state these."}
+{"jid": "54999ac4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "12b99abe", "label": "correct", "cited_support": "yes", "reason": "Gives request logs and user complaints as evidence and cookie/session theft for impersonation; cited chunks state both."}
+{"jid": "ebbf6ff2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "dad0116c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "a5ee853b", "label": "correct", "cited_support": "yes", "reason": "Explains dirname run with no arguments and gives export -f with find -exec bash -c; cited chunks state both."}
+{"jid": "d6296407", "label": "correct", "cited_support": "yes", "reason": "States arithmetic coercion is allowed as too annoying otherwise and 1 + 1 string is ambiguous; cited chunk states this."}
+{"jid": "e5e2c002", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "2b57be3f", "label": "correct", "cited_support": "yes", "reason": "Names ignorespace and ignoreboth; cited chunks state both."}
+{"jid": "4b5b7c50", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "1afd288a", "label": "partial", "cited_support": "yes", "reason": "Gives GET as simplest but omits that response metadata must not encourage caching; the cited chunk supports the GET part."}
+{"jid": "7eafc04b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "f286ff6d", "label": "correct", "cited_support": "yes", "reason": "Names the CRIME attack on compressed headers and cookies; cited chunks describe CRIME targeting the cookie in compressed headers."}
+{"jid": "5775b9a8", "label": "correct", "cited_support": "yes", "reason": "Says supported from 7.4 and enabling needs a WLC reboot; cited chunks state both plus the extra mode-on detail."}
+{"jid": "2c36fb13", "label": "correct", "cited_support": "yes", "reason": "Says yes, the IIS test still logged all entries after stopping mid-request; cited chunk states this."}
+{"jid": "32637aef", "label": "correct", "cited_support": "yes", "reason": "Gives cross join with generate_series(1,1000), order by random() limit 10, approximate and slow; cited chunks state this."}
+{"jid": "22d98750", "label": "correct", "cited_support": "yes", "reason": "Queries sys.dm_os_performance_counters for the deprecated-features counters with cntr_value > 0; cited chunk states that query."}
+{"jid": "6f311e5d", "label": "correct", "cited_support": "yes", "reason": "States LZF default with Snappy later and experimental in 0.19.9; cited chunk states this."}
+{"jid": "3ad551a6", "label": "correct", "cited_support": "yes", "reason": "States LZF default with Snappy planned later; cited chunk states this."}
+{"jid": "a7e80363", "label": "correct", "cited_support": "yes", "reason": "Says the hash is deterministic per byte sequence but string encodings differ; cited chunks state this and the hex-case point."}
+{"jid": "7327f871", "label": "correct", "cited_support": "yes", "reason": "Names the MVC Mini Profiler; cited chunk states it."}
+{"jid": "5d30e909", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "2700ae45", "label": "correct", "cited_support": "yes", "reason": "Gives the #! /bin/echo Please-source shebang and says the shebang picks the interpreter; cited chunks state both and the /bin/false variant."}
+{"jid": "eb30a150", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing the plan cache without a trace; cited chunk states this."}
+{"jid": "f09efae1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on a question with no answer in the knowledge base."}
+{"jid": "21a31891", "label": "correct", "cited_support": "yes", "reason": "Says built-in CRUD hurts unit testing and IDatabaseService should be constructor-injected; cited chunks state both."}

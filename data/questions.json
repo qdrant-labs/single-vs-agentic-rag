@@ -1,0 +1,2415 @@
+[
+ {
+  "qid": "q001",
+  "type": "straightforward",
+  "question": "Why do many languages specify a fixed stack size for each thread?",
+  "answer": "They want to use the native stack, on operating systems that do not support non-contiguous stack extents.",
+  "evidence": [
+   653252
+  ],
+  "item": "Tsoftwareengineering-330626",
+  "support": "they want to work using the native stack, on OSes that don't do this",
+  "verifier_reason": "Chunk 653252 states that languages fix thread stack size because they use the native stack on OSes that do not support non-contiguous stack extents."
+ },
+ {
+  "qid": "q002",
+  "type": "straightforward",
+  "question": "In SQL Server, which tools help find where the performance problems lie among a set of 35 suspect stored procedures?",
+  "answer": "Profiler events for elapsed time and cached plans, plus sys.dm_exec_query_stats (and record a baseline).",
+  "evidence": [
+   745862
+  ],
+  "item": "Tdba-64896",
+  "support": "a combination of Profile/Events for elapsed time and cached plans, plus sys.dm_exec_query_stats",
+  "verifier_reason": "Chunk 745862 states Profiler events for elapsed time and cached plans plus sys.dm_exec_query_stats and a baseline; added 'SQL Server' so the platform is unambiguous."
+ },
+ {
+  "qid": "q003",
+  "type": "straightforward",
+  "question": "Which btrfs filesystem defrag option flushes data for each file before moving to the next file, giving slower progress output and lower IO load?",
+  "answer": "-f (flush data for each file before going to the next file), e.g. btrfs filesystem defrag -v -r -f dir/",
+  "evidence": [
+   236634,
+   236637
+  ],
+  "item": "Tserverfault-896535",
+  "support": "-f flush data for each file before going to the next file.",
+  "verifier_reason": "Chunks 236634 and 236637 state that -f flushes each file before the next, which gives slower progress output and lower IO load."
+ },
+ {
+  "qid": "q004",
+  "type": "straightforward",
+  "question": "What workaround is suggested when a new RDS MySQL 8.0.16 instance has an empty ST_SPATIAL_REFERENCE_SYSTEMS table?",
+  "answer": "Create a new instance with v8.0.15 and then perform the minor upgrade (requires a reboot).",
+  "evidence": [
+   819819
+  ],
+  "item": "Tdba-254655",
+  "support": "you can create a new instance with v8.0.15 and then perform the minor upgrade (requires reboot)",
+  "verifier_reason": "Chunk 819819 states the workaround: create the instance on 8.0.15, then do the minor upgrade, which needs a reboot."
+ },
+ {
+  "qid": "q005",
+  "type": "straightforward",
+  "question": "How can I start a program automatically when CPU percent reaches a certain level on Windows?",
+  "answer": "Use an alert in perfmon; on its Action tab choose \"Run This Program\" and set the complete file path of the program or script.",
+  "evidence": [
+   222232,
+   222233
+  ],
+  "item": "Tserverfault-822135",
+  "support": "Run This Program Sets the complete file path of a program or script to run when the alert occurs.",
+  "verifier_reason": "Chunks 222232-222233 state the perfmon alert with the Run This Program action taking the program's full path, and a keyword check found no competing answer in the thread."
+ },
+ {
+  "qid": "q006",
+  "type": "straightforward",
+  "question": "How can you recover the public key of an AWS EC2 key pair by launching a temporary instance?",
+  "answer": "Launch temporary instance with that keypair, stop it, attach its root EBS volume to another instance, and copy the public key from the mounted filesystem.",
+  "evidence": [
+   109270,
+   109271
+  ],
+  "item": "Tserverfault-342530",
+  "support": "Detach the root EBS volume from the stopped instance A. Attach and mount it to your running instance B.",
+  "verifier_reason": "Chunks 109270-109271 state the specific procedure (launch with the key pair, stop, move the root EBS volume to another instance, copy the key)."
+ },
+ {
+  "qid": "q007",
+  "type": "straightforward",
+  "question": "Should a command's --help usage message go to stderr or stdout, and where should the usage message for an invalid option go?",
+  "answer": "--help output goes to stdout so it can be piped to less; the usage message for an invalid option or missing argument goes to stderr.",
+  "evidence": [
+   285276,
+   285277,
+   285278
+  ],
+  "item": "Tunix-8813",
+  "support": "It should go to stdout, so you can type: command --help | less",
+  "verifier_reason": "Chunks 285276-285278 state both parts: --help output goes to stdout for piping, and invalid-option usage goes to stderr."
+ },
+ {
+  "qid": "q008",
+  "type": "straightforward",
+  "question": "How much memory would be needed for a WordPress site with 8,000 hits per day with occasional spikes?",
+  "answer": "At least 1GB of RAM, assuming a caching plugin such as W3 Total Cache or WP Super Cache and minimal graphics served from the server.",
+  "evidence": [
+   63114,
+   63115
+  ],
+  "item": "Tserverfault-185011",
+  "support": "at your current size I think I would go with at least 1GB of RAM, assuming you use a caching plugin",
+  "verifier_reason": "Chunks 63114/63115 state at least 1GB of RAM, assuming a caching plugin such as W3 Total Cache or WP Super Cache and minimal graphics."
+ },
+ {
+  "qid": "q009",
+  "type": "straightforward",
+  "question": "What does the construct bash <<(curl -s http://xxx.com) actually do?",
+  "answer": "It is an input redirection (<) from a process substitution <(curl -s ...), not a here-document; it is a convoluted way of writing curl -s url | bash.",
+  "evidence": [
+   301013
+  ],
+  "item": "Tunix-39645",
+  "support": "is just a convoluted way of doing: curl -s https://rvm.beginrescueend.com/install/rvm | bash",
+  "verifier_reason": "Chunk 301013 explains the construct and its curl | bash equivalent; tightened the answer to match the source (input redirection from a process substitution, not a here-document)."
+ },
+ {
+  "qid": "q010",
+  "type": "straightforward",
+  "question": "Does the Cisco 2504 WLC support LAG, and what is required to enable it?",
+  "answer": "Yes, supported in v7.4; enabling LAG requires a reboot of the WLC.",
+  "evidence": [
+   971911
+  ],
+  "item": "Tnetworkengineering-1644",
+  "support": "Yes, the 2504 supports LAG in v7.4... Enabling LAG requires a reboot of the WLC",
+  "verifier_reason": "Chunk 971911 directly states LAG support in v7.4 and that enabling it requires a WLC reboot; added the vendor name for clarity."
+ },
+ {
+  "qid": "q011",
+  "type": "straightforward",
+  "question": "Why is encapsulating translations in a separate normalized table better than adding a column for each language?",
+  "answer": "Adding, updating or removing rows is far easier than adding or removing columns, so the table structure stays unchanged as languages change over time.",
+  "evidence": [
+   753870,
+   753871
+  ],
+  "item": "Tdba-87327",
+  "support": "it's far easier to add, update, or remove rows to a table than it is to alter the table by adding/removing columns",
+  "verifier_reason": "Chunks 753870/753871 state that adding or removing rows is easier than altering columns, so the table stays the same as languages change."
+ },
+ {
+  "qid": "q012",
+  "type": "straightforward",
+  "question": "Why is the MAC address bb:bb:bb:bb:bb:bb treated as a non-unicast address?",
+  "answer": "The first byte bb is 10111011 in binary, so its last bit (the I/G bit) is 1, which makes it a group address.",
+  "evidence": [
+   975501
+  ],
+  "item": "Tnetworkengineering-16131",
+  "support": "the last bit in the first octet/byte is the I/G bit, which is 1. This makes your MAC address a group MAC address",
+  "verifier_reason": "Chunk 975501 states the answer exactly: bb is 10111011, the I/G bit is 1, so it is a group address."
+ },
+ {
+  "qid": "q013",
+  "type": "straightforward",
+  "question": "Why did creating a Truecrypt hidden partition delete the original data on the drive?",
+  "answer": "Both used the same password, so Truecrypt mounted the outer partition while trying to format the hidden one, and formatted the outer partition instead.",
+  "evidence": [
+   848792
+  ],
+  "item": "Tsecurity-5955",
+  "support": "it just tried the password which happened to unlock the outer partition instead, since they both used the same password. And it then proceeded to format that outer partition",
+  "verifier_reason": "Chunk 848792 states that the shared password made Truecrypt open and format the outer volume instead of the hidden one."
+ },
+ {
+  "qid": "q014",
+  "type": "straightforward",
+  "question": "What database design is recommended when 30 users each need full, private access to only their own data?",
+  "answer": "Completely separate databases, one per user.",
+  "evidence": [
+   683340,
+   683341
+  ],
+  "item": "Tsoftwareengineering-389298",
+  "support": "I would go with completely separate databases. This offers the greatest level of separation of the data",
+  "verifier_reason": "Chunks 683340 and 683341 recommend one completely separate database per user; answer tightened because 'instead of a shared multi-tenant database' is not in the listed evidence."
+ },
+ {
+  "qid": "q015",
+  "type": "straightforward",
+  "question": "A SELECT joining a big session table to a smaller latest-session table with ORDER BY and LIMIT 500 is slow when few rows match. What query rewrite was suggested?",
+  "answer": "A LATERAL JOIN driven from the smaller sessionlatest table (matching session_id and update_id, ordering by session_id with LIMIT 500), ideally with an index on session (session_id, update_id).",
+  "evidence": [
+   811359,
+   811360,
+   811361
+  ],
+  "item": "Tdba-230043",
+  "support": "I would try to use LATERAL JOIN starting from the smaller table.",
+  "verifier_reason": "Chunks 811360-811361 give the LATERAL JOIN rewrite and the suggested index; question says 'query rewrite' to exclude the schema-change suggestion, and the answer is corrected because the example joins on both session_id and update_id."
+ },
+ {
+  "qid": "q016",
+  "type": "straightforward",
+  "question": "Why does Python allow 1 + 1.0 but not 1 + \"1\" when it avoids implicit conversions?",
+  "answer": "Numeric arithmetic coercion is allowed since the alternative would be too annoying, but 1 + \"1\" is ambiguous (int, float, ord, str(1)+\"1\"), so you must specify.",
+  "evidence": [
+   634221
+  ],
+  "item": "Tsoftwareengineering-284937",
+  "support": "It allows 1 + 1.0 because the alternative would be too annoying to live with, but it doesn't allow 1 + \"1\"",
+  "verifier_reason": "Chunk 634221 states exactly why 1 + 1.0 is allowed and 1 + \"1\" is not, with the source's specific ambiguity list."
+ },
+ {
+  "qid": "q017",
+  "type": "straightforward",
+  "question": "Which profiling tool did one answerer use as part of an application to profile SQL Azure?",
+  "answer": "MVC Mini Profiler",
+  "evidence": [
+   718646
+  ],
+  "item": "Tdba-11065",
+  "support": "I have used the MVC Mini Profiler as part of an application to profile SQL Azure",
+  "verifier_reason": "Chunk 718646 names MVC Mini Profiler; I reworded the question to ask what one answerer used, since many tools could profile SQL Azure in general."
+ },
+ {
+  "qid": "q018",
+  "type": "straightforward",
+  "question": "Which build task should be used in Azure DevOps for a .NET Core 3.0 app hosted on Ubuntu?",
+  "answer": "dotnet build in the DotNetCoreCLI@2 task, not VSBuild.",
+  "evidence": [
+   997509
+  ],
+  "item": "Tdevops-9598",
+  "support": "you should only use dotnet build in DotNetCoreCLI@2 task, because VSBuild task only runs on Windows based agent",
+  "verifier_reason": "Chunk 997509 states that dotnet build in the DotNetCoreCLI@2 task should be used, because VSBuild runs only on Windows agents."
+ },
+ {
+  "qid": "q019",
+  "type": "straightforward",
+  "question": "How can a cron job reshuffle a word-of-the-day data file each day so that the script only needs to pick the first line?",
+  "answer": "Run `sort -R -o wotd_data.txt wotd_data.txt` daily from cron (0 0 * * *), then the script prints the first line with `head -n 1 wotd_data.txt`.",
+  "evidence": [
+   392067
+  ],
+  "item": "Tunix-290235",
+  "support": "0 0 * * * sort -R -o wotd_data.txt wotd_data.txt",
+  "verifier_reason": "Chunk 392067 states the daily cron sort -R -o wotd_data.txt wotd_data.txt and head -n 1 exactly as the reference answer gives them."
+ },
+ {
+  "qid": "q020",
+  "type": "straightforward",
+  "question": "What happens to transactional replication data if the distribution agent is stopped, and what risk does a long delay carry?",
+  "answer": "Replication data builds up until distribution restarts, and a long delay can fill the available log space because replication reads from the transaction log.",
+  "evidence": [
+   770875
+  ],
+  "item": "Tdba-130220",
+  "support": "the transactional replication data will build up while waiting for distribution to start again",
+  "verifier_reason": "Chunk 770875 states that the replication data builds up and that a long delay can fill the available log space."
+ },
+ {
+  "qid": "q021",
+  "type": "straightforward",
+  "question": "Why is installing Proxmox on top of an existing Ubuntu server a bad idea?",
+  "answer": "Proxmox runs on Debian; the dependency chain would force replacing almost every Ubuntu package with Debian ones, leaving a badly broken, mostly-Debian Ubuntu install.",
+  "evidence": [
+   217832,
+   217833
+  ],
+  "item": "Tserverfault-800174",
+  "support": "you'll be replacing almost every package on your Ubuntu system with Debian repository packages",
+  "verifier_reason": "Chunks 217832 and 217833 state that Proxmox runs on Debian and that its dependency chain would replace almost every Ubuntu package, leaving a broken, mostly-Debian install."
+ },
+ {
+  "qid": "q022",
+  "type": "straightforward",
+  "question": "What GitHub practices did one company adopt for ISO27001 certification, without moving to GitHub Enterprise?",
+  "answer": "Protected main branches, required PRs into main, PR templates with checklists (.github/pull_request_template.md), and approvals managed via GitHub teams.",
+  "evidence": [
+   968104,
+   968105
+  ],
+  "item": "Tsecurity-266377",
+  "support": "Create PR templates (.github/pull_request_template.md) with checklists of items for developers to check off",
+  "verifier_reason": "Chunks 968104-968105 list the four controls (protected main, required PRs, PR templates with checklists, approvals via GitHub teams) without GitHub Enterprise."
+ },
+ {
+  "qid": "q023",
+  "type": "straightforward",
+  "question": "What is the difference between nscd and sssd, and should both run at the same time?",
+  "answer": "nscd just caches name-service lookups; sssd handles remote-directory authentication and caching. Don't run both; if nscd is needed, use it only for hosts.",
+  "evidence": [
+   419935,
+   419936
+  ],
+  "item": "Tunix-388596",
+  "support": "sssd and nscd should not be used at the same time as it can result in unexpected lookups.",
+  "verifier_reason": "Chunks 419935 and 419936 state what each daemon does and the source-specific advice not to run both and, if needed, to run nscd for hosts only."
+ },
+ {
+  "qid": "q024",
+  "type": "straightforward",
+  "question": "How can an email recipient avoid open-tracking by services like Bananatag that insert a tracking pixel into messages?",
+  "answer": "Block image fetching from the tracker's servers, block images that look like tracking URLs or are smaller than a certain size, or block images altogether.",
+  "evidence": [
+   864636,
+   864637
+  ],
+  "item": "Tsecurity-30961",
+  "support": "you must either block image fetching from the bananatag servers... or simply block images altogether",
+  "verifier_reason": "Chunks 864636-864637 state the blocking options; question reworded to name the service and the answer completed with the omitted middle option."
+ },
+ {
+  "qid": "q025",
+  "type": "straightforward",
+  "question": "How do you configure per-IP bandwidth management on a SonicWall so each user gets guaranteed and maximum speeds?",
+  "answer": "Enable Advanced Bandwidth Management, activate on WAN with interface speed, create a Per-IP bandwidth object, enable it on default any->any rule for ingress and egress.",
+  "evidence": [
+   976307,
+   976308
+  ],
+  "item": "Tnetworkengineering-18857",
+  "support": "Generate a new bandwidth object and configure it for Per-IP Bandwidth Management.",
+  "verifier_reason": "Chunks 976307-976308 list the SonicWall per-IP bandwidth management steps in the reference answer."
+ },
+ {
+  "qid": "q026",
+  "type": "straightforward",
+  "question": "In a layered GUI/BLL/DAL project, why shouldn't CRUD methods be built into the User object, and how should data access classes get their IDatabaseService?",
+  "answer": "Built-in CRUD makes unit testing much harder; instead pass dependencies such as IDatabaseService into each data access class's constructor via dependency injection.",
+  "evidence": [
+   550381
+  ],
+  "item": "Tsoftwareengineering-83064",
+  "support": "You should use dependency injection to pass in dependencies to the constructor of each data access class",
+  "verifier_reason": "Chunk 550381 states that built-in CRUD makes unit testing harder and that dependencies such as IDatabaseService should be constructor-injected into each data access class."
+ },
+ {
+  "qid": "q027",
+  "type": "straightforward",
+  "question": "What command clamps the MSS for TCP over IPv6 on Junos?",
+  "answer": "tcp mss",
+  "evidence": [
+   971142
+  ],
+  "item": "Tnetworkengineering-239",
+  "support": "you can clamp an MSS for TCP over IPv6 on Junos the same as you would in IPv4 using the same command, tcp mss",
+  "verifier_reason": "Specific question; chunk 971142 says Junos clamps MSS for TCP over IPv6 with the same tcp mss command used for IPv4."
+ },
+ {
+  "qid": "q028",
+  "type": "straightforward",
+  "question": "In SQL Server, what error occurs when a distributed query is run against a loopback linked server from within a distributed transaction?",
+  "answer": "Error 3910: Transaction context in use by another session.",
+  "evidence": [
+   721353,
+   721354
+  ],
+  "item": "Tdba-16052",
+  "support": "causes an error, such as error 3910: \"[Microsoft][ODBC SQL Server Driver][SQL Server]Transaction context in use by another session.\"",
+  "verifier_reason": "Chunk 721354 states error 3910 'Transaction context in use by another session'; question tightened to add the 'from within a distributed transaction' condition the source gives."
+ },
+ {
+  "qid": "q029",
+  "type": "straightforward",
+  "question": "Besides provider documentation, what general way works to find out the attributes of any Terraform object you can refer to in an expression?",
+  "answer": "Run terraform console and ask for the value's type, e.g. type(data.local_sensitive_file.public_key).",
+  "evidence": [
+   999748,
+   999749
+  ],
+  "item": "Tdevops-17429",
+  "support": "run terraform console and then ask it for the type of the value in question",
+  "verifier_reason": "Chunks 999748-999749 state running terraform console and asking for type(...); reworded because the original 'defined within the configuration itself' misdescribes the source's 'any object, not only provider ones'."
+ },
+ {
+  "qid": "q030",
+  "type": "straightforward",
+  "question": "What ASA feature allows handling multiple VLANs with the same subnet behind a single ASA?",
+  "answer": "Contexts, which create virtual ASAs, each VLAN interface assigned to its own context.",
+  "evidence": [
+   974639
+  ],
+  "item": "Tnetworkengineering-10547",
+  "support": "you could use contexts which create virtual ASAs within the ASA... Each vlan interface is assigned to a context",
+  "verifier_reason": "Chunk 974639 states ASA contexts (virtual ASAs, one VLAN interface per context); the thread's other option (per-VLAN NAT routers) is not an ASA feature, so the answer is unique."
+ },
+ {
+  "qid": "q031",
+  "type": "straightforward",
+  "question": "When is it worth issuing a new CSRF token within a session, rather than a new one for every form request?",
+  "answer": "On principal change inside a session, primarily at login, to prevent session fixation leading to CSRF.",
+  "evidence": [
+   860791,
+   860793
+  ],
+  "item": "Tsecurity-22903",
+  "support": "There is one place where it is worth issuing a new CSRF token, though: on principal-change inside a session.",
+  "verifier_reason": "Chunks 860791 and 860793 state issuing a new token on principal change, primarily login, to prevent session fixation leading to CSRF."
+ },
+ {
+  "qid": "q032",
+  "type": "straightforward",
+  "question": "A process protected with nohup still dies when I log out and logind.conf has KillUserProcesses=yes. What command is the workaround?",
+  "answer": "Run the command with systemd-run --scope --user [command], which tells systemd not to kill the process.",
+  "evidence": [
+   430253,
+   430254
+  ],
+  "item": "Tunix-420594",
+  "support": "$ systemd-run --scope --user [command]",
+  "verifier_reason": "Chunks 430253-430254 give systemd-run --scope --user [command] as the workaround when KillUserProcesses=yes and say it stops systemd from killing the process."
+ },
+ {
+  "qid": "q033",
+  "type": "straightforward",
+  "question": "Does all of Chrome's telemetry use a unique ID to tie activity to an anonymised user?",
+  "answer": "No. Some telemetry uses a unique ID, which lets Google combine pieces of information about an anonymised user, but some of it is completely anonymous.",
+  "evidence": [
+   863954
+  ],
+  "item": "Tsecurity-29796",
+  "support": "Not all of the telemetry from Chrome uses the unique ID though",
+  "verifier_reason": "Chunk 863954 states that only some Chrome telemetry uses the unique ID and some is completely anonymous, which matches the reference answer."
+ },
+ {
+  "qid": "q034",
+  "type": "straightforward",
+  "question": "How can I check the free memory of a Jenkins build executor?",
+  "answer": "Use the Monitoring plugin; its node reports at http://yourhost/monitoring/nodes chart memory, cpu and system load for all nodes, with per-node pages too.",
+  "evidence": [
+   993840,
+   993841,
+   993842
+  ],
+  "item": "Tdevops-173",
+  "support": "The report for the nodes is available at http://yourhost/monitoring/nodes",
+  "verifier_reason": "Chunks 993840-993842 state that the Monitoring plugin charts memory, CPU and load for all nodes at /monitoring/nodes and has per-node pages."
+ },
+ {
+  "qid": "q035",
+  "type": "straightforward",
+  "question": "Which HISTCONTROL values make bash skip commands that start with a space when saving history?",
+  "answer": "ignorespace, or ignoreboth (shorthand for ignorespace and ignoredups).",
+  "evidence": [
+   448265,
+   448266
+  ],
+  "item": "Tunix-483701",
+  "support": "If the value contains ignorespace or ignoreboth, any command starting with a space will not be added to command history.",
+  "verifier_reason": "Chunks 448265 and 448266 state that ignorespace or ignoreboth (shorthand for ignorespace and ignoredups) skip space-prefixed commands."
+ },
+ {
+  "qid": "q036",
+  "type": "straightforward",
+  "question": "Which ImageMagick option, together with which escape sequence, writes an image's own filename as text in a corner of the image?",
+  "answer": "The -annotate option with the %t escape (file name without directory or extension), positioned with -gravity (e.g. north-east).",
+  "evidence": [
+   366022,
+   366023
+  ],
+  "item": "Tunix-207369",
+  "support": "You specify the text with the -annotate option, which can contain escape sequences such as %t for the file name",
+  "verifier_reason": "Chunks 366022 and 366023 state -annotate with %t plus -gravity; reworded so the question no longer says 'annotates', which gave away the option name."
+ },
+ {
+  "qid": "q037",
+  "type": "straightforward",
+  "question": "How much signal loss does Plexiglas cause at 2.3GHz versus 5.25GHz?",
+  "answer": "About 0.36 dB at 2.3GHz and about 0.93 dB at 5.25GHz.",
+  "evidence": [
+   972822
+  ],
+  "item": "Tnetworkengineering-3754",
+  "support": "Plexiglas incurs about a .36dB loss at 2.3GHz and about .93dB loss at 5.25GHz",
+  "verifier_reason": "Chunk 972822 gives the specific 0.36 dB and 0.93 dB figures from the cited table, which general knowledge would not supply."
+ },
+ {
+  "qid": "q038",
+  "type": "straightforward",
+  "question": "What tool can be used to pause or suspend a KVM guest without virsh and libvirtd?",
+  "answer": "The QEMU monitor.",
+  "evidence": [
+   995510
+  ],
+  "item": "Tdevops-2909",
+  "support": "the best option for me became qemu monitor",
+  "verifier_reason": "Chunk 995510 names the QEMU monitor; reworded to drop the context-dependent 'the answerer'."
+ },
+ {
+  "qid": "q039",
+  "type": "straightforward",
+  "question": "For an HP P410 RAID with Samsung 830 SSDs on Debian 6.0, which change gives the greatest performance improvement?",
+  "answer": "Add another pair of disks and expand to RAID 1+0, which provides the greatest benefit.",
+  "evidence": [
+   135742
+  ],
+  "item": "Tserverfault-431437",
+  "support": "Add another pair of disks and expand to RAID 1+0. This will provide the greatest benefit.",
+  "verifier_reason": "Chunk 135742 ranks adding another pair of disks and expanding to RAID 1+0 as the greatest-impact change."
+ },
+ {
+  "qid": "q040",
+  "type": "straightforward",
+  "question": "Is a SHA-1 hash of a string always the same, or can different implementations give different results?",
+  "answer": "The hash is deterministic, but a string can be converted to bits many ways (ISO-8859-1, UTF-8, UTF-16, BOM, NFD), giving different inputs and hashes.",
+  "evidence": [
+   858145,
+   858146,
+   858147
+  ],
+  "item": "Tsecurity-18290",
+  "support": "and all will yield very different hash values when processed with a given hash function.",
+  "verifier_reason": "Clear question; chunks 858145-858147 state that hashing is deterministic but string-to-bit encodings (Latin-1, UTF-8, UTF-16, BOM, NFD) differ and give different hashes."
+ },
+ {
+  "qid": "q041",
+  "type": "straightforward",
+  "question": "Ctrl-C would not stop pppd running in non-detached mode from a shell script. What turned out to be the cause?",
+  "answer": "A bug in the particular pppd version shipped in the distro; earlier and later pppd versions do not have the problem.",
+  "evidence": [
+   306046
+  ],
+  "item": "Tunix-50093",
+  "support": "Turned out it was a bug in the particular version of pppd that was being used in the distro.",
+  "verifier_reason": "Chunk 306046 states the cause was a bug in that distro's pppd version; reworded so the question is self-contained rather than asking about an unspecified incident."
+ },
+ {
+  "qid": "q042",
+  "type": "straightforward",
+  "question": "Why is it unsafe to store the XSRF value inside an anonymous JavaScript function?",
+  "answer": "The token sits in the text that declares the function, so an XSS payload can read it via an XHR request.",
+  "evidence": [
+   868209
+  ],
+  "item": "Tsecurity-36143",
+  "support": "the CSRF token is not actually stored within an anonymous function. This token would be stored within text that declares an anonymous function.",
+  "verifier_reason": "Chunk 868209 states that the token lives in the text declaring the function, which an XSS payload can fetch via XHR; the answer is source-specific."
+ },
+ {
+  "qid": "q043",
+  "type": "straightforward",
+  "question": "What is the next-best way to give RRAS VPN clients on a Windows server DHCP addresses from their own scope, since an Amazon VPC's DHCP options cannot be overridden?",
+  "answer": "Create a virtual network on the Windows box with the Loopback Adapter, run a DHCP scope on it, and effectively dual-home the box.",
+  "evidence": [
+   190558,
+   190559,
+   190560
+  ],
+  "item": "Tserverfault-663778",
+  "support": "create a virtual network on the Windows box, using the Loopback Adapter",
+  "verifier_reason": "Chunk 190559 states the loopback-adapter virtual network and DHCP scope dual-homing answer; wording tightened to name the Amazon VPC and Windows server."
+ },
+ {
+  "qid": "q044",
+  "type": "straightforward",
+  "question": "How can I make a bash key binding copy the whole current command line to the X clipboard?",
+  "answer": "Define a function that pipes printf %s \"$READLINE_LINE\" to xsel -ib, then bind it with bind -x (e.g. to \\eW), guarded by checking $DISPLAY.",
+  "evidence": [
+   290843,
+   290844
+  ],
+  "item": "Tunix-18701",
+  "support": "printf %s \"$READLINE_LINE\" | xsel -ib",
+  "verifier_reason": "Chunks 290843 and 290844 give exactly the READLINE_LINE | xsel -ib function bound with bind -x to \\eW inside a $DISPLAY check."
+ },
+ {
+  "qid": "q045",
+  "type": "straightforward",
+  "question": "How do you fix COPY or rename failures when Nginx with an https frontend proxies WebDAV or SVN to an internal Apache over http?",
+  "answer": "Rewrite the Destination header in the Nginx location: if it matches ^https(.+)$, set it to http$1, then use proxy_set_header Destination $destination.",
+  "evidence": [
+   44550,
+   44551
+  ],
+  "item": "Tserverfault-121766",
+  "support": "proxy_set_header Destination $destination;",
+  "verifier_reason": "Chunks 44550 and 44551 describe the https Destination header problem and give the exact $destination rewrite with proxy_set_header Destination."
+ },
+ {
+  "qid": "q046",
+  "type": "straightforward",
+  "question": "Under what terms may the text of the GNU General Public License itself be copied and distributed?",
+  "answer": "Verbatim copies of the license document may be copied and distributed, but changing the document is not allowed.",
+  "evidence": [
+   619036
+  ],
+  "item": "Tsoftwareengineering-241583",
+  "support": "Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.",
+  "verifier_reason": "Chunk 619036 quotes the GPL's own notice allowing verbatim copies to be copied and distributed but not changed."
+ },
+ {
+  "qid": "q047",
+  "type": "straightforward",
+  "question": "What is the term for a really big source code commit or patch that is so large no one can review it?",
+  "answer": "A \"code bomb\": a patch so large that no one can review it.",
+  "evidence": [
+   581680
+  ],
+  "item": "Tsoftwareengineering-152733",
+  "support": "A code bomb is a patch that's so large that no one can review it.",
+  "verifier_reason": "The 'so large no one can review it' definition points to 'code bomb' (chunk 581680); the other terms in the thread do not carry that definition."
+ },
+ {
+  "qid": "q048",
+  "type": "straightforward",
+  "question": "For Merkle-Damgard hashes like SHA-1, why does revealing h(P+B) give an attacker no extra information beyond h(P)?",
+  "answer": "Because of length extension: given h(P), the attacker can already compute h(P+B) for many B without knowing P, so revealing it adds nothing.",
+  "evidence": [
+   886541,
+   886542
+  ],
+  "item": "Tsecurity-69440",
+  "support": "it allows us to show that revealing h(P+B) does not give extra information to the attacker, precisely because the attacker did not need wait for us",
+  "verifier_reason": "Chunks 886541 and 886542 state that length extension lets an attacker already compute h(P+B) from h(P), so revealing it adds nothing."
+ },
+ {
+  "qid": "q049",
+  "type": "straightforward",
+  "question": "How do I make a bash bind key insert \"g++ !$\" and also execute it immediately instead of waiting for Enter?",
+  "answer": "Append \\r to the macro: bind '\"\\ee\": \"g++ !$\\r\"'.",
+  "evidence": [
+   312499
+  ],
+  "item": "Tunix-67468",
+  "support": "bind '\"\\ee\": \"g++ !$\\r\"'",
+  "verifier_reason": "Chunk 312499 states that appending \\r to the bind macro executes the command; this is specific and clear."
+ },
+ {
+  "qid": "q050",
+  "type": "straightforward",
+  "question": "Why must a load balancer rewrite the IP address in the node's response before forwarding it to the client?",
+  "answer": "Without the rewrite, the client would receive a packet from an IP it does not trust and simply discard the response.",
+  "evidence": [
+   645695
+  ],
+  "item": "Tsoftwareengineering-312956",
+  "support": "Without it the client, receiving a packet from an IP it does not trust, would simply discard the response.",
+  "verifier_reason": "Chunk 645695 states that without the rewrite the client discards a packet from an IP it does not trust; the question is clear and does not give the answer away."
+ },
+ {
+  "qid": "q051",
+  "type": "semantic",
+  "question": "On a cheap shared host my site sits behind an Apache add-on that blocks known attack patterns. Is relying on it alone a good security policy, and what did one admin prefer instead?",
+  "answer": "No, it is only a blacklist that gives false security; better to review all uploaded code plus logs, log analysis, reporting, and intrusion detection/prevention systems.",
+  "evidence": [
+   526933,
+   526934
+  ],
+  "item": "Tsoftwareengineering-6146",
+  "support": "combined with lots of logs, logfile analysis, reporting systems, and intrusion detection/intrusion prevention systems (IPS)",
+  "verifier_reason": "Chunks 526933 and 526934 state that mod_security is a blacklist giving false security and describe the code review, logging and IDS/IPS policy preferred instead, and the question avoids the product name."
+ },
+ {
+  "qid": "q052",
+  "type": "semantic",
+  "question": "After upgrading my Linux desktop environment, opening a link from another app no longer switches me to the workspace where my browser window lives. Which window behavior setting restores that?",
+  "answer": "Set focus stealing prevention to none, under systemsettings5 > Window Management > Window Behavior.",
+  "evidence": [
+   453655,
+   453656
+  ],
+  "item": "Tunix-502612",
+  "support": "Change the Focus stealing prevention settings to none and your problem will be fixed",
+  "verifier_reason": "Question paraphrases the KDE desktop-switching problem without naming the product or setting, and chunks 453655/453656 state the focus stealing prevention fix and its menu path."
+ },
+ {
+  "qid": "q053",
+  "type": "semantic",
+  "question": "I couldn't build a PHP opcode cache extension because the temp directory is mounted without execute permission and I can't remount it. What workaround did one person use?",
+  "answer": "Create a chrooted environment, following the Media Temple knowledge base guide on troubleshooting noexec /tmp.",
+  "evidence": [
+   91820
+  ],
+  "item": "Tserverfault-282725",
+  "support": "creating a chrooted environment",
+  "verifier_reason": "Chunk 91820 states the chrooted-environment workaround from the Media Temple guide, and the question paraphrases APC and noexec /tmp without naming them."
+ },
+ {
+  "qid": "q054",
+  "type": "semantic",
+  "question": "I have an executable script written in the classic Unix pattern-scanning language, and flags like -h are swallowed by the interpreter. With GNU coreutils 8.30 or newer, what shebang passes them through to the script?",
+  "answer": "#! /usr/bin/env -S sh -c 'exec awk -f \"$0\" -- \"$@\"'",
+  "evidence": [
+   472052
+  ],
+  "item": "Tunix-572637",
+  "support": "#! /usr/bin/env -S sh -c 'exec awk -f \"$0\" -- \"$@\"'",
+  "verifier_reason": "Chunk 472052 gives the exact env -S shebang; the question avoids naming awk and the answer is specific to the source."
+ },
+ {
+  "qid": "q055",
+  "type": "semantic",
+  "question": "People tell me to code against abstractions, but making a separate abstract type for every class seems absurd. In what broader sense can that advice be applied beyond language keywords?",
+  "answer": "It applies to web APIs or Internet protocols too: it means a guaranteed, exposed behavior rather than the underlying implementation.",
+  "evidence": [
+   631892
+  ],
+  "item": "Tsoftwareengineering-277206",
+  "support": "Here an interface is a guaranteed/exposed behavior, not the underlying implementation.",
+  "verifier_reason": "Chunk 631892 states that the advice applies to web APIs and Internet protocols, where an interface means guaranteed exposed behavior."
+ },
+ {
+  "qid": "q056",
+  "type": "semantic",
+  "question": "On a Windows web server, if I shut down a site while a page request is still running, does that in-flight request run to completion first?",
+  "answer": "Yes. In a test with timed sleeps and a finally block, stopping the site mid-request still produced all six log entries.",
+  "evidence": [
+   155865
+  ],
+  "item": "Tserverfault-515278",
+  "support": "the running process is finished before the site is shut down.",
+  "verifier_reason": "Chunk 155865 states the timed-sleep test where all six log entries appeared after stopping the site; the question avoids IIS and Stop-WebSite."
+ },
+ {
+  "qid": "q057",
+  "type": "semantic",
+  "question": "Since patching my servers against the speculative-execution CPU bugs, some boxes slowed a lot and others not at all. What kind of workload is hit hardest, and why?",
+  "answer": "Programs with frequent user-to-kernel context switches, like databases or hypervisors, because kernel page tables are flushed on each switch.",
+  "evidence": [
+   934189
+  ],
+  "item": "Tsecurity-177362",
+  "support": "a program that relies on frequent context switching (like a database or an hypervisor) will see a big performance impact",
+  "verifier_reason": "Chunk 934189 says context-switch-heavy programs like databases and hypervisors suffer most because KPTI flushes kernel page tables, and the question avoids naming Meltdown/Spectre/KPTI."
+ },
+ {
+  "qid": "q058",
+  "type": "semantic",
+  "question": "Some accounts on my site get activated even though the person never clicked the confirmation link I emailed. What could cause that, and how can I guard against it?",
+  "answer": "Browsers (e.g. Chrome prefetching) or antivirus programs load the link in the background without the user clicking it, activating the account; guard against it by checking that the verification page actually renders, not just that a GET request occurred.",
+  "evidence": [
+   943050,
+   943051
+  ],
+  "item": "Tsecurity-197004",
+  "support": "make sure the verification page actually renders (not just that a GET request occurred)",
+  "verifier_reason": "Chunks 943050-943051 state the prefetch/antivirus cause and the render-check guard; the answer drops '(e.g. via JavaScript)', which the evidence does not say."
+ },
+ {
+  "qid": "q059",
+  "type": "semantic",
+  "question": "I'm new to building apps for Google's phone OS and the official developer site has no clear reading order. What did one person use to get a guided overview before reading it?",
+  "answer": "Android Boot Camp 2012, which gave an overview that put the developer website's content into context.",
+  "evidence": [
+   577205
+  ],
+  "item": "Tsoftwareengineering-142953",
+  "support": "I was able to use Android Boot Camp 2012 to get an overview of the topic.",
+  "verifier_reason": "Chunk 577205 names Android Boot Camp 2012 as the overview used before reading the developer site, and the question avoids the term Android."
+ },
+ {
+  "qid": "q060",
+  "type": "semantic",
+  "question": "Our servers sit behind a device that spreads incoming requests, and it is also their default gateway. How can server-to-server traffic avoid passing through it?",
+  "answer": "Run a routing protocol such as OSPF or RIP (or use static routes in smaller deployments) so that traffic bypasses the device.",
+  "evidence": [
+   973727
+  ],
+  "item": "Tnetworkengineering-7051",
+  "support": "a routing protocol (i.e. OSPF or RIP) is run to allow the \"east-west\" traffic to circumvent the load balancer",
+  "verifier_reason": "Chunk 973727 states that a routing protocol (OSPF or RIP), or static routes in small deployments, lets east-west traffic bypass the load balancer, and the question avoids the term load balancer."
+ },
+ {
+  "qid": "q061",
+  "type": "semantic",
+  "question": "Of the 4,096 possible values in the 12-bit tag field on Ethernet trunks, why can only 4,094 be used, and what are the two excluded values for?",
+  "answer": "0x000 and 0xFFF are reserved; 0x000 means a priority tag with no VLAN ID, and 0xFFF must never be configured or transmitted.",
+  "evidence": [
+   977853,
+   977854
+  ],
+  "item": "Tnetworkengineering-24404",
+  "support": "The hexadecimal values of 0x000 and 0xFFF are reserved.",
+  "verifier_reason": "Chunks 977853-977854 state that 0x000 and 0xFFF are reserved, 0x000 means a priority tag with no VLAN ID, and 0xFFF must not be configured or transmitted; the question avoids 'VLAN' and '802.1Q'."
+ },
+ {
+  "qid": "q062",
+  "type": "semantic",
+  "question": "When I poll a router with a command-line walk tool on Ubuntu, I only see long dotted numeric identifiers instead of readable names. How do I fix that?",
+  "answer": "Run apt-get install snmp-mibs-downloader, then edit /etc/snmp/snmp.conf to read 'mibs +ALL'.",
+  "evidence": [
+   188619
+  ],
+  "item": "Tserverfault-654293",
+  "support": "apt-get install snmp-mibs-downloader",
+  "verifier_reason": "Chunk 188619 states installing snmp-mibs-downloader and setting 'mibs +ALL', and the question avoids snmpwalk/OID/MIB terms."
+ },
+ {
+  "qid": "q063",
+  "type": "semantic",
+  "question": "A colleague says that managing our deployments through pull requests in a repository means we've adopted the whole cultural philosophy of joining development and operations. Is that right?",
+  "answer": "No. Using Git to manage infrastructure and deployments is a specific process; DevOps is a culture, so either can exist without the other.",
+  "evidence": [
+   997403,
+   997404,
+   997405
+  ],
+  "item": "Tdevops-9267",
+  "support": "DevOps is not a process. It is a culture.",
+  "verifier_reason": "Chunks 997403-997405 state GitOps is a Git-tied process while DevOps is a culture and either can exist without the other; the question avoids both terms."
+ },
+ {
+  "qid": "q064",
+  "type": "semantic",
+  "question": "In my WPF app a base view model has one handler that picks the action from a string in the XAML. What problem arises if a child class must change just one action's behavior?",
+  "answer": "You must copy the entire Execute(String parameter) method and change the one case statement, since you can't override a single command.",
+  "evidence": [
+   650392
+  ],
+  "item": "Tsoftwareengineering-323547",
+  "support": "the only way to override behavior for one command is to copy the entire Execute(String parameter) method and change the one case statement",
+  "verifier_reason": "Clear scenario; chunk 650392 states that a derived view model must copy the whole Execute(String parameter) method and change one case statement to override a single command."
+ },
+ {
+  "qid": "q065",
+  "type": "semantic",
+  "question": "I'm designing storage for a chat bot's access rights, where users can have rights per channel and also globally. How should I lay out the tables?",
+  "answer": "A users table, a local-permissions table (user-id, channel, permission), and a global-permissions table (user-id, permission), with permission as a string column.",
+  "evidence": [
+   573741
+  ],
+  "item": "Tsoftwareengineering-135660",
+  "support": "local-permissions: <user-id> <channel(-id)> <permission>",
+  "verifier_reason": "Chunk 573741 states the three-table layout with a string permission column, and the question avoids the IRC and permission terms."
+ },
+ {
+  "qid": "q066",
+  "type": "semantic",
+  "question": "When automating build, deploy-to-dev and deploy-to-prod on my CI server, what rule of thumb decides where to split the work into separate jobs?",
+  "answer": "Identify 'atomic' units: the smallest group of steps someone might need to run on their own, and make each its own job.",
+  "evidence": [
+   996942
+  ],
+  "item": "Tdevops-6591",
+  "support": "what are the smallest group of steps that you envision admins/ops/devs/etc. might need to run on their own",
+  "verifier_reason": "Chunk 996942 states the 'atomic unit' rule of thumb, and the question avoids Jenkins/Jenkinsfile."
+ },
+ {
+  "qid": "q067",
+  "type": "semantic",
+  "question": "My PHP web service parses XML sent by browsers, and I'm worried the parser could be tricked into reading local files or probing internal hosts. Which PHP call mitigates this?",
+  "answer": "libxml_disable_entity_loader(true);",
+  "evidence": [
+   910406
+  ],
+  "item": "Tsecurity-122140",
+  "support": "In PHP you can help fix this by calling libxml_disable_entity_loader(true);",
+  "verifier_reason": "Paraphrase avoids XXE and still has one clear answer; chunk 910406 names libxml_disable_entity_loader(true) as the PHP mitigation."
+ },
+ {
+  "qid": "q068",
+  "type": "semantic",
+  "question": "Can I build a container image for a different operating system family, such as a BSD, on my Linux workstation relying only on container isolation? Why or why not?",
+  "answer": "No; containers share the host kernel, so you need hardware virtualization such as VirtualBox, VMware, Xen or KVM to build for a different kernel type.",
+  "evidence": [
+   995241
+  ],
+  "item": "Tdevops-2187",
+  "support": "that's still the host kernel who own the process",
+  "verifier_reason": "Chunk 995241 states containers use the host kernel, so building for a different kernel type needs hardware virtualization (VirtualBox, VMware, Xen, KVM); the question avoids Docker/FreeBSD/Ubuntu."
+ },
+ {
+  "qid": "q069",
+  "type": "semantic",
+  "question": "On a Red Hat-style system, installing a package fails saying it conflicts with another version of that same package, though none is listed as installed. What is the likely cause?",
+  "answer": "A previous installation aborted and left files behind; the installer refuses if any file already exists and attributes the conflict to the same package.",
+  "evidence": [
+   315648,
+   315649
+  ],
+  "item": "Tunix-75634",
+  "support": "rpm by default won't install a package if any of the file it needs to install already exists in the filesystem.",
+  "verifier_reason": "Chunks 315648-315649 state that an aborted earlier install leaves files behind and rpm then blames the same package, and the question paraphrases without naming rpm."
+ },
+ {
+  "qid": "q070",
+  "type": "semantic",
+  "question": "A computer booting with no IP configured asks the network for an address. How can the server reply directly to it rather than shouting to everyone?",
+  "answer": "It uses the client's MAC address (chaddr) as the link-layer destination and the offered address (yiaddr) as the IP destination, since delivery happens at layer 2.",
+  "evidence": [
+   979199,
+   979201
+  ],
+  "item": "Tnetworkengineering-29168",
+  "support": "The server can send a unicast message since it knows the host's MAC address.",
+  "verifier_reason": "Question avoids DHCP/OFFER terms, has one clear answer, and chunks 979199 and 979201 together state the chaddr/yiaddr unicast delivery."
+ },
+ {
+  "qid": "q071",
+  "type": "semantic",
+  "question": "On Ubuntu, which package and command let me percent-encode a local path in a shell script so I can build a link starting with the file scheme?",
+  "answer": "Install gridsite-clients and run urlencode -m \"$filepath\"; then prepend \"file://\" yourself, e.g. echo \"file://$(urlencode -m \"$1\")\".",
+  "evidence": [
+   309091
+  ],
+  "item": "Tunix-59501",
+  "support": "will convert the path to an URI",
+  "verifier_reason": "Chunk 309091 states the gridsite-clients package, urlencode -m and prepending file://; the question paraphrases urlencode as percent-encode and names no tool."
+ },
+ {
+  "qid": "q072",
+  "type": "semantic",
+  "question": "I'm new to automating manual operations work. What basic starter toolchain is suggested for spinning up developer VMs, managing server configuration, running the build and deploy pipeline, and containerizing apps?",
+  "answer": "Vagrant for VMs, Ansible for configuration management, GitLab or Jenkins for CI/CD, and Docker for containers.",
+  "evidence": [
+   996413
+  ],
+  "item": "Tdevops-5010",
+  "support": "Vagrant to automate setting up VMs for your developers",
+  "verifier_reason": "Chunk 996413 lists exactly Vagrant, Ansible, GitLab or Jenkins, and Docker for these four jobs, and the question paraphrases each job without naming any tool."
+ },
+ {
+  "qid": "q073",
+  "type": "semantic",
+  "question": "I'm drawing a modelling diagram for a codebase that mixes classes with free-standing helper routines doing I/O. How could I show those routines without cluttering the picture?",
+  "answer": "Add a single box labelled \"I/O Functions\" without detailing each one, or put the details in a separate diagram.",
+  "evidence": [
+   657295
+  ],
+  "item": "Tsoftwareengineering-338384",
+  "support": "I might add a single box labelled \"I/O Functions\" without detailing which ones",
+  "verifier_reason": "Question avoids UML and the source title, and chunk 657295 states the single I/O Functions box or a separate diagram."
+ },
+ {
+  "qid": "q074",
+  "type": "semantic",
+  "question": "I administer Microsoft's database server from an Apple laptop, where the old GUI tracing tool doesn't run. Is there an open source script that finds the most resource-hungry queries from the plan cache without starting a trace?",
+  "answer": "sp_BlitzCache, which analyzes the most resource-intensive queries in the plan cache without a heavy-overhead trace or XE session.",
+  "evidence": [
+   796760
+  ],
+  "item": "Tdba-191281",
+  "support": "The open source sp_BlitzCache analyzes the most resource-intensive queries in your plan cache",
+  "verifier_reason": "Chunk 796760 names sp_BlitzCache as the open source script that analyzes the most resource-intensive plan-cache queries without a trace, and the question avoids the distinctive names."
+ },
+ {
+  "qid": "q075",
+  "type": "semantic",
+  "question": "I'm considering enabling Google's experimental faster web transport protocol on my TLS site. Which known attack on compressed headers and cookies is the security concern?",
+  "answer": "The CRIME attack, which targets HTTP cookies; compressing encrypted data makes length depend on content, leaking information.",
+  "evidence": [
+   863795,
+   863796
+  ],
+  "item": "Tsecurity-29632",
+  "support": "SPDY has been reported to be vulnerable to the CRIME attack",
+  "verifier_reason": "Chunks 863795 and 863796 name CRIME against SPDY cookies and explain the compression length leak; the question avoids naming SPDY."
+ },
+ {
+  "qid": "q076",
+  "type": "semantic",
+  "question": "Where can I find open scripts for hardening Enterprise Linux servers to a US Defense Department security guideline, including one that builds a pre-hardened installer image?",
+  "answer": "Red Hat's government group on GitHub (RedHatGov), plus Frank Caviggia's stig-fix script at people.redhat.com, which modifies a RHEL 6.4 ISO for compliance settings.",
+  "evidence": [
+   336761,
+   336762
+  ],
+  "item": "Tunix-124305",
+  "support": "which will modify a RHEL 6.4 .iso with many settings and requirements for DISA STIG compliance",
+  "verifier_reason": "Chunks 336761-336762 name the RedHatGov GitHub organization and the people.redhat.com stig-fix script that builds a compliant RHEL 6.4 ISO, and the question avoids STIG, DISA and RHEL."
+ },
+ {
+  "qid": "q077",
+  "type": "semantic",
+  "question": "In a CircleCI 2.0 config, how do I make a private deploy key I uploaded in the dashboard usable inside a job?",
+  "answer": "Add an add_ssh_keys step with fingerprints listing the key's fingerprint as shown in the UI.",
+  "evidence": [
+   994420
+  ],
+  "item": "Tdevops-838",
+  "support": "you have to add a add_ssh_keys with the fingerprint of your key as seen in the UI",
+  "verifier_reason": "Chunk 994420 states the add_ssh_keys/fingerprints step, but 'a hosted CI service' is ambiguous (other CI services handle keys differently), so the product name is unavoidable and has been added."
+ },
+ {
+  "qid": "q078",
+  "type": "semantic",
+  "question": "A tenant changed their apartment's network setup on a fiber line they had been told was capped at 100 down and 50 up. What speeds did they then measure?",
+  "answer": "About 300 Mbps up and 250 Mbps down, compared with 20 Mb before.",
+  "evidence": [
+   938346
+  ],
+  "item": "Tsecurity-187042",
+  "support": "My internet speed went from 20mb up/down to literally 300mbps up, 250down.",
+  "verifier_reason": "Chunk 938346 gives the speeds (300 up, 250 down, from 20 before), but it never says the tenant replaced the building's gear, so I reworded that premise to what the chunk supports."
+ },
+ {
+  "qid": "q079",
+  "type": "semantic",
+  "question": "Why do many web API designers still put the release number in the endpoint path despite purists' objections?",
+  "answer": "Because it's easy to implement and debug, and it makes clearly visible which version you are using.",
+  "evidence": [
+   995901
+  ],
+  "item": "Tdevops-3533",
+  "support": "the reason why many API designers do include an API version in the url is because it's easy to implement and debug",
+  "verifier_reason": "Chunk 995901 states the reason (easy to implement and debug, version clearly visible), and the question avoids the source's terms."
+ },
+ {
+  "qid": "q080",
+  "type": "semantic",
+  "question": "I granted a login the server-wide right to run bulk file loads, but it still can't load rows into my target database in SQL Server. What other permission does it need there?",
+  "answer": "The INSERT permission, which is database/table-level; the server-wide bulk operations right alone is not enough to load into a database.",
+  "evidence": [
+   725895
+  ],
+  "item": "Tdba-23599",
+  "support": "the user won't be able to BULK INSERT into a certain database if they don't have the INSERT permission as well",
+  "verifier_reason": "Chunk 725895 states that the INSERT permission is also needed despite server-wide ADMINISTER BULK OPERATIONS, and the question avoids the permission names."
+ },
+ {
+  "qid": "q081",
+  "type": "semantic",
+  "question": "On a Cisco chassis switch with removable line cards, what global configuration command turns one card fully off instead of just restarting it?",
+  "answer": "Switch(config)# no hw-module module _num_ power",
+  "evidence": [
+   975234
+  ],
+  "item": "Tnetworkengineering-13422",
+  "support": "no hw-module module _num_ power",
+  "verifier_reason": "Chunk 975234 states the command; added 'Cisco' because the command is vendor-specific and without it the question has no single answer."
+ },
+ {
+  "qid": "q082",
+  "type": "semantic",
+  "question": "I keep contacts for a small church group in one wide table with a column per detail. Should I break out separate tables for things like addresses and churches?",
+  "answer": "Keep one table; it's already in 3NF, and tables holding just an id and name would be overkill since there's little redundancy.",
+  "evidence": [
+   723052,
+   723053,
+   723056
+  ],
+  "item": "Tdba-18771",
+  "support": "I would leave the data in a single table.",
+  "verifier_reason": "Chunks 723052, 723053 and 723056 state keeping one table, that it is already in 3NF, and that id-plus-name tables would be overkill; question avoids distinctive terms."
+ },
+ {
+  "qid": "q083",
+  "type": "semantic",
+  "question": "Pulling an official image from the default public registry with containerd's low-level client fails when I give the short repo name, though the Kubernetes-style CLI works. What full reference should I use?",
+  "answer": "Use the full reference docker.io/library/<image>:<tag>, including the library namespace and the tag, e.g. ctr images pull docker.io/library/alpine:latest.",
+  "evidence": [
+   999520,
+   999521
+  ],
+  "item": "Tdevops-16149",
+  "support": "the right syntax for ctr isn't docker.io/alpine:latest but docker.io/library/alpine:latest",
+  "verifier_reason": "Evidence states the full docker.io/library/<image>:<tag> form for ctr and the question avoids ctr, crictl and Docker Hub; answer generalised because the question never names alpine."
+ },
+ {
+  "qid": "q084",
+  "type": "semantic",
+  "question": "On an open-source firewall distribution, my remote-access VPN is joined to the LAN at layer 2. After a LAN host pings a VPN client, connectivity dies. What hidden firewall behavior caused this and where is it turned off?",
+  "answer": "An implicit rule on the bridge drops fragmented packets; disable it under System > Advanced > Firewall/NAT.",
+  "evidence": [
+   972865
+  ],
+  "item": "Tnetworkengineering-3843",
+  "support": "implicit rule in the firewall defined on the bridge which dropped fragmented packets",
+  "verifier_reason": "Chunk 972865 states the hidden implicit bridge rule that drops fragmented packets and the System > Advanced > Firewall/NAT location; the question avoids pfSense and OpenVPN."
+ },
+ {
+  "qid": "q085",
+  "type": "semantic",
+  "question": "Why would adding a random per-user value before hashing not have stopped a big social network's leaked password hashes from being cracked, and what should they have used?",
+  "answer": "The problem was the algorithm, not the salt: SHA1 is a fast cryptographic hash that a GPU can brute force at tens of thousands of hashes per second; they should have used an adaptive password hash like bcrypt, which slows brute force to tens of hashes per second.",
+  "evidence": [
+   856387,
+   856388
+  ],
+  "item": "Tsecurity-15910",
+  "support": "SHA1, with or without salt, is far too fast to be used as a password hash.",
+  "verifier_reason": "Chunks 856387-856388 state SHA1 is too fast with or without salt and bcrypt should have been used; question reworded to remove the false premise that the dump was salted."
+ },
+ {
+  "qid": "q086",
+  "type": "semantic",
+  "question": "On SQL Server 2008 R2 or 2012, how can I quickly check whether my application relies on features slated for removal?",
+  "answer": "Query sys.dm_os_performance_counters where object_name LIKE '%Deprecated%' and cntr_value > 0, ordered by cntr_value descending.",
+  "evidence": [
+   742084
+  ],
+  "item": "Tdba-56746",
+  "support": "You can get a quick idea if your application is using any deprecated features by running",
+  "verifier_reason": "Chunk 742084 gives the sys.dm_os_performance_counters '%Deprecated%' query, and the question paraphrases 'deprecated' as 'slated for removal'."
+ },
+ {
+  "qid": "q087",
+  "type": "semantic",
+  "question": "On a pair of Cisco Nexus switches sharing a multi-chassis port channel, must the trunk's allowed list of Layer 2 segments match on both switches to avoid the channel being suspended?",
+  "answer": "No; the allowed VLAN list isn't a Type 1 or Type 2 consistency parameter, so a mismatch doesn't suspend the vPC.",
+  "evidence": [
+   972048
+  ],
+  "item": "Tnetworkengineering-1949",
+  "support": "You should be able to modify the allowed VLAN list without problems",
+  "verifier_reason": "Chunk 972048 states allowed VLANs is neither a Type 1 nor Type 2 parameter so the vPC is not suspended, and the question paraphrases vPC/VLAN terms."
+ },
+ {
+  "qid": "q088",
+  "type": "semantic",
+  "question": "On a Junos switch, one access port faces a customer who sends tagged frames. How can I map the customer's VLANs 41-42 into one provider VLAN and 51-52 into another on that single port?",
+  "answer": "Make the port an access port that is a member of both service VLANs (e.g. SVID4 and SVID5), and under each service VLAN set dot1q-tunneling customer-vlans: 41-42 on one, 51-52 on the other.",
+  "evidence": [
+   979693
+  ],
+  "item": "Tnetworkengineering-30509",
+  "support": "set vlans SVID4 dot1q-tunneling customer-vlans 41-42",
+  "verifier_reason": "Chunk 979693 config shows the access port as a member of two service VLANs each with dot1q-tunneling customer-vlans; answer tightened to describe both mappings."
+ },
+ {
+  "qid": "q089",
+  "type": "semantic",
+  "question": "I want to see which of my SQL Server databases are busiest right now. Which built-in view could I query, and what session id threshold excludes internal sessions?",
+  "answer": "Query sys.dm_exec_sessions, group by database_id counting session_id; session ids of 50 or less are system sessions, so filter session_id > 50.",
+  "evidence": [
+   766634
+  ],
+  "item": "Tdba-120748",
+  "support": "session ids of 50 or less are system sessions",
+  "verifier_reason": "Chunk 766634 states sys.dm_exec_sessions grouped by database_id with session_id > 50 because ids of 50 or less are system sessions."
+ },
+ {
+  "qid": "q090",
+  "type": "semantic",
+  "question": "Can a database attached to a newer SQL Server release be moved back to an older release if I keep the same compatibility level?",
+  "answer": "No; once attached to a version it can never be re-attached to a previous version, even at the same compatibility level.",
+  "evidence": [
+   81155
+  ],
+  "item": "Tserverfault-247364",
+  "support": "Once a database has been attached to a version of SQL server, it can never be re-attached to a previous version",
+  "verifier_reason": "Chunk 81155 states a database attached to a newer version can never be re-attached to an older one even at the same compatibility level; product name is unavoidable."
+ },
+ {
+  "qid": "q091",
+  "type": "semantic",
+  "question": "My container builds keep re-downloading external binaries and libraries from outside sources on every run. What kind of tool can I host to store those dependencies locally, and which two popular ones have free open source editions?",
+  "answer": "Artifact repositories such as Sonatype Nexus and JFrog Artifactory, both of which offer a free open source version.",
+  "evidence": [
+   994515
+  ],
+  "item": "Tdevops-942",
+  "support": "Two of the most popular are sonatype's Nexus and JFrog's Artifactory.",
+  "verifier_reason": "Chunk 994515 names artifact repositories, Sonatype Nexus and JFrog Artifactory, both with free open-source editions; the question paraphrases the need without naming either product."
+ },
+ {
+  "qid": "q092",
+  "type": "semantic",
+  "question": "In PostgreSQL versions before 9.3, how can I pick 10 random rows with replacement from a table?",
+  "answer": "Cross join the table with generate_series(1, 1000) so each row appears 1000 times, order by random() and limit 10; this approximates sampling with replacement, but performance is horrible even on small tables.",
+  "evidence": [
+   756810,
+   756811
+  ],
+  "item": "Tdba-96610",
+  "support": "which creates a 1000-fold copy of the table",
+  "verifier_reason": "Evidence states the generate_series(1,1000) cross join with order by random() limit 10; removed the source term 'lateral joins' from this semantic question and noted the sampling is approximate."
+ },
+ {
+  "qid": "q093",
+  "type": "semantic",
+  "question": "Back in the 0.19 days of a popular Lucene-based search server, which codec compressed stored data by default, and which one was planned to come later?",
+  "answer": "LZF was the default for store-level compression, with Snappy coming later (experimental Snappy support appeared in 0.19.9).",
+  "evidence": [
+   160434
+  ],
+  "item": "Tserverfault-533893",
+  "support": "store-level compression defaults to LZF, with Snappy coming some time in the future",
+  "verifier_reason": "Chunk 160434 states LZF as the default with Snappy later (experimental in 0.19.9), and the question avoids naming Elasticsearch."
+ },
+ {
+  "qid": "q094",
+  "type": "semantic",
+  "question": "To make a 2008-era Microsoft relational database redundant, what approach is recommended over delayed copying, failover clusters or hypervisor HA, and how many servers does it need?",
+  "answer": "Mirroring across three servers, one a small free tiebreaker; clustering or VMware HA leave one database as a corruptible weak point.",
+  "evidence": [
+   86925
+  ],
+  "item": "Tserverfault-267578",
+  "support": "clustering / vmware leaves one database as weak point that still can be corrupted",
+  "verifier_reason": "Chunk 86925 recommends mirroring with 3 servers (one a small free witness) over log shipping, clustering or VMware HA, and the question paraphrases those terms."
+ },
+ {
+  "qid": "q095",
+  "type": "semantic",
+  "question": "I forward web traffic through a router to an internal server, but once I apply an outbound filter on the router interface, external clients' HTTPS requests get no response. Why?",
+  "answer": "The server's reply is sent to the client's random source port, which the outbound access-list doesn't permit, so the router drops it.",
+  "evidence": [
+   972963,
+   972964
+  ],
+  "item": "Tnetworkengineering-5104",
+  "support": "router wouldn't let the packet leave, because the destination port (that random port) is not specified in the access-list you have created.",
+  "verifier_reason": "Chunks 972963-972964 state that the reply to the client's random source port is dropped by the outbound access-list; the question avoids Cisco/access-list terms."
+ },
+ {
+  "qid": "q096",
+  "type": "semantic",
+  "question": "In a SQL Server availability group, how can I stop reporting-only accounts from ever logging into the current writable node even when their connection strings lack read-only intent?",
+  "answer": "Disable their logins on the primary, and run an Agent job every minute on each replica that disables them if it is primary and enables them otherwise.",
+  "evidence": [
+   804764,
+   804765
+  ],
+  "item": "Tdba-211753",
+  "support": "run an Agent job every minute on every replica, checking to see if this particular replica is a primary",
+  "verifier_reason": "Chunk 804764 states the disable-on-primary plus per-minute Agent job approach; the answer is specific and not given away."
+ },
+ {
+  "qid": "q097",
+  "type": "semantic",
+  "question": "I applied IP-based packet filter rules to a switch port carrying several tagged VLANs and nothing is filtered. Why is that, and where do the rules belong?",
+  "answer": "The port is a layer-2 interface and ignores layer-3 addressing; apply the ACL on a layer-3 (SVI) interface instead.",
+  "evidence": [
+   984636
+  ],
+  "item": "Tnetworkengineering-48228",
+  "support": "You need to apply the ACL to a layer-3 (SVI) interface.",
+  "verifier_reason": "Chunk 984636 states that the trunk is a layer-2 interface that ignores layer-3 addressing and that the ACL belongs on a layer-3 SVI; the question avoids the terms ACL, trunk and SVI."
+ },
+ {
+  "qid": "q098",
+  "type": "semantic",
+  "question": "To start a document database server in the background so it survives logout, what is the argument for using the server's own built-in backgrounding option over a shell wrapper that ignores hangups?",
+  "answer": "Let the server fork itself, since it may do work before forking and can optimize; nohup is only for software lacking a fork option.",
+  "evidence": [
+   128171
+  ],
+  "item": "Tserverfault-405414",
+  "support": "I'd say it is always better to let server software do the forking so it can make optimizations.",
+  "verifier_reason": "Paraphrase avoids mongod/--fork/nohup, has one clear answer, and chunk 128171 states the reasoning (server may work before forking and can optimize; nohup only for software without a fork option)."
+ },
+ {
+  "qid": "q099",
+  "type": "semantic",
+  "question": "I accidentally posted the barcode I scanned to set up my phone's rotating six-digit login codes. Is it still safe to use, and how do I fix it?",
+  "answer": "No, it stays valid indefinitely and an attacker can clone your codes; generate a new code, usually by turning 2-factor auth off and on again.",
+  "evidence": [
+   903453,
+   903454
+  ],
+  "item": "Tsecurity-105874",
+  "support": "you should generate a new code (this can usually be done by turning 2-factor auth off, and then on again)",
+  "verifier_reason": "Chunks 903453-903454 state the QR code stays valid forever, lets an attacker clone the tokens, and should be replaced by turning 2-factor auth off and on; the question avoids the product and QR/TOTP terms."
+ },
+ {
+  "qid": "q100",
+  "type": "semantic",
+  "question": "I have a prebuilt test executable with no source code and want to package it as a container. What goes in the build definition, and how long will the container live?",
+  "answer": "Load the binary in place of your code and set it as the entry point; the container lives until that entry point program ends.",
+  "evidence": [
+   997902
+  ],
+  "item": "Tdevops-10749",
+  "support": "you load in the binary and set that as your entry point",
+  "verifier_reason": "Chunk 997902 says to load the binary and set it as the entry point, and that the container lives until that program ends, without the question naming Docker or ENTRYPOINT."
+ },
+ {
+  "qid": "q101",
+  "type": "multi",
+  "question": "My web server log shows GET requests mentioning cmd.exe and System.Net.WebClient that returned 404. What do they indicate, and why do people send requests for pages that don't exist?",
+  "answer": "They are attempted Windows exploits; the 404 means the vulnerable /public/index.php is absent, so no damage. Such probes check whether you are already compromised or try to provoke errors that leak server information.",
+  "evidence": [
+   962493,
+   891869
+  ],
+  "item": "Psecurity-249274-82596",
+  "support": "your server does not have the vulnerable /public/index.php file, so no damage was done || looking to see if you are already compromised, or looking to get your server to throw an error",
+  "verifier_reason": "Chunk 962493 explains the Windows exploit attempt and the 404, chunk 891869 explains why probes for missing pages are sent; neither alone answers both parts."
+ },
+ {
+  "qid": "q102",
+  "type": "multi",
+  "question": "Apache writes its files into a private, hash-named directory under /tmp. What setting causes that, and how can I change it for Apache's unit without editing the package-supplied unit file?",
+  "answer": "PrivateTmp=yes causes it; run systemctl edit on the service to create a drop-in .conf under /etc/systemd/system/<unit>.service.d/ setting PrivateTmp=no, leaving the upstream unit untouched.",
+  "evidence": [
+   239518,
+   239520,
+   226186
+  ],
+  "item": "Pserverfault-912094-840996",
+  "support": "PrivateTmp=yes ... desirable to setting PrivateTmp=no || creating .conf files in a drop-in directory /etc/systemd/system/<unit-name>.<unit-type>.d/",
+  "verifier_reason": "Chunk 239518 gives PrivateTmp=yes and chunk 226186 gives the systemctl edit drop-in directory, and keyword checks showed neither thread alone has the other half."
+ },
+ {
+  "qid": "q103",
+  "type": "multi",
+  "question": "Since which SQL Server version is the built-in Windows Administrators group not made sysadmin by default, and if no sysadmin login remains, does the Dedicated Administrator Connection let you recover one?",
+  "answer": "Since SQL Server 2008. No: even the Dedicated Administrator Connection still requires login credentials, so it cannot recover a lost sysadmin login.",
+  "evidence": [
+   762827,
+   718759,
+   718760
+  ],
+  "item": "Pdba-112011-11299",
+  "support": "Not granting sysadmin privileges to BUILTIN\\Administrators is a change introduced in SQL Server 2008. / Dedicated Administrator Connection (DAC) ... still requires login credentials.",
+  "verifier_reason": "SQL Server 2008 comes from thread 112017 and the DAC still needing login credentials from thread 11300; answer trimmed to drop the contested 'no official way, reinstall' claim the question does not ask about."
+ },
+ {
+  "qid": "q104",
+  "type": "multi",
+  "question": "How can a developer deal with accumulating technical debt without asking a non-technical manager for a big-bang rewrite: what goes quietly into every estimate, and where should larger changes be made?",
+  "answer": "Make refactoring an unspoken part of all estimates, and do small iterative refactorings released gradually, on a separate branch.",
+  "evidence": [
+   537899,
+   573837,
+   573838
+  ],
+  "item": "Psoftwareengineering-135910-43948",
+  "support": "Just make this an unspoken part of all of your estimates / You should do these things on a separate branch",
+  "verifier_reason": "Thread 43967 gives refactoring as an unspoken part of every estimate and thread 135912 gives small iterative changes on a separate branch; both are needed."
+ },
+ {
+  "qid": "q105",
+  "type": "multi",
+  "question": "When building a writable snapshot overlay on a read-only loop device so LVM will activate it, how do you stop LVM complaining about duplicate PVs, and how can you check how full the overlay is?",
+  "answer": "Exclude the original loop device with a filter or scan setting in /etc/lvm/lvm.conf (e.g. r|/dev/loop1|); check overlay fullness with dmsetup status on the new device name.",
+  "evidence": [
+   473838,
+   312596
+  ],
+  "item": "Punix-580613-67678",
+  "support": "edit /etc/lvm/lvm.conf to exclude the original /dev/loop1 ... You can tell how full it is with dmsetup status",
+  "verifier_reason": "Chunk 473838 (thread 683548) gives the lvm.conf filter/scan exclusion and chunk 312596 (thread 67681) gives dmsetup status; neither thread's chunks cover the other half."
+ },
+ {
+  "qid": "q106",
+  "type": "multi",
+  "question": "Why do exported variables from a shell script vanish after I run it, and what file permission difference is there between running it directly and passing its path to an interpreter?",
+  "answer": "Executing runs it in a subshell, so exports vanish (source it with . env.sh instead); running directly needs the executable bit, while passing the path to an interpreter does not.",
+  "evidence": [
+   398602,
+   281959
+  ],
+  "item": "Punix-312590-2976",
+  "support": "When you execute the script, it is run in a subshell | the script must be marked executable to run it directly, but not to run it by passing the path to the interpreter",
+  "verifier_reason": "The subshell/source explanation (post 312591) and the executable-bit difference (post 2978) are both needed, and the evidence states both."
+ },
+ {
+  "qid": "q107",
+  "type": "multi",
+  "question": "When a null pointer comes from a caller's programming mistake rather than a runtime failure, how can C code check for it, and in a language with exceptions, how should a null that signals a serious bug be handled?",
+  "answer": "In C, use an assert, which is compiled in during development and left out of production code; in an exception-based language, let the generic exception bubble up to the error logging so someone is notified and fixes the bug.",
+  "evidence": [
+   595894,
+   579199
+  ],
+  "item": "Psoftwareengineering-186036-147480",
+  "support": "you'll see an assert to check for the programmer errors instead of an if statement ... The generic exception is best if the error condition would be a sign of a serious bug",
+  "verifier_reason": "Chunk 595894 gives the C assert compiled out of production and chunk 579199 gives letting the generic exception bubble to error logging; neither thread alone answers both parts; reworded to drop the 'another answer' reference and the NullReferenceException name the chunk does not state."
+ },
+ {
+  "qid": "q108",
+  "type": "multi",
+  "question": "What happens if you leave out a join condition in a comma-style join versus an ANSI join, and what should you compare to check whether the two styles perform differently?",
+  "answer": "ANSI join gives a compile-time error; the old comma syntax silently returns a CROSS JOIN. Compare the EXPLAIN plans and execution times of each style.",
+  "evidence": [
+   777434,
+   721779
+  ],
+  "item": "Pdba-144744-16725",
+  "support": "if you miss out a join condition you get a compile time error ... getting the EXPLAIN plan for each and seeing if execution time is the same",
+  "verifier_reason": "Chunk 777434 gives the compile-time error versus silent CROSS JOIN and chunk 721779 gives comparing EXPLAIN plans and execution times, so each thread supplies one half."
+ },
+ {
+  "qid": "q109",
+  "type": "multi",
+  "question": "How do I let a parameter choose between different multi-column sort orders in a SQL Server ORDER BY, and why does it fail with a conversion error when the sorted columns have different data types?",
+  "answer": "Use a separate CASE per column and direction keyed on a sort-style parameter; a single CASE mixing datatypes converts to the highest-precedence type (e.g. nvarchar to int), so use a CASE per datatype or per column.",
+  "evidence": [
+   716442,
+   714610
+  ],
+  "item": "Pdba-7301-4162",
+  "support": "Using an @SortStyle parameter to differentiate between sort orders | Your CASE expression can only have one datatype.",
+  "verifier_reason": "Needs the per-column CASE pattern from post 7304 and the datatype-precedence explanation from post 4166; both are stated in the evidence."
+ },
+ {
+  "qid": "q110",
+  "type": "multi",
+  "question": "How do I concatenate many files without exceeding the command line length limit, and what constraint applies to files when using device mapper to build a virtual concatenated file?",
+  "answer": "Use find -print0 | sort -z | xargs -0 cat -- >>out to handle ARG_MAX; device mapper linear targets over loop devices need file sizes that are multiples of 512.",
+  "evidence": [
+   333888,
+   324319
+  ],
+  "item": "Punix-118244-94041",
+  "support": "xargs -0 cat -- >>out | With device mapper (file sizes have to be multiple of 512)",
+  "verifier_reason": "The xargs pipeline for ARG_MAX comes from thread 118248 and the multiple-of-512 file size constraint for device mapper from thread 94061; both specific and both needed."
+ },
+ {
+  "qid": "q111",
+  "type": "multi",
+  "question": "In bash, how do I pass a wget user-agent option containing spaces from a variable correctly, and what is a safer alternative to eval for filling variables into a stored template string later?",
+  "answer": "Quote the variable in the call, wget \"$user_agent\"; instead of eval, define a function that assigns the template strings, then set the variables and call the function.",
+  "evidence": [
+   334885,
+   309550
+  ],
+  "item": "Punix-120475-60688",
+  "support": "in the wget call , \"$user_agent\" is quoted. This is crucial. || It would be a lot more robust to define a function instead of a string.",
+  "verifier_reason": "Chunk 334885 says to quote \"$user_agent\" and chunk 309550 says to use a function instead of eval, but neither chunk mentions arrays, so I cut the array claim from the answer."
+ },
+ {
+  "qid": "q112",
+  "type": "multi",
+  "question": "On a Debian-based system the man page for cp is missing, and other commands have no page either. Which dpkg config file edit restores the standard pages, and which man section holds POSIX descriptions of the other commands?",
+  "answer": "Remove the lines matching /usr/share/man and /usr/share/groff from /etc/dpkg/dpkg.cfg.d/01_nodoc, then reinstall groff, man-db, manpages and coreutils (which holds the cp page); the POSIX command pages are in section 1P (POSIX Programmer's Manual).",
+  "evidence": [
+   406383,
+   281264
+  ],
+  "item": "Punix-339132-1834",
+  "support": "remove the lines matching /usr/share/man and /usr/share/groff from /etc/dpkg/dpkg.cfg.d/01_nodoc || POSIX Programmer's Manual (man section 1P)",
+  "verifier_reason": "Chunk 406383 gives the 01_nodoc edit and chunk 281264 gives section 1P; each thread alone covers only one half. The answer is tightened to list groff as the chunk does."
+ },
+ {
+  "qid": "q113",
+  "type": "multi",
+  "question": "In which ksh93 release did the exec {fd}</file style of redirection become available, and what problem with hard-coded descriptors like exec 4< does it avoid?",
+  "answer": "ksh93r and above; the shell picks a free descriptor (10 or higher) and stores its number in the variable, so you don't have to choose a number and hope it isn't already in use (nor are you limited to single-digit descriptors).",
+  "evidence": [
+   381574,
+   371996
+  ],
+  "item": "Punix-255843-226164",
+  "support": "With ksh93r and above, you can open more than 10 file descriptor ... Was 4 in use? Who knows?",
+  "verifier_reason": "Chunk 381574 gives ksh93r and chunk 371996 gives the pick-and-hope problem; answer widened slightly since chunk 381574 also frames the problem as the single-digit limit."
+ },
+ {
+  "qid": "q114",
+  "type": "multi",
+  "question": "Two distros share one swap partition. What must be done to the swap space at boot for sharing to work, and why is hibernating one install and then booting the other dangerous?",
+  "answer": "The swap must be initialized at boot; hibernating one OS while running another risks data loss because changing any disk filesystem between suspend and resume corrupts the hibernated system's state.",
+  "evidence": [
+   283521,
+   391258
+  ],
+  "item": "Punix-287765-5656",
+  "support": "as long as you initialize the swap space when you boot | If you touch anything on disk between suspend and resume",
+  "verifier_reason": "Chunk 283521 (post 5659) gives the need to initialize swap at boot and the no-hibernate restriction, and only chunk 391258 (post 287771) explains the data-loss danger, so both threads are needed."
+ },
+ {
+  "qid": "q115",
+  "type": "multi",
+  "question": "What free toolset is recommended on Linux for collecting and reporting NetFlow data, and which free collector runs on Windows but needs recompiling because its supplied build is limited?",
+  "answer": "nfdump with nfsen on Linux; ntop on Windows (Win32), whose provided build is limited to capturing 1000 packets per session, so you must recompile it or find other builds.",
+  "evidence": [
+   98733,
+   4570
+  ],
+  "item": "Pserverfault-307411-9256",
+  "support": "my favorite toolset is nfdump+nfsen on Linux/Unix | ntop can act as a NetFlow collector and is available for Win32",
+  "verifier_reason": "Chunk 98733 recommends nfdump plus nfsen on Linux, and chunk 4570 says ntop on Win32 must be recompiled because the supplied build is limited to 1000 packets per session; each thread answers only one half."
+ },
+ {
+  "qid": "q116",
+  "type": "multi",
+  "question": "In bash, how can I make .* match all hidden files except . and .., and what exactly does the glob .??* match?",
+  "answer": "Set GLOBIGNORE=\".:..\" and unset dotglob with shopt -u dotglob; .??* matches a literal dot, any two characters, then zero or more non-slash characters, so at least three characters.",
+  "evidence": [
+   280911,
+   302987
+  ],
+  "item": "Punix-1168-43713",
+  "support": "use the GLOBIGNORE variable to hide the . and .. directories || matches any file name that begins with a literal dot ., followed by any two (not necessarily the same) characters",
+  "verifier_reason": "Chunk 280911 gives GLOBIGNORE plus shopt -u dotglob and chunk 302987 explains .??*; each thread covers only one part."
+ },
+ {
+  "qid": "q117",
+  "type": "multi",
+  "question": "Can a child process change its parent's environment variables, and if I must alter a running process's environment anyway, which debugger sequence is suggested?",
+  "answer": "No, environment variables only pass from parent to child. Otherwise attach with gdb, call putenv (\"DISPLAY=your.new:value\"), then detach; it may not work and can be risky.",
+  "evidence": [
+   415866,
+   300275,
+   300276
+  ],
+  "item": "Punix-372627-38205",
+  "support": "Environment variables can only be passed from parent to child | (gdb) attach process_id (gdb) call putenv (\"DISPLAY=your.new:value\") (gdb) detach",
+  "verifier_reason": "The parent-to-child-only rule and the gdb attach/putenv/detach sequence come from different threads, and the evidence states both."
+ },
+ {
+  "qid": "q118",
+  "type": "multi",
+  "question": "Which gcc options produce annotated assembly to read when learning how code maps to machine instructions, and why are CPU opcode values not chosen arbitrarily?",
+  "answer": "gcc -S -O2 -fverbose-asm outputs readable assembly; opcodes are chosen so groups of bits enable or disable logic gates in the ALU, which reduces ALU complexity.",
+  "evidence": [
+   569068,
+   561483
+  ],
+  "item": "Psoftwareengineering-126095-110740",
+  "support": "Reading the assembly code (generated by gcc -S -O2 -fverbose-asm) can also be helpful. | Well-chosen opcodes reduce the complexity of the ALU.",
+  "verifier_reason": "gcc -S -O2 -fverbose-asm comes from post 126098 and the ALU logic-gate reasoning for opcodes from post 110754; each thread covers only one half."
+ },
+ {
+  "qid": "q119",
+  "type": "multi",
+  "question": "Which driver module is needed to install Oracle Linux 6.4 on a ProLiant DL380e Gen8, and which boot options are added to the linuxefi line when installing CentOS 7 on a DL120 Gen9 with a B140i controller?",
+  "answer": "The hp-vsa driver (via driver disk on a USB key) for the Gen8; for CentOS 7 on the Gen9 B140i, add inst.dd modprobe.blacklist=ahci.",
+  "evidence": [
+   167262,
+   202362
+  ],
+  "item": "Pserverfault-721523-562574",
+  "support": "The driver you need is the hp-vsa module. / add on the linuxefi line the following inst.dd modprobe.blacklist=ahci",
+  "verifier_reason": "The hp-vsa driver comes only from thread 562576 and the inst.dd modprobe.blacklist=ahci boot options only from thread 722174; specific and both threads needed."
+ },
+ {
+  "qid": "q120",
+  "type": "multi",
+  "question": "Two causes of a MySQL server crashing: for oversized TEXT/BLOB data, which two my.cnf settings and values are recommended, and for a corrupt InnoDB data dictionary what is the only sure cleanup?",
+  "answer": "max_allowed_packet=1G and innodb_log_file_size=2047M; for the corrupt dictionary, take mysqldumps, shut down mysql, delete all DB folders except the mysql schema, delete ibdata1, ib_logfile0 and ib_logfile1, start mysql, and reload all the dumps.",
+  "evidence": [
+   721784,
+   720277
+  ],
+  "item": "Pdba-16737-14259",
+  "support": "max_allowed_packet=1G | The only sure way to clean everything up is to perform the mysqldumps as I just specified",
+  "verifier_reason": "Needs both threads: chunk 721784 gives max_allowed_packet=1G and innodb_log_file_size=2047M, and chunk 720277 gives the only sure cleanup (the thread's chunk 720274 confirms the corrupt data dictionary); answer tightened to what the evidence states."
+ },
+ {
+  "qid": "q121",
+  "type": "multi",
+  "question": "Is it safe to tell everyone which password hash my site uses if I publish its source code, and what alternative is suggested if the site owner is uneasy about public code?",
+  "answer": "It is safe with a strong function like scrypt; if the owner is uneasy, use a private repository (GitHub private repos or your own Git server) instead.",
+  "evidence": [
+   877656,
+   891579
+  ],
+  "item": "Psecurity-82057-51648",
+  "support": "If you use something like scrypt, you're perfectly safe in telling everyone that you use it | Private repos do exist on GitHub",
+  "verifier_reason": "Thread 51649 states scrypt is safe to disclose and thread 82061 suggests private GitHub repos or an own Git server; the evidence covers both parts."
+ },
+ {
+  "qid": "q122",
+  "type": "multi",
+  "question": "Which HTTP method is suggested as the simplest way to fire a non-RESTful action such as a reload, and what must the response metadata avoid when that method is used to propagate a signal?",
+  "answer": "GET is probably the simplest; the response metadata must not encourage caching, or a cache may short-circuit the round trip and return a previously cached response.",
+  "evidence": [
+   625291,
+   683084
+  ],
+  "item": "Psoftwareengineering-388615-261552",
+  "support": "GET is probably the simplest. | you had best be sure that the metadata in the response does not encourage caching",
+  "verifier_reason": "Thread 261561 gives GET as simplest and thread 388621 gives the no-caching rule, each needed; 'a method' changed to 'that method' to tie the halves together."
+ },
+ {
+  "qid": "q123",
+  "type": "multi",
+  "question": "Which old 2004 Windows vulnerability illustrates that a valid-looking uploaded image can carry an attack, and how can a file named fake_image.jpg lead to XSS?",
+  "answer": "The GDI JPEG vulnerability; if the file is really HTML and the browser content-sniffs it, visiting its URL directly renders it as an HTML page, enabling XSS.",
+  "evidence": [
+   857266,
+   855638,
+   855639
+  ],
+  "item": "Psecurity-17095-14881",
+  "support": "the GDI JPEG vulnerability in Windows from 2004 ... some browsers ... will display the html page in the file",
+  "verifier_reason": "Chunk 857266 names the 2004 GDI JPEG vulnerability and chunks 855638-855639 explain the content-sniffing XSS when the image URL is opened directly; each thread answers only one part."
+ },
+ {
+  "qid": "q124",
+  "type": "multi",
+  "question": "When sending a for loop to a remote host over ssh, why do the loop variables come out empty if the command is in double quotes, and what can you do when the remote login shell is tcsh?",
+  "answer": "The local shell expands the variables inside double quotes before ssh sends the command, so use single quotes; with a tcsh login shell, run the loop under sh explicitly (sh -c), run it as a script with ssh host sh ./script.sh, or change the login shell to a sh-like shell with chsh.",
+  "evidence": [
+   281042,
+   422817,
+   422819
+  ],
+  "item": "Punix-397529-1459",
+  "support": "Simply use single quotes (') instead and your problem will disappear | you may want to explicitly start a sh shell",
+  "verifier_reason": "Chunk 281042 covers double-quote expansion and chunks 422817/422819 cover tcsh; question reworded so it no longer states the local-expansion cause, and answer adds the chsh option the evidence gives."
+ },
+ {
+  "qid": "q125",
+  "type": "multi",
+  "question": "Which escape sequence request makes a terminal type back its Primary Device Attributes string, and which status-report query makes it reply with a sequence that bash can bind to inject text?",
+  "answer": "ESC [ c (echo -e '\\033[c') requests the device attributes; ESC [ 5 n makes the terminal reply ESC [ 0 n, which can be bound with bash bind to the text to insert.",
+  "evidence": [
+   481954,
+   368627
+  ],
+  "item": "Punix-610031-213799",
+  "support": "echo -e '\\033[c' ... query status report escape sequence: <ESC>[5n which terminals invariably reply (so as input) as <ESC>[0n",
+  "verifier_reason": "Chunk 481954 gives ESC [ c for the attribute string and chunk 368627 gives ESC [5n -> ESC [0n with bash bind; each thread supplies one half, and neither half is given away."
+ },
+ {
+  "qid": "q126",
+  "type": "multi",
+  "question": "Which weakness of SHA-2 is the reason PBKDF2 is often built on HMAC, and how far does repeated iteration shrink the hash space of a 256-bit hash?",
+  "answer": "SHA-2 is vulnerable to length extension attacks, so PBKDF2 uses HMAC; iterating shrinks the hash space because a hash is not a permutation, but not below 2^128.",
+  "evidence": [
+   847630,
+   847631,
+   846502
+  ],
+  "item": "Psecurity-4574-3390",
+  "support": "PBKDF2 is often used with HMAC for that reason | the reduction does not go below a 2128 space of a 256-bit hash function",
+  "verifier_reason": "Length extension as the reason for HMAC and the specific 2^128 lower bound on iteration shrinkage come from different threads, and the evidence states both."
+ },
+ {
+  "qid": "q127",
+  "type": "multi",
+  "question": "Using only its first line, how can I make a library script meant only for sourcing print a notice if someone executes it directly, and what decides which interpreter runs a script when no interpreter is named on the command line, given the file extension does not?",
+  "answer": "Make the first line the shebang #! /bin/echo Please-source; when executed directly, the interpreter is determined by the shebang line, not the file extension.",
+  "evidence": [
+   395032,
+   395033,
+   357547
+  ],
+  "item": "Punix-299618-182882",
+  "support": "#! /bin/echo Please-source | the interpreter being invoked is determined by the \"shebang\" used in the script",
+  "verifier_reason": "Both threads are needed (the /bin/echo shebang trick and shebang-not-extension interpreter selection) and the evidence states both; added 'using only its first line' so the first half has one clear answer rather than any BASH_SOURCE-style check."
+ },
+ {
+  "qid": "q128",
+  "type": "multi",
+  "question": "In SQL Server, how can I write decimal multiplication and division so the result's precision and scale stay predictable, and what formula gives the result scale of a division before it is capped?",
+  "answer": "Explicitly CONVERT every operand (and the final result) to one fixed type such as DECIMAL(15,6); a division's result scale is max(6, s1 + p2 + 1), and anything above 38 is reduced to 38.",
+  "evidence": [
+   750371,
+   750372,
+   734682
+  ],
+  "item": "Pdba-77664-41743",
+  "support": "tailor the expressions ... by making much more verbose explicit conversions || The result scale for a division is max(6, s1 + p2 + 1)",
+  "verifier_reason": "Thread 77671 supplies the explicit-CONVERT fix and thread 41745 the max(6, s1 + p2 + 1) formula with the cut to 38; neither thread alone has both. The question was tightened because 'how can I stop' also admits 41745's 'do it in client code'."
+ },
+ {
+  "qid": "q129",
+  "type": "multi",
+  "question": "How can I check whether a running Linux kernel supports io_uring by looking at its symbol list, and what name prefix do system calls conventionally have in that list?",
+  "answer": "grep io_uring_setup /proc/kallsyms; in /proc/kallsyms system calls conventionally begin with sys_ (sys32_ for 32-bit programs on 64-bit systems).",
+  "evidence": [
+   478321,
+   351368
+  ],
+  "item": "Punix-596276-164704",
+  "support": "grep io_uring_setup /proc/kallsyms / By convention, system calls have a name that begin with sys_.",
+  "verifier_reason": "Thread 596284 gives the grep of io_uring_setup in /proc/kallsyms and thread 164714 gives the sys_/sys32_ prefix convention; neither alone covers both parts."
+ },
+ {
+  "qid": "q130",
+  "type": "multi",
+  "question": "To get a newer GCC without upgrading the whole distribution, where does a self-built compiler install to avoid clashing with the distro's, and what pin priorities does the suggested apt preferences file for pulling gcc-4.7 from wheezy onto Debian Squeeze give squeeze and wheezy?",
+  "answer": "A self-built gcc installs under /usr/local (distro tools use /usr); the apt preferences pin squeeze at Pin-Priority 900 and wheezy at 200.",
+  "evidence": [
+   337805,
+   299420,
+   299421
+  ],
+  "item": "Punix-126433-36388",
+  "support": "it installs in /usr/local/{bin,lib,include,...} / Pin: release n=squeeze Pin-Priority: 900 ... Pin: release n=wheezy Pin-Priority: 200",
+  "verifier_reason": "The /usr/local install comes from thread 126548 and the 900/200 pin priorities from thread 36415; wording tightened to name the specific apt-pinning setup so the question is self-contained."
+ },
+ {
+  "qid": "q131",
+  "type": "multi",
+  "question": "What habits help design patterns emerge pragmatically instead of being forced onto code, and what is the main lasting benefit of knowing pattern names such as Strategy or Builder?",
+  "answer": "Keep the Single Responsibility Principle in mind and write tests first so patterns emerge; pattern names give quick shared communication (\"use a Strategy\", FooBuilder implies Builder).",
+  "evidence": [
+   576674,
+   546171
+  ],
+  "item": "Psoftwareengineering-141854-70877",
+  "support": "keeping principles like the Single Responsibility Principle in mind, and writing tests first / The power of design patterns is in communication.",
+  "verifier_reason": "Thread 141879 gives SRP and test-first so patterns emerge and thread 70893 gives communication via pattern names; each covers one part."
+ },
+ {
+  "qid": "q132",
+  "type": "multi",
+  "question": "To make a bootable USB copy of a running Linux system, which command copies the root filesystem without crossing mount points, and why is running dd on a mounted live filesystem risky, and what gives a consistent copy instead?",
+  "answer": "cp -ax / /mnt/sda1 copies the local filesystem; dd of a mounted filesystem can yield corruption, whereas an LVM snapshot gives a consistent point-in-time copy.",
+  "evidence": [
+   401694,
+   378106,
+   378108
+  ],
+  "item": "Punix-323596-244983",
+  "support": "cp -ax / /mnt/sda1 ... you can make an LVM snapshot ... consistent snapshot of the original at a point in time",
+  "verifier_reason": "Chunk 401694 gives cp -ax / /mnt/sda1 and chunks 378106 and 378108 give corruption risk and the LVM snapshot alternative, so each thread is needed."
+ },
+ {
+  "qid": "q133",
+  "type": "multi",
+  "question": "Which GNU screen commands switch on background colour erase for a window and for the default of all new screens, and when did tmux implement that capability?",
+  "answer": "The bce command switches it on and defbce sets the default for new screens; tmux implemented background colour erase in October 2016.",
+  "evidence": [
+   380247,
+   380278
+  ],
+  "item": "Punix-251847-251726",
+  "support": "One switches it on with the bce command. One sets the default ... with the defbce command ... He later implemented it in October 2016",
+  "verifier_reason": "Chunk 380247 gives bce/defbce and chunk 380278 gives the October 2016 tmux implementation; each thread is needed."
+ },
+ {
+  "qid": "q134",
+  "type": "multi",
+  "question": "After finding a reflected XSS hole on my site, where can I look for evidence that it was exploited, and what can a simple script do with a visitor's session?",
+  "answer": "Check detailed HTTP request logs for malicious scripts in parameters and user complaints of altered or deleted data; simple scripts can read cookies and forward session information to impersonate the user.",
+  "evidence": [
+   895835,
+   850758
+  ],
+  "item": "Psecurity-91109-8303",
+  "support": "you might have records of http requests with malicious scripts in the parameters | Relatively simple scripts can read cookies and forward session information",
+  "verifier_reason": "Thread 91111 supplies the log and user-complaint evidence and thread 8306 supplies the cookie-reading session theft; each part needs its own thread."
+ },
+ {
+  "qid": "q135",
+  "type": "multi",
+  "question": "How can rsync keep deleted or overwritten files in a separate directory instead of discarding them, and how can I delete from one directory every file that exists at the same relative path in another?",
+  "answer": "Use rsync --backup with --backup-dir=DIR; for duplicates, cd into the old directory and run find . -type f -exec rm -f ../new/{} \\;",
+  "evidence": [
+   408054,
+   335701
+  ],
+  "item": "Punix-345036-122170",
+  "support": "--backup-dir=DIR ... to keep a copy of any modified and removed files in a separate directory || find . -type f -exec rm -f ../new/{} \\;",
+  "verifier_reason": "The answer needs the rsync --backup/--backup-dir chunk 408054 and the find -exec rm chunk 335701, one from each thread, and together they state it."
+ },
+ {
+  "qid": "q136",
+  "type": "multi",
+  "question": "How many key-derivation iterations does a KeePass database use by default, and what extra step makes a cloud-stored copy of the database harder to breach?",
+  "answer": "The default is 6000 iterations (12000 AES invocations per password); additionally encrypt the cloud-stored file with a separate key you keep with you, so an attacker needs two compromises.",
+  "evidence": [
+   850903,
+   874496,
+   874497
+  ],
+  "item": "Psecurity-45272-8476",
+  "support": "The default number of iterations is 6000 || it requires two points of compromise instead of one",
+  "verifier_reason": "Chunk 850903 gives the 6000-iteration default and chunks 874496-874497 give the separate-key second encryption layer, so each thread is needed and together they state the answer."
+ },
+ {
+  "qid": "q137",
+  "type": "multi",
+  "question": "Why does GNU tr mangle UTF-8 characters, and what must a Perl one-liner add so tr/// with fullwidth letters in its source code works, given that -C alone does not help?",
+  "answer": "GNU tr doesn't support multi-byte characters; in Perl add use utf8 (or -Mutf8) so the source is read as UTF-8, because -C only controls IO.",
+  "evidence": [
+   372636,
+   433022,
+   433023
+  ],
+  "item": "Punix-429521-228558",
+  "support": "but that it doesn't support multi-byte characters | You need to use utf8 to have your Perl (5) source itself encoded in that way",
+  "verifier_reason": "Chunk 372636 gives GNU tr's lack of multi-byte support and chunks 433022-433023 give use utf8 / -Mutf8 with -C only covering IO; the Perl thread's chunks do not state the tr limitation."
+ },
+ {
+  "qid": "q138",
+  "type": "multi",
+  "question": "Where should a disk partition start to get roughly 70 MB/s writes instead of 29 MB/s, and in which kernel version did the log-structured NILFS2 filesystem become available?",
+  "answer": "Start it at sector 128 (proper alignment), which gave 70 MB/s versus 29 MB/s with the default start at sector 63; NILFS2 became available in kernel 2.6.30.",
+  "evidence": [
+   40710,
+   2741
+  ],
+  "item": "Pserverfault-110127-5958",
+  "support": "vs 70MB/s with proper alignment [ starting from 128rd sector ] | will be available in kernel 2.6.30",
+  "verifier_reason": "Chunk 40710 gives sector 128 versus the default sector 63 (70 vs 29 MB/s), and chunk 2741 gives kernel 2.6.30 for NILFS2; changed 'an SSD partition' to 'a disk partition' because the measurement was made on a 4 kB-sector desktop disk, not an SSD."
+ },
+ {
+  "qid": "q139",
+  "type": "multi",
+  "question": "My window manager doesn't see a timezone variable I exported in ~/.bashrc. Which file should I define it in instead, and which shells never read that file?",
+  "answer": "Define it in ~/.profile; csh and tcsh explicitly don't look at ~/.profile.",
+  "evidence": [
+   309468,
+   282005
+  ],
+  "item": "Punix-60458-3052",
+  "support": "So define environment variables in ~/.profile. | csh and tcsh explicitly don't look at ~/.profile",
+  "verifier_reason": "Chunk 309468 says to use ~/.profile and chunk 282005 says csh/tcsh ignore it, so both threads are needed; I removed the bash/sh/dash parenthetical because the evidence does not state it."
+ },
+ {
+  "qid": "q140",
+  "type": "multi",
+  "question": "Which pipeline prints only the grand total disk usage of a set of *.sql files, and which one lists directories sorted by size, largest first, in human-readable units?",
+  "answer": "du -c -- *.sql | tail -n 1 gives the total; du -sh -- */ | sort -rh lists directories largest first (GNU sort and du).",
+  "evidence": [
+   287939,
+   328851
+  ],
+  "item": "Punix-13623-106330",
+  "support": "du -c -- *.sql | tail -n 1 | du -sh -- */ | sort -rh",
+  "verifier_reason": "Chunk 287939 gives du -c -- *.sql | tail -n 1 and chunk 328851 gives du -sh -- */ | sort -rh, one fact from each thread."
+ },
+ {
+  "qid": "q141",
+  "type": "multi",
+  "question": "Why do many hardware controllers, such as wireless adapters or GPUs, need their firmware supplied again at every power-on, and which host component does that loading?",
+  "answer": "Their firmware is loaded into volatile storage (RAM) on the device each time the host powers on; the kernel loads it onto the device rather than using it itself.",
+  "evidence": [
+   440346,
+   412121
+  ],
+  "item": "Punix-455137-359989",
+  "support": "The firmware is loaded into volatile storage on the device and needs to be done each time the host computer is turned on. / they're loaded by the kernel onto other pieces of hardware.",
+  "verifier_reason": "Thread 455177 explains firmware goes into volatile storage on the device at every power-on and thread 359996 states the kernel loads it onto the device; together they answer the question."
+ },
+ {
+  "qid": "q142",
+  "type": "multi",
+  "question": "Why does piping grep into xargs dirname inside find -exec print a usage message for files that don't match, and how can bash make a shell function available to find -exec?",
+  "answer": "When grep matches nothing, xargs runs dirname with no arguments; for functions, run export -f foo and use find ... -exec bash -c 'foo \"$@\"' bash {} +.",
+  "evidence": [
+   339700,
+   306255
+  ],
+  "item": "Punix-131592-50692",
+  "support": "xargs launches dirname without any arguments | bash allows one to export functions via the environment with export -f",
+  "verifier_reason": "Chunk 339700 explains that xargs runs dirname with no arguments when grep matches nothing, and chunk 306255 gives export -f with find -exec bash -c; each thread answers only one half."
+ },
+ {
+  "qid": "q143",
+  "type": "multi",
+  "question": "Besides encrypting traffic, what does a CA-signed web server certificate establish, and which certificate should an ordinary site that is not a bank buy?",
+  "answer": "It authenticates who owns the website (someone invested in proving ownership); for a non-bank site, get the cheapest certificate, since typical users see no difference if the browser doesn't complain.",
+  "evidence": [
+   38333,
+   31463
+  ],
+  "item": "Pserverfault-102948-82039",
+  "support": "to authenticate who the owner of the website is || get the cheapest certificate you can",
+  "verifier_reason": "Chunk 38333 gives ownership authentication and chunk 31463 gives 'buy the cheapest unless you're a bank'; each thread answers only one part."
+ },
+ {
+  "qid": "q144",
+  "type": "multi",
+  "question": "How can users change their password without re-encrypting all their data, and if the key comes from a passphrase via PBKDF2 for an encrypt-then-MAC scheme, how many bits are derived and how are they used?",
+  "answer": "Encrypt data with a random key that is itself encrypted with a password-derived key, so only that key is re-encrypted; derive 384 bits via PBKDF2, split into K1 (AES-128-CBC key), K2 (IV), K3 (HMAC-SHA-256 key).",
+  "evidence": [
+   868982,
+   857113,
+   857114
+  ],
+  "item": "Psecurity-37200-16861",
+  "support": "the data itself is encrypted with a randomly generated key, which in turn is encrypted with a password-derived one || generate 384 bits of key ... Split these into three 128-bit keys K1, K2 and K3",
+  "verifier_reason": "Thread 37200 (chunk 868982) gives the wrapped random data key for cheap password changes and thread 16861 (chunks 857113, 857114) gives the 384-bit PBKDF2 split into K1/K2/K3; neither thread alone answers both parts."
+ },
+ {
+  "qid": "q145",
+  "type": "multi",
+  "question": "SSH to my VPS fails with \"Server refused to allocate pty\". What commands re-create the pty devices, and which command regenerates the Ubuntu initramfs where devpts gets mounted?",
+  "answer": "Run /sbin/MAKEDEV tty and /sbin/MAKEDEV pty; to regenerate the initramfs that mounts devpts, run sudo update-initramfs -c -k $(uname -r).",
+  "evidence": [
+   77441,
+   238136
+  ],
+  "item": "Pserverfault-905093-233962",
+  "support": "/sbin/MAKEDEV tty | /sbin/MAKEDEV pty | $ sudo update-initramfs -c -k $(uname -r)",
+  "verifier_reason": "The MAKEDEV tty/pty commands come only from thread 234027 and the update-initramfs regeneration only from thread 905113; together they state the answer."
+ },
+ {
+  "qid": "q146",
+  "type": "multi",
+  "question": "In Vim in a terminal, how do I map Ctrl-S to save, and what does Ctrl-S do at the terminal level that can interfere, and which key undoes it?",
+  "answer": "nnoremap <c-s> :w<cr>; but terminals treat Ctrl+S as XOFF flow control (stop transmitting), and Ctrl+Q sends XON to resume.",
+  "evidence": [
+   408335,
+   341699
+  ],
+  "item": "Punix-345975-137842",
+  "support": "nnoremap <c-s> :w<cr> || XOFF flow control command (Ctrl+S) ... XON flow control command (Ctrl+Q)",
+  "verifier_reason": "Chunk 408335 gives the nnoremap mapping and only hints that the terminal uses Ctrl-S, while chunk 341699 explains XOFF/XON with Ctrl+S and Ctrl+Q, so both threads are needed."
+ },
+ {
+  "qid": "q147",
+  "type": "multi",
+  "question": "Which kernel release did a brand-new Radeon HD 6450 need for full resolution on Fedora, and if the boot then freezes after X was reconfigured, which file should be deleted and which log checked?",
+  "answer": "Kernel 2.6.38 (in Fedora 15); delete xorg.conf and check /var/log/Xorg.0.log for errors.",
+  "evidence": [
+   285262,
+   285275
+  ],
+  "item": "Punix-8788-8807",
+  "support": "you need the not-yet-released ... 2.6.38 kernel / Deleting xorg.conf should solve the problem, also you should check /var/log/Xorg.0.log for errors.",
+  "verifier_reason": "The 2.6.38 kernel requirement comes from thread 8800 and deleting xorg.conf and checking /var/log/Xorg.0.log from thread 8810; each part needs its own thread."
+ },
+ {
+  "qid": "q148",
+  "type": "multi",
+  "question": "In the one-line form if [ \"a\" == \"a\" ] ; then echo \"true\" ; fi, what are if and then technically in the shell, and which comparison operator is more portable than ==?",
+  "answer": "if and then are shell reserved words that build a compound command, not programs; a single = is more portable and POSIX-compliant than ==.",
+  "evidence": [
+   406306,
+   305455
+  ],
+  "item": "Punix-338945-48805",
+  "support": "Both if and then are reserved words in the shell grammar, not \"programs\" | using = instead of == is more portable and POSIX compliant",
+  "verifier_reason": "Clear two-part question with one answer each (reserved words forming a compound command; = is more portable), each stated in a different thread's evidence."
+ },
+ {
+  "qid": "q149",
+  "type": "multi",
+  "question": "In SQL Server, what permission benefit is lost by spreading related code across separate databases, and what kind of data requirement forces tables to share one database?",
+  "answer": "Ownership chaining is lost, so the login needs permissions on objects in both databases; data needing transactional and referential consistency must live in the same database.",
+  "evidence": [
+   719217,
+   719218,
+   718668
+  ],
+  "item": "Pdba-12337-11101",
+  "support": "However, you lose ownership chaining like this. | Data that needs to be transactionally and referentially consistent needs to be in the same database.",
+  "verifier_reason": "Chunks 719217-719218 state the loss of ownership chaining across databases, and chunk 718668 states that transactionally and referentially consistent data must share one database; each thread gives one half."
+ },
+ {
+  "qid": "q150",
+  "type": "multi",
+  "question": "What kind of encryption would stop a cloud provider from decrypting users' backups for court orders, and what kind of encryption does Google actually apply to WhatsApp chat backups stored on Google Drive?",
+  "answer": "Zero-knowledge encryption would prevent the provider decrypting for court orders; Google provides only server-side encryption, which lets it decrypt the files for valid law-enforcement requests.",
+  "evidence": [
+   948948,
+   928230
+  ],
+  "item": "Psecurity-212062-163152",
+  "support": "If they used zero-knowledge encryption, they would not be able to do that. | Google only provides server side encryption, which allows them to decrypt your files",
+  "verifier_reason": "Needs both threads (zero-knowledge in 948948, server-side only in 928230); the question is reworded to name WhatsApp, since 'such chat backups' did not say which chat app."
+ },
+ {
+  "qid": "q151",
+  "type": "unanswerable",
+  "question": "When a class only supports a single observer registered after construction, how should that limit be handled so allowing multiple observers later changes only the implementation?",
+  "answer": "Pretend multiple observers are supported in the interface and just assert that only one is ever registered.",
+  "evidence": [],
+  "item": "Usoftwareengineering-306634",
+  "support": "Pretend that you support multiple observers, assert that only one ever gets registered.",
+  "verifier_reason": "Observer and delegate threads in the index never advise exposing a multi-observer interface while asserting that only one is registered, and the question is a reasonable design query for this knowledge base."
+ },
+ {
+  "qid": "q152",
+  "type": "unanswerable",
+  "question": "How does Sonatype Nexus 3 Pro provide high availability for the artifact repository, and what are its mechanisms collectively called?",
+  "answer": "Component Fabric: peer-to-peer repository managers (no single master), storage backends such as S3, and dynamic nodes for auto-scaling.",
+  "evidence": [],
+  "item": "Udevops-366",
+  "support": "Sonatype's Nexus 3 Pro supports High Availability through a couple of mechanisms that are collectively known as Component Fabric",
+  "verifier_reason": "A keyword search for 'Component Fabric' returns only Python Fabric, MySQL Fabric and Juniper switch fabric, and no chunk describes Nexus 3 Pro high availability."
+ },
+ {
+  "qid": "q153",
+  "type": "unanswerable",
+  "question": "How do I stop Outlook repeatedly prompting for credentials over RPC over HTTPS, given Remember my Password doesn't cover the front-end proxy server?",
+  "answer": "Add the front-end server name (same as its SSL certificate name) with your username and password under Control Panel Manage Passwords.",
+  "evidence": [],
+  "item": "Userverfault-39537",
+  "support": "Click Add, then type out the name of your Front-end server.",
+  "verifier_reason": "Outlook prompt threads in the index cover NTLM, kernel-mode auth and credential-manager domain prefixes; chunk 19197 only vaguely links a blog on Windows password caching and never gives the front-end-server Manage Passwords step."
+ },
+ {
+  "qid": "q154",
+  "type": "unanswerable",
+  "question": "I get \"Operation not permitted\" when mounting a remote filesystem with sshfs under MacFUSE into /Volumes on my Mac. What two things should I try?",
+  "answer": "Mount into a directory inside your own home directory instead of /Volumes, or run the sshfs command with sudo.",
+  "evidence": [],
+  "item": "Userverfault-282285",
+  "support": "Have you tried mounting sshfs into a directory within your own home directory?",
+  "verifier_reason": "Six searches found sshfs permission answers (allow_other, defer_permissions, fuse group) but none about MacFUSE mounts into /Volumes failing and using a home-directory mount point or sudo."
+ },
+ {
+  "qid": "q155",
+  "type": "unanswerable",
+  "question": "To avoid programming by coincidence, how much new code should I add between test runs, according to the advice on shortening the edit/compile/test cycle?",
+  "answer": "Add about 5 lines and then test, rather than 50 lines at once; five tested 10-line chunks beat one 50-line chunk tested together.",
+  "evidence": [],
+  "item": "Usoftwareengineering-201972",
+  "support": "when you add 5 lines and then test, the odds that you got the right answer because it works like you think it works are much better",
+  "verifier_reason": "No result advises adding about 5 lines between tests or contrasts five tested 10-line chunks with 50 lines tested at once; the 'programming by coincidence' keyword hits are unrelated."
+ },
+ {
+  "qid": "q156",
+  "type": "unanswerable",
+  "question": "Why might a Unix system deliberately leave /usr/local out of root's PATH?",
+  "answer": "/usr/local traditionally holds unofficial, locally installed and possibly experimental software, and because root's mistakes can be fatal, root should have to give an explicit path to run it.",
+  "evidence": [],
+  "item": "Uunix-115129",
+  "support": "Because it isn't set up in the relevant shell startup files for root.",
+  "verifier_reason": "Results only describe what /usr/local is for and show root PATHs that include it; none explains leaving it out of root's PATH for safety, and the wording is changed because many distributions do include it."
+ },
+ {
+  "qid": "q157",
+  "type": "unanswerable",
+  "question": "What distinguishes a VPN concentrator from a VPN gateway, given that the two terms are used interchangeably?",
+  "answer": "A concentrator is a dedicated VPN gateway appliance (physical or virtual); a gateway may also be a router or firewall, so not every gateway is a concentrator.",
+  "evidence": [],
+  "item": "Unetworkengineering-17839",
+  "support": "All VPN Concentrators are VPN Gateways, but not all VPN Gateways are VPN Concentrators.",
+  "verifier_reason": "Indexed chunks mention VPN concentrators only in passing (Cisco 3005, firewall appliances acting as one) and none distinguishes a concentrator from a gateway."
+ },
+ {
+  "qid": "q158",
+  "type": "unanswerable",
+  "question": "Edits I make to the server's crontab keep getting overwritten every time we deploy our Rails app. What is overwriting them?",
+  "answer": "The Whenever gem, which rewrites the crontab on each deploy; either remove it or use it to define the jobs.",
+  "evidence": [],
+  "item": "Userverfault-544340",
+  "support": "This gem was overwriting the changes I made in the crontab file each time I deployed.",
+  "verifier_reason": "Searches turned up only generic crontab-loss and Rails cron chunks; nothing names the Whenever gem or any deploy step that rewrites the crontab."
+ },
+ {
+  "qid": "q159",
+  "type": "unanswerable",
+  "question": "How can I fill a named volume with generated static files before starting my web server with docker-compose, without leaving an idle generator container behind afterwards?",
+  "answer": "Run the generator yourself with docker run --rm and the named volume mounted (the container is removed when it finishes), then run docker-compose up for the server; docker build cannot mount volumes, so a build step cannot populate it.",
+  "evidence": [],
+  "item": "Udevops-3275",
+  "support": "start the jekyll container yourself (docker run --rm jekyll:xyz -v ...:...), the --rm will remove the container after it is finished. Then docker-compose up",
+  "verifier_reason": "No result describes running the generator with docker run --rm against a named volume and then running docker-compose up; the wording is changed so the question no longer spells out the --rm answer."
+ },
+ {
+  "qid": "q160",
+  "type": "unanswerable",
+  "question": "How can I build a Git commit history from successive snapshots of a code base, setting the author name and date on each imported commit?",
+  "answer": "Point GIT_WORK_TREE at each version in turn, git add and git commit, and set GIT_AUTHOR_NAME and GIT_AUTHOR_DATE per import.",
+  "evidence": [],
+  "item": "Usoftwareengineering-73342",
+  "support": "Use GIT_AUTHOR_DATE and GIT_AUTHOR_NAME for each import in order to set the right author's name and date.",
+  "verifier_reason": "Results only show GIT_WORK_TREE in deploy hooks, git commit --author, and GIT_AUTHOR_* env vars in other contexts; none describes importing successive snapshots into a history."
+ },
+ {
+  "qid": "q161",
+  "type": "unanswerable",
+  "question": "To decouple CI tooling data from servers with an immutable architecture, which tools are suggested for static analysis, artifact storage, base images and deployment?",
+  "answer": "SonarQube static analysis in CI, artifacts pushed to Nexus, Packer base images, deployment via Terraform and Ansible, Jenkins 2.0 pipeline as code.",
+  "evidence": [],
+  "item": "Udevops-1540",
+  "support": "CI with static analysis(Sonarqube, because free!), pushing version artefacts to Nexus. Base Image using Packer.",
+  "verifier_reason": "Searches found Jenkins/Nexus integration and Packer image threads but none recommending the SonarQube, Nexus, Packer, Terraform/Ansible immutable pipeline for decoupling tool data, so the index does not answer it."
+ },
+ {
+  "qid": "q162",
+  "type": "unanswerable",
+  "question": "A site-to-site VPN tunnel on a Cisco ASA shows as up but passes no traffic. Which ASA software version resolved this for one user?",
+  "answer": "Upgrading the ASA image to 8.6.1(5), which fixes bug CSCtq57752.",
+  "evidence": [],
+  "item": "Unetworkengineering-2155",
+  "support": "The resolution to my problem is to upgrade my ASA image to 8.6.1(5).",
+  "verifier_reason": "Several 'ASA tunnel up but not passing traffic' threads are indexed, but they give a reboot, a stale SPI or NAT fixes, and nothing mentions 8.6.1(5), CSCtq57752 or an upgrade that fixed this symptom."
+ },
+ {
+  "qid": "q163",
+  "type": "unanswerable",
+  "question": "A MySQL query filters on a very lopsided col1 = 1, adds a date range and LIKE on col2, and orders by date DESC with a small LIMIT. What single composite index is suggested on InnoDB?",
+  "answer": "ALTER TABLE table_1 ADD INDEX col1_date_ndx (col1,date,col2); for MyISAM the index also includes id.",
+  "evidence": [],
+  "item": "Udba-33533",
+  "support": "ALTER TABLE table_1 ADD INDEX col1_date_ndx (col1,date,col2);",
+  "verifier_reason": "Searches found generic composite-index advice (e.g. 745009, 831917) but no chunk with this query shape or the (col1,date,col2) InnoDB index; col1_date_ndx has no keyword match."
+ },
+ {
+  "qid": "q164",
+  "type": "unanswerable",
+  "question": "How can I raise PostgreSQL's 32 TB maximum table size, and what limit do I get?",
+  "answer": "Build with --with-blocksize=32 (KB, default 8), which gives a maximum table size of 128TB.",
+  "evidence": [],
+  "item": "Udba-28556",
+  "support": "Using 32 kilobytes, your table has a maximum size of 128TB.",
+  "verifier_reason": "Six searches found nothing on raising PostgreSQL's 32 TB table limit with --with-blocksize=32 to get 128 TB; chunk 747179 only notes the page size can be set at compile time."
+ },
+ {
+  "qid": "q165",
+  "type": "unanswerable",
+  "question": "A host answers telnet fine, but an openssl TLS connection to it fails with \"No route to host\". The name has both A and AAAA records. What is the likely cause?",
+  "answer": "IPv4 connectivity to the target is broken; telnet prefers IPv6 via the AAAA record, while openssl avoids IPv6 and uses IPv4.",
+  "evidence": [],
+  "item": "Userverfault-453722",
+  "support": "It seems that your IPv4 connection is broken",
+  "verifier_reason": "No chunk ties a telnet-works/openssl-'No route to host' split to telnet preferring IPv6 via AAAA while openssl uses broken IPv4; results are generic openssl, telnet and IPv6 threads."
+ },
+ {
+  "qid": "q166",
+  "type": "unanswerable",
+  "question": "Which standard number was the LLDP-MED extension published under, and by which organization and when?",
+  "answer": "ANSI/TIA-1057, published by the Telecommunications Industry Association (TIA) in April 2006.",
+  "evidence": [],
+  "item": "Unetworkengineering-1280",
+  "support": "formally approved and published as the standard ANSI/TIA-1057 by the Telecommunications Industry Association (TIA) in April 2006",
+  "verifier_reason": "A keyword search for TIA-1057 returns no matches, and the LLDP-MED threads in the index cover only PoE power allocation, not the standard number, publisher or date."
+ },
+ {
+  "qid": "q167",
+  "type": "unanswerable",
+  "question": "In a Declarative Jenkins pipeline, if one stage writes a value to a file with writeFile and a later stage reads it back with readFile, what limitation applies?",
+  "answer": "Both the reading and writing must happen on the same node, so it cannot be used to send data across nodes.",
+  "evidence": [],
+  "item": "Udevops-5203",
+  "support": "both the reading and writing must take place on the same node, so you can't use this to send data across nodes",
+  "verifier_reason": "Jenkins results show writeFile/readFile usage and variable passing but never the caveat that reading and writing must happen on the same node."
+ },
+ {
+  "qid": "q168",
+  "type": "unanswerable",
+  "question": "In a SQL Server deadlock graph, an IX lock request is blocked by an SIU page lock after a SELECT with UPDLOCK. What turns the IU page lock into SIU?",
+  "answer": "A shared page-level lock on the nonclustered primary key index merges with the IU page lock into SIU, lasting the whole transaction.",
+  "evidence": [],
+  "item": "Udba-89460",
+  "support": "The existing IU page lock is converted to SIU.",
+  "verifier_reason": "The index has SIU only as a lock-mode name (dba 99343, 282731) and other UPDLOCK deadlocks; none explains an S page lock on the nonclustered PK merging with IU into a transaction-long SIU."
+ },
+ {
+  "qid": "q169",
+  "type": "unanswerable",
+  "question": "Can I run a graphical app in Docker on a headless server by mounting the X11 libraries from a separate container through a volume?",
+  "answer": "Not a good idea: the app still needs X11 libraries and an X11 buffer (VNC, Xvfb) where it runs; loading libraries from another container via a volume creates a hard dependency and is likely to crash on library locks, so even if doable with tweaks it is a footgun.",
+  "evidence": [],
+  "item": "Udevops-5330",
+  "support": "You can't run a program running on x11 without a x11 buffer somewhere, be it vnc, xvfb or whatever.",
+  "verifier_reason": "No indexed result says that loading X11 libraries from another container through a volume is a bad idea (results only cover xvfb, VNC and X11 forwarding); the answer was softened because the source calls it a footgun that may be doable with tweaks, not impossible."
+ },
+ {
+  "qid": "q170",
+  "type": "unanswerable",
+  "question": "When trying to win over a low-acceptance organization to DevOps tooling, what kind of evidence suits software developers versus executive stakeholders?",
+  "answer": "Developers want to see it in action via proofs of concept with measurable outcomes; executives may accept case studies and presentations.",
+  "evidence": [],
+  "item": "Udevops-1944",
+  "support": "software developers ... want to see it in action, so POC's with measurable outcomes are preferred",
+  "verifier_reason": "Searches found general advice on adopting tools (632893-632898, 678636) but nothing contrasting POCs with measurable outcomes for developers against case studies and presentations for executives."
+ },
+ {
+  "qid": "q171",
+  "type": "unanswerable",
+  "question": "With Apache's mod_bw, how can I limit files over 1MB to 200kb/s?",
+  "answer": "Use LargeFileLimit * 1024 204800 inside the mod_bw block; files over 1024 KB are limited to 204800 bytes per second.",
+  "evidence": [],
+  "item": "Userverfault-559834",
+  "support": "LargeFileLimit * 1024 204800",
+  "verifier_reason": "mod_bw appears in the index only with Bandwidth/MinBandwidth examples; LargeFileLimit and any per-file-size limit have no matches."
+ },
+ {
+  "qid": "q172",
+  "type": "unanswerable",
+  "question": "If I can't use Let's Encrypt as my certificate authority, which ACME challenge types can Ansible's acme_certificate module handle?",
+  "answer": "http-01, dns-01 and tls-alpn-01 challenges.",
+  "evidence": [],
+  "item": "Udevops-8722",
+  "support": "if you can't use letsencrypt then it might be a good tool to check out for http-01, dns-01 and tls-alpn-01 challenges.",
+  "verifier_reason": "Six searches found only the devops 16141 acme_certificate playbook (http-01 only) and unrelated certbot/DNS-01 threads; no chunk lists the module's supported challenge types."
+ },
+ {
+  "qid": "q173",
+  "type": "unanswerable",
+  "question": "Why does Yubico not let users supply their own key material to an authenticator, in terms of what its attestation can promise?",
+  "answer": "Yubico couldn't guarantee, via attestation to their root cert, that the key material was securely generated by them and stored only on the authenticator.",
+  "evidence": [],
+  "item": "Usecurity-220828",
+  "support": "if an attestation is verified up to our root cert, we guarantee that the associated keypair comes from a Yubikey",
+  "verifier_reason": "Results on non-programmable YubiKey U2F secrets give counter or backup reasons (940226) and generic attestation descriptions, but none ties the restriction to Yubico's attestation guarantee that it generated the key material and it stays only on the device."
+ },
+ {
+  "qid": "q174",
+  "type": "unanswerable",
+  "question": "Pulse Secure's client UI on Ubuntu 22.04 can't download its Chromium Embedded Framework. Which script and argument install it manually, and how do I verify it?",
+  "answer": "As root run /opt/pulsesecure/bin/setup_cef.sh install, then verify with ./setup_cef.sh check_installed.",
+  "evidence": [],
+  "item": "Uunix-712425",
+  "support": "/opt/pulsesecure/bin$ ./setup_cef.sh install",
+  "verifier_reason": "Six searches (setup_cef.sh, Pulse Secure CEF, Ubuntu 22.04) found nothing about installing or checking Pulse Secure's CEF, and it is a reasonable support question."
+ },
+ {
+  "qid": "q175",
+  "type": "unanswerable",
+  "question": "In Packet Tracer with a serial DCE cable between two routers, which router becomes the DCE end and how can I identify it on the link?",
+  "answer": "The router whose side you click first becomes DCE with the DCE cable; the end showing the clock symbol is DCE and needs clock rate.",
+  "evidence": [],
+  "item": "Unetworkengineering-55017",
+  "support": "With the DCE cable, (red zigzag with clock) the side you click first will be the DCE, the second will be DTE",
+  "verifier_reason": "Six searches found only general DCE/clock-rate material; nothing says the side clicked first becomes DCE or that the clock-symbol end is DCE in Packet Tracer."
+ },
+ {
+  "qid": "q176",
+  "type": "unanswerable",
+  "question": "With psql run with ON_ERROR_STOP on and --single-transaction, an error in an \\include file stops the script but nothing is rolled back. What is the workaround?",
+  "answer": "Drop the --single-transaction option and wrap the main script in explicit BEGIN/COMMIT statements.",
+  "evidence": [],
+  "item": "Udba-87040",
+  "support": "removing the single-transaction option and wrapping explicit BEGIN/COMMIT statements around my main script.",
+  "verifier_reason": "Searches surfaced ON_ERROR_STOP and --single-transaction usage (794874, 719887, 841591) but nothing on the \\include no-rollback quirk or the drop-single-transaction workaround; the 'why' part had no real answer, so the wording was tightened."
+ },
+ {
+  "qid": "q177",
+  "type": "unanswerable",
+  "question": "Why is it considered a code smell to have a CompanyDao use an EmployeeDao internally?",
+  "answer": "It introduces undesirable coupling, can leave one DAO subordinated to the other, and sets up a possible circular dependency.",
+  "evidence": [],
+  "item": "Usoftwareengineering-322613",
+  "support": "it would introduce undesirable coupling",
+  "verifier_reason": "The DAO results cover managers, services, singletons and DTOs, but none gives coupling, subordination and circular dependency as the reasons a DAO should not use another DAO."
+ },
+ {
+  "qid": "q178",
+  "type": "unanswerable",
+  "question": "Besides avoiding rounding on every query, what index-related benefit comes from storing timestamps with lower precision in PostgreSQL?",
+  "answer": "Less precision means more ties, giving more opportunity for index duplicate compression (deduplication) on versions new enough to offer it.",
+  "evidence": [],
+  "item": "Udba-298979",
+  "support": "less precision means more ties so more opportunity for index duplicate compression",
+  "verifier_reason": "Three dense and three keyword searches found only general timestamp-size and index-ordering advice; no result links lower timestamp precision to more ties and index deduplication."
+ },
+ {
+  "qid": "q179",
+  "type": "unanswerable",
+  "question": "In SSRS, the page setup print options don't change my report's orientation. What do I set in BIDS instead?",
+  "answer": "The report's Height and Width properties inside BIDS; orientation in SSRS is controlled by these values.",
+  "evidence": [],
+  "item": "Udba-23487",
+  "support": "You will need to use the Height/Width property of the report inside BIDS. Orientation in SSRS is controlled by setting these values.",
+  "verifier_reason": "Searches only surface an SSRS label-orientation thread fixed via the printer's 'Always Use Driver Settings' option; nothing says to set the report Height/Width in BIDS."
+ },
+ {
+  "qid": "q180",
+  "type": "unanswerable",
+  "question": "My CloudWatch anomaly detection alarms fire false positives every time daylight saving time shifts. Would switching my timers to UTC make them less likely?",
+  "answer": "No. The AWS predictor only sees a generic time series and ignores time zones, so switching to UTC will not reduce false positives.",
+  "evidence": [],
+  "item": "Udevops-9923",
+  "support": "switching to UTC will not make false-positives less likely",
+  "verifier_reason": "Searches found CloudWatch alarm-period chunks and general anomaly-IDS chunks but nothing on CloudWatch anomaly detection and daylight saving time or on whether switching to UTC helps."
+ },
+ {
+  "qid": "q181",
+  "type": "unanswerable",
+  "question": "In the fish shell, how do I find and rerun an old command when I only remember part of it?",
+  "answer": "Type the part you remember on the commandline, press up-arrow until the command appears, then press Enter to execute it.",
+  "evidence": [],
+  "item": "Uunix-359773",
+  "support": "enter the part you remember right into the commandline, press up-arrow until you have found what you want",
+  "verifier_reason": "The index has fish threads on the history pager, the missing !! and up-arrow recall of the last command, but none says to type a fragment and press up-arrow to search history."
+ },
+ {
+  "qid": "q182",
+  "type": "unanswerable",
+  "question": "In a code review dispute over assigning a comparison result to a boolean field like obj.NeedsChange, what small readability tweak was suggested as a compromise?",
+  "answer": "Wrap the comparison in parentheses: obj.NeedsChange = ( obj.Performance <= LOW_PERFORMANCE );",
+  "evidence": [],
+  "item": "Usoftwareengineering-287085",
+  "support": "obj.NeedsChange = ( obj.Performance <= LOW_PERFORMANCE );",
+  "verifier_reason": "Searches found only general boolean-comparison style threads (e.g. '== true', parenthesization in general); none suggests wrapping the comparison in parentheses as a review compromise."
+ },
+ {
+  "qid": "q183",
+  "type": "unanswerable",
+  "question": "I want agents' Cisco phones to auto-dial a customer list. What is this feature called, and which Cisco product is the cheaper, simpler option for it?",
+  "answer": "An Outbound Campaign; not built into CUCM, but UCCX (Unified Contact Center Express) offers a more limited, cheaper version. UCCE is for complex cases.",
+  "evidence": [],
+  "item": "Unetworkengineering-6695",
+  "support": "Unified Contact Center Express (UCCX) has a more limited capability for performing a Campaign, but is a much cheaper, much simpler solution to implement",
+  "verifier_reason": "No chunk mentions Outbound Campaign, UCCX or UCCE; the dialer results are Asterisk/Vicidial/Swyx threads."
+ },
+ {
+  "qid": "q184",
+  "type": "unanswerable",
+  "question": "My Linux resolv.conf shows an unfamiliar DNS server, 46.161.40.29. How can I tell whether my router is the compromised device without logging into the router?",
+  "answer": "Check the DNS configuration on a Windows desktop on the same network; if it points to the same 46.161.40.29, the router is very likely compromised.",
+  "evidence": [],
+  "item": "Usecurity-101137",
+  "support": "check the DNS configuration on your Windows desktop. If it points to the same 46.161.40.29, then it's very likely the router.",
+  "verifier_reason": "Router-compromise threads (security 130196, 174313, 99958) suggest resetting the router or pointing a device at 8.8.8.8, but none says to compare another machine's DNS setting, and the IP never appears."
+ },
+ {
+  "qid": "q185",
+  "type": "unanswerable",
+  "question": "Burp Suite shows a garbled response body whose headers say Content-Encoding: br. What workaround is suggested?",
+  "answer": "Brotli is not decoded; activate the Match and Replace template 'Require non-compressed responses' under Proxy -> Options to override Accept-Encoding.",
+  "evidence": [],
+  "item": "Usecurity-135967",
+  "support": "There is allready a template named \"Require non-compressed responses\"",
+  "verifier_reason": "Searches found Burp and Brotli chunks (e.g. 926569 on stripping Accept-Encoding, IIS/nginx Brotli setup) but none saying Burp does not decode Brotli or pointing to the 'Require non-compressed responses' Match and Replace rule."
+ },
+ {
+  "qid": "q186",
+  "type": "unanswerable",
+  "question": "In an Ansible playbook run against localhost, how can I print the directory ansible-playbook was invoked from on the control host?",
+  "answer": "Use the env lookup plugin: debug msg \"{{ lookup('env', 'PWD') }}\", since plugins run in the parent ansible process on the control host.",
+  "evidence": [],
+  "item": "Udevops-3763",
+  "support": "msg: \"{{ lookup('env', 'PWD') }}\"",
+  "verifier_reason": "Searches found env lookups for other variables (239932, 206069), 'lookups run on the control machine' (274373) and playbook_dir (994730), but no chunk giving lookup('env','PWD') for the directory ansible-playbook was invoked from."
+ },
+ {
+  "qid": "q187",
+  "type": "unanswerable",
+  "question": "Is it supported to configure BFD on a virtual-template or dialer interface on Cisco IOS-XE 3S?",
+  "answer": "No. Older releases like IOS-XE 3S wrongly allowed the configuration, but BFD on virtual-template and dialer interfaces is not supported and is deactivated on newer versions.",
+  "evidence": [],
+  "item": "Unetworkengineering-58517",
+  "support": "BFD functionality on virtual-template and dialer interfaces is not supported",
+  "verifier_reason": "BFD results cover ASR 9000 restrictions, carrier-delay and OSPFv3 only; nothing says whether BFD is supported on virtual-template or dialer interfaces on IOS-XE 3S."
+ },
+ {
+  "qid": "q188",
+  "type": "unanswerable",
+  "question": "In TCP as defined in RFC 793, what inequality must hold for an incoming ACK to count as an acceptable acknowledgment?",
+  "answer": "SND.UNA < SEG.ACK =< SND.NXT (oldest unacknowledged sequence number below the ACK, ACK at most the next sequence number to send).",
+  "evidence": [],
+  "item": "Userverfault-904756",
+  "support": "SND.UNA < SEG.ACK =< SND.NXT",
+  "verifier_reason": "The index quotes RFC 793 on acknowledgment numbers and unacceptable ACKs, but no chunk gives the inequality SND.UNA < SEG.ACK =< SND.NXT."
+ },
+ {
+  "qid": "q189",
+  "type": "unanswerable",
+  "question": "Processing an SSAS Tabular model attached to an Analysis Services instance fails on impersonation. Which ImpersonationMode value is not supported for such databases?",
+  "answer": "ImpersonateCurrentUser; use ImpersonateWindowsUserAccount or ImpersonateServiceAccount instead.",
+  "evidence": [],
+  "item": "Udba-165189",
+  "support": "ImpersonateCurrentUser is not supported for models attached to a SSAS instance.",
+  "verifier_reason": "ImpersonateCurrentUser returns nothing; the only SSAS impersonation chunks set ImpersonateServiceAccount via PowerShell (dba 104744) or ImpersonateAccount in SSMS (dba 182937), with no statement about what is unsupported."
+ },
+ {
+  "qid": "q190",
+  "type": "unanswerable",
+  "question": "In Oracle, does making a large varchar2 column the primary key slow a heap table compared with just putting a normal index on that column?",
+  "answer": "No difference: on a heap table a PK backed by an index on a varchar2 column costs the same as a non-PK index on that column.",
+  "evidence": [],
+  "item": "Udba-13370",
+  "support": "if it's an Oracle heap table, it's the same as having an index on non-PK varchar2 column",
+  "verifier_reason": "Searches found varchar-PK and IOT/heap material (751304, 829201, 731019) but nothing stating that an Oracle heap-table PK on a varchar2 column costs the same as a plain index on it."
+ },
+ {
+  "qid": "q191",
+  "type": "unanswerable",
+  "question": "On a mounted NTFS volume with a recent ntfs-3g, which extended attribute can I read with getfattr to get a file's creation time?",
+  "answer": "system.ntfs_crtime_be (the ntfs.ntfs_crtime and ntfs.ntfs_crtime_be attributes), a count of 100-nanosecond intervals since January 1, 1601.",
+  "evidence": [],
+  "item": "Uunix-87265",
+  "support": "Newer versions of ntfs-3g expose a ntfs.ntfs_crtime and ntfs.ntfs_crtime_be attribute.",
+  "verifier_reason": "The index mentions only system.ntfs_times as an ntfs-3g virtual xattr (unix 721999) without tying it to creation time; ntfs_crtime is absent (keyword search returned nothing)."
+ },
+ {
+  "qid": "q192",
+  "type": "unanswerable",
+  "question": "After renaming my Windows server, the Oracle listener won't start. How do I find the file to edit and what do I change?",
+  "answer": "Run lsnrctl status to find the listener.ora path, change the HOST entry in it to the new host name, then restart the listener.",
+  "evidence": [],
+  "item": "Udba-18906",
+  "support": "Change the host there and restart the listener.",
+  "verifier_reason": "Listener threads cover missing listener.ora, SID and port issues, but none ties a host rename to editing the HOST entry in listener.ora found through lsnrctl status."
+ },
+ {
+  "qid": "q193",
+  "type": "unanswerable",
+  "question": "kubectl says the server could not find the requested resource. What kubectl-to-cluster version rule should I check, and what are the fixes?",
+  "answer": "kubectl must be within one minor version of the cluster; downgrade kubectl or upgrade the cluster.",
+  "evidence": [],
+  "item": "Udevops-2956",
+  "support": "You must use a kubectl version that is within one minor version difference of your cluster.",
+  "verifier_reason": "The closest result (255876) only says to keep client and server versions matching; nothing states the within-one-minor-version rule or ties it to the could-not-find-the-requested-resource error."
+ },
+ {
+  "qid": "q194",
+  "type": "unanswerable",
+  "question": "In Postgres, a partial index is ignored when the query has a big IN list. Which release removes this limitation, and what element limit applied before?",
+  "answer": "PostgreSQL 12 removes the limit; the previous cap was 100 elements in the IN list.",
+  "evidence": [],
+  "item": "Udba-246421",
+  "support": "This will be fixed in version 12 ... no longer impose the 100-element limit",
+  "verifier_reason": "Partial-index and IN-list results never mention the 100-element limit on proving a partial index predicate, or PostgreSQL 12 removing it."
+ },
+ {
+  "qid": "q195",
+  "type": "unanswerable",
+  "question": "In PostgreSQL, how does the efficiency of the GIN and GiST indexes used on jsonb columns compare with a plain b-tree index on an ordinary column?",
+  "answer": "GiST and GIN are generally much less efficient; a b-tree on a normal column will almost always be much, much faster.",
+  "evidence": [],
+  "item": "Udba-115825",
+  "support": "GiST and GIN indexes like those used on jsonb are generally much less efficient than a plain b-tree index.",
+  "verifier_reason": "jsonb, GIN and btree_gin threads in the index never state that GIN/GiST indexes are generally much less efficient than a plain b-tree on a normal column."
+ },
+ {
+  "qid": "q196",
+  "type": "unanswerable",
+  "question": "How much in Azure credits could a startup qualify for through Microsoft's BizSpark programme to host an application?",
+  "answer": "$120,000 of Azure credits.",
+  "evidence": [],
+  "item": "Udevops-1002",
+  "support": "you may qualify for $120,000 of Azure Credits to host your application through Microsoft's BizSpark programme",
+  "verifier_reason": "BizSpark appears in several chunks (27175, 88079, 88082) but none gives the $120,000 Azure credit figure."
+ },
+ {
+  "qid": "q197",
+  "type": "unanswerable",
+  "question": "In a Jenkins scripted pipeline, how do I list the commit messages and authors of every build since the last successful one?",
+  "answer": "Recursively walk getPreviousBuild() collecting builds whose result isn't SUCCESS, then loop rawBuild.changeSets entries (entry.msg, entry.author) in an @NonCPS method.",
+  "evidence": [],
+  "item": "Udevops-2310",
+  "support": "def changeLogSets = currentBuild.rawBuild.changeSets",
+  "verifier_reason": "The index only has separate pieces: looping previous builds (998691), changeSets authors for the current build (995054) and getPreviousSuccessfulBuild (994537); no result explains collecting commit messages and authors of all builds since the last success."
+ },
+ {
+  "qid": "q198",
+  "type": "unanswerable",
+  "question": "What must a VoIP customer and provider maintain so that E911 emergency calls carry more than just a street address?",
+  "answer": "A database of where each phone is connected, so emergency services get the address plus the floor and section of the floor.",
+  "evidence": [],
+  "item": "Unetworkengineering-51114",
+  "support": "maintain a database of where each phone is connected so that emergency services will get not only the address of a 911 call, but the floor and section of the floor",
+  "verifier_reason": "Six searches on E911, VoIP location databases and emergency-call location found nothing about a customer and provider database of where each phone is connected (floor and section); the question is reasonable to ask."
+ },
+ {
+  "qid": "q199",
+  "type": "unanswerable",
+  "question": "What is the earliest citation found for the term \"rings\" in computer protection domains, and who wrote it?",
+  "answer": "The 1967 paper Protection in an Information Processing Utility by Robert M. Graham.",
+  "evidence": [],
+  "item": "Usecurity-191300",
+  "support": "The earliest citation for rings which I can find is the 1967 paper",
+  "verifier_reason": "Searches found protection-ring chunks (Multics origin 325722, x86 rings 913407) and Saltzer/Schroeder citations, but none naming Graham's 1967 'Protection in an Information Processing Utility' as the earliest use of 'rings'."
+ },
+ {
+  "qid": "q200",
+  "type": "unanswerable",
+  "question": "To script a login to criticker.com with curl and then fetch protected pages, which URL should the credentials be posted to?",
+  "answer": "https://www.criticker.com/authenticate.php, not the signin.php page opened in a browser (use -c to save and -b to send the cookie).",
+  "evidence": [],
+  "item": "Uunix-138669",
+  "support": "loginpage is https://www.criticker.com/authenticate.php and not https://www.criticker.com/signin.php",
+  "verifier_reason": "The index has general curl/wget advice on posting to the form action URL with cookie files, but criticker and its authenticate.php endpoint never appear."
+ }
+]

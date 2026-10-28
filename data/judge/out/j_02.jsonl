@@ -1,0 +1,40 @@
+{"jid": "dd05b913", "label": "correct", "cited_support": "yes", "reason": "States nscd caches lookups, sssd handles remote auth with its own cache, not to run both, and nscd for hosts only."}
+{"jid": "323582f0", "label": "correct", "cited_support": "yes", "reason": "Lists Vagrant, Ansible, GitLab or Jenkins, and Docker exactly as the reference."}
+{"jid": "4686990a", "label": "correct", "cited_support": "yes", "reason": "States the atomic-unit rule; the three-job example is supported by cited chunk 996943."}
+{"jid": "09d76fc4", "label": "correct", "cited_support": "yes", "reason": "Names 0x000 as priority tag with no VLAN ID and 0xFFF as never configured or transmitted."}
+{"jid": "87187931", "label": "correct", "cited_support": "yes", "reason": "Verbatim copies may be distributed but changing the document is not allowed."}
+{"jid": "876c4d43", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "398f2af4", "label": "incorrect", "cited_support": "yes", "reason": "Describes abstraction generally (functions, arrays) and misses the web API/protocol sense of a guaranteed exposed behavior."}
+{"jid": "f7e8953b", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "f9d800ac", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "b12d5f23", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "eca1522b", "label": "correct", "cited_support": "yes", "reason": "Identifies input redirection from process substitution, equivalent to curl -s URL | bash."}
+{"jid": "8778dbfc", "label": "correct", "cited_support": "yes", "reason": "Single I/O Functions box or a separate diagram, matching the reference."}
+{"jid": "fbab62c7", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "da1558ec", "label": "correct", "cited_support": "yes", "reason": "Users, local-permissions and global-permissions tables with a string permission column; extra detail supported by chunk 573742."}
+{"jid": "72b21efb", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "509ed30e", "label": "correct", "cited_support": "yes", "reason": "States the atomic-unit rule with each unit its own job."}
+{"jid": "84a63507", "label": "correct", "cited_support": "yes", "reason": "nfdump+nfsen on Linux and ntop on Windows needing recompiling due to the 1000-packet limit."}
+{"jid": "d5caacd9", "label": "correct", "cited_support": "yes", "reason": "Trunk is layer 2 and ignores layer-3 addressing; apply the ACL to the SVI."}
+{"jid": "48b19e77", "label": "correct", "cited_support": "yes", "reason": "Says no, it is a blacklist giving false security, and lists code review, logs, analysis, reporting and IDS/IPS."}
+{"jid": "2f145c3e", "label": "correct", "cited_support": "yes", "reason": "Names MVC Mini Profiler."}
+{"jid": "73b675a4", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "601105d5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "6d20b4ee", "label": "correct", "cited_support": "yes", "reason": "Lists protected main branches, required PRs, PR templates with checklists, and approvals via GitHub teams."}
+{"jid": "ccfb4670", "label": "correct", "cited_support": "yes", "reason": "Gives gcc -S -O2 -fverbose-asm and explains opcodes reduce ALU complexity by gating logic."}
+{"jid": "9e82fc30", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "25fdd603", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "155bf6c1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "d8edf919", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "5fd90ab1", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "1001f7c7", "label": "correct", "cited_support": "yes", "reason": "States the difference, not to run both, and nscd for hosts only."}
+{"jid": "79d7cbc8", "label": "correct", "cited_support": "yes", "reason": "Gives -annotate with %t and -gravity north-east; the %f aside is not in the cited chunks but the core answer is supported."}
+{"jid": "4b382003", "label": "correct", "cited_support": "yes", "reason": "States the difference, not to run both, and nscd for hosts only with sssd caching users and groups."}
+{"jid": "1dbdd74c", "label": "not_found", "cited_support": "n/a", "reason": "Unanswerable question; system correctly answered NOT_FOUND."}
+{"jid": "44bc710f", "label": "correct", "cited_support": "yes", "reason": "Proxmox runs on Debian, so nearly every Ubuntu package gets replaced, leaving a broken mostly-Debian install."}
+{"jid": "b0c20919", "label": "correct", "cited_support": "yes", "reason": "On principal change, primarily at login, to prevent session fixation leading to CSRF."}
+{"jid": "1f2f5bd4", "label": "partial", "cited_support": "yes", "reason": "LVM exclusion via lvm.conf is right, but it says to monitor the overlay file instead of dmsetup status."}
+{"jid": "3fb2ce44", "label": "partial", "cited_support": "yes", "reason": "LVM exclusion via lvm.conf is right, but it says to monitor the overlay file instead of dmsetup status."}
+{"jid": "b5d1944d", "label": "partial", "cited_support": "yes", "reason": "Total pipeline is right, but it misses du -sh -- */ | sort -rh and gives a megabyte sort instead."}
+{"jid": "3772933a", "label": "correct", "cited_support": "yes", "reason": "Disable logins on the primary plus a per-minute Agent job on each replica that disables or enables them."}
+{"jid": "b3c51358", "label": "correct", "cited_support": "yes", "reason": "About 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz."}

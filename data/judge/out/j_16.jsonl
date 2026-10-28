@@ -1,0 +1,40 @@
+{"jid": "3269880d", "label": "correct", "cited_support": "yes", "reason": "States both facts: built-in CRUD hurts unit testing, and IDatabaseService is injected via the data access class constructor."}
+{"jid": "8321aecc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "608c63cd", "label": "partial", "cited_support": "yes", "reason": "Explains 0x000 as a priority tag but omits that 0xFFF must never be configured or transmitted."}
+{"jid": "b1d06f33", "label": "correct", "cited_support": "yes", "reason": "Verbatim copies may be copied and distributed, changing is not allowed, as in the reference."}
+{"jid": "0a2b51a7", "label": "correct", "cited_support": "yes", "reason": "Identifies process substitution read as bash's input and the equivalence to curl -s url | bash."}
+{"jid": "424947ce", "label": "correct", "cited_support": "yes", "reason": "Single 'I/O Functions' box or a separate diagram, matching the reference."}
+{"jid": "e67f804e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "5d7fb210", "label": "partial", "cited_support": "no", "reason": "Exploit and 404 part is right, but the reason for probes differs from the reference (already-compromised check, error-leak info), and the bot IP-range scanning claim is not in the cited chunks."}
+{"jid": "8ce04d2b", "label": "partial", "cited_support": "no", "reason": "Shebang-decides-interpreter is right, but it uses #!/bin/false instead of #!/bin/echo and claims it prints the message, which the cited text does not say (it only returns an error)."}
+{"jid": "6e8a5360", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the overview that put the developer site in context."}
+{"jid": "10e741d8", "label": "correct", "cited_support": "yes", "reason": "Says ~/.profile and that csh/tcsh do not read it; extra zsh detail is supported by the cited chunk."}
+{"jid": "93816b09", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "2000370b", "label": "correct", "cited_support": "yes", "reason": "Append \\r to the macro with the exact bind command from the reference."}
+{"jid": "4a291eba", "label": "correct", "cited_support": "yes", "reason": "Security contexts as virtual ASAs with each VLAN interface assigned to a context."}
+{"jid": "6cbb2fd2", "label": "correct", "cited_support": "yes", "reason": "Names the tcp mss command, same as for IPv4."}
+{"jid": "e3e199c0", "label": "correct", "cited_support": "yes", "reason": "Firmware goes to volatile device storage each boot and the host OS driver/kernel loads it onto the device."}
+{"jid": "c6d8eb14", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "e59a1b7e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "56fa8116", "label": "correct", "cited_support": "yes", "reason": "Remove /usr/share/man and /usr/share/groff lines from 01_nodoc, reinstall (cp in coreutils), and POSIX pages in section 1P."}
+{"jid": "22dc973c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "593f0f88", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "bea95573", "label": "incorrect", "cited_support": "yes", "reason": "Gives a TTY-detachment argument instead of the reference's: the server may do work before forking and can optimize, nohup is for software without a fork option."}
+{"jid": "bace3a03", "label": "correct", "cited_support": "yes", "reason": "Launch with the keypair, stop, attach the root EBS volume to another instance, copy the public key."}
+{"jid": "4f38a273", "label": "partial", "cited_support": "yes", "reason": "Mentions server logs and session theft, but omits user complaints of altered or deleted data and the logged malicious parameters."}
+{"jid": "1d8ddf27", "label": "partial", "cited_support": "no", "reason": "Right idea (append \\r) but the command drops the outer single quotes, so it differs from the cited bind '\"\\ee\": \"g++ !$\\r\"' and would not work as written."}
+{"jid": "c41642e8", "label": "correct", "cited_support": "yes", "reason": "Arithmetic coercion allowed as too annoying otherwise; 1 + \"1\" ambiguous so you must specify."}
+{"jid": "70343610", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "6a1f08e9", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing plan cache without a trace or XE session."}
+{"jid": "e4518201", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "38023f56", "label": "correct", "cited_support": "yes", "reason": "States the certificate authenticates the site's identity and a non-bank should buy the cheapest certificate."}
+{"jid": "afaf5d3e", "label": "correct", "cited_support": "yes", "reason": "Error 3910: Transaction context in use by another session."}
+{"jid": "81f2d4a4", "label": "incorrect", "cited_support": "yes", "reason": "Suggests downloading Cisco MIBs manually instead of installing snmp-mibs-downloader and setting mibs +ALL in snmp.conf."}
+{"jid": "2218915b", "label": "correct", "cited_support": "yes", "reason": "Start at sector 128 instead of 63 for 70 vs 29 MB/s, and NILFS2 in kernel 2.6.30."}
+{"jid": "87556ad7", "label": "correct", "cited_support": "yes", "reason": "Yes, the test still logged all entries so the in-flight request completes."}
+{"jid": "7ec6c78d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "8513c7a3", "label": "correct", "cited_support": "no", "reason": "Supported in v7.4 and requires a reboot, but the '(not in 7.2)' claim is not stated in the cited chunks."}
+{"jid": "44fdfdf2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "c20d8555", "label": "correct", "cited_support": "yes", "reason": "Reserved words forming a compound command, and = is more portable than ==."}
+{"jid": "1c46472b", "label": "correct", "cited_support": "yes", "reason": "Length extension lets the attacker compute h(P+B) from h(P) already, so it adds nothing."}
+{"jid": "ff2f8692", "label": "correct", "cited_support": "yes", "reason": "Separate CASE per column and direction keyed on a parameter, and mixed types convert to the higher-precedence type, so one CASE per datatype."}

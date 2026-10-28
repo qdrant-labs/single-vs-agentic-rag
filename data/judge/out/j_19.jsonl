@@ -1,0 +1,40 @@
+{"jid": "cd13dbd9", "label": "correct", "cited_support": "yes", "reason": "Names Vagrant, Ansible, GitLab or Jenkins, and Docker exactly as the reference and cited chunk do."}
+{"jid": "0b39cab4", "label": "correct", "cited_support": "yes", "reason": "Identifies a bug in the distro's particular pppd version with earlier and later versions unaffected, as both cited chunks state."}
+{"jid": "9140ed65", "label": "correct", "cited_support": "yes", "reason": "Lists all four practices (protected main, required PRs, PR templates with checklists, approvals via GitHub teams), all stated in the cited chunks."}
+{"jid": "8040752b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "1fd817e8", "label": "correct", "cited_support": "yes", "reason": "States swap must be initialized at boot and that hibernating then booting the other OS corrupts state and filesystems, supported by the cited chunks."}
+{"jid": "142cd812", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing resource-intensive plan cache queries without a trace, as the cited chunk states."}
+{"jid": "13dfe02e", "label": "correct", "cited_support": "yes", "reason": "Gives the find -print0 | xargs cat approach for the command line limit and the multiple-of-512 device mapper constraint, both in the cited chunks."}
+{"jid": "e5bcdccb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "5601373d", "label": "correct", "cited_support": "yes", "reason": "Gives the daily cron sort -R -o and head -n 1 approach exactly as the reference and cited chunk."}
+{"jid": "1f0acae5", "label": "correct", "cited_support": "yes", "reason": "States GNU tr lacks multi-byte support and that Perl needs use utf8 or -Mutf8 since -C only covers IO, supported by the cited chunks."}
+{"jid": "b29766b8", "label": "correct", "cited_support": "yes", "reason": "Describes the Loopback Adapter virtual network with its own DHCP scope and dual-homing, as in the cited chunks."}
+{"jid": "decdba1b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "3b815d7c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "816b2342", "label": "partial", "cited_support": "yes", "reason": "dd risk and LVM snapshot parts match, but it gives rsync -x or a bind-mount copy instead of the reference's cp -ax / /mnt/sda1."}
+{"jid": "e5f6fb67", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "77539bba", "label": "correct", "cited_support": "yes", "reason": "Gives the LATERAL JOIN from the smaller sessionlatest table with LIMIT 500 and the (session_id, update_id) index, all in the cited chunks."}
+{"jid": "ef379548", "label": "correct", "cited_support": "yes", "reason": "Explains via length extension that the attacker could already compute h(P+B) from h(P), as the cited chunks state."}
+{"jid": "d09d193a", "label": "correct", "cited_support": "yes", "reason": "Gives assert for programmer-error nulls in C and a generic exception bubbling to error logging, both stated in the cited chunks."}
+{"jid": "d094e598", "label": "correct", "cited_support": "yes", "reason": "Explains it is input redirection from process substitution, not a here-document, equivalent to curl | bash, as the cited chunks state."}
+{"jid": "6576f2b6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "091d58fb", "label": "correct", "cited_support": "yes", "reason": "Names nfdump+nfsen on Linux and ntop on Windows with the 1000-packet build limit requiring recompiling, as in the cited chunks."}
+{"jid": "58bb35f8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "bd1279d1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "70a1c61d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "afac3624", "label": "correct", "cited_support": "yes", "reason": "Recommends dotnet build in DotNetCoreCLI@2 rather than VSBuild, as the cited chunk states."}
+{"jid": "b24583c1", "label": "correct", "cited_support": "yes", "reason": "Explains xargs running dirname with no arguments and the export -f plus bash -c 'foo \"$@\"' pattern, both in the cited chunks."}
+{"jid": "fbc2752f", "label": "partial", "cited_support": "yes", "reason": "Mentions Profiler and the plan cache but omits sys.dm_exec_query_stats and the baseline, substituting the Object Execution Statistics report."}
+{"jid": "ed7eac3b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "0c7c656d", "label": "correct", "cited_support": "yes", "reason": "States the hash is deterministic per byte sequence and differences come from string-to-bytes encoding, as the cited chunks say (hex case remark is a minor extra)."}
+{"jid": "ea9de52b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "bab36d29", "label": "correct", "cited_support": "yes", "reason": "Names security contexts as virtual ASAs with each VLAN interface assigned to a context, as in the cited chunk."}
+{"jid": "6bea123e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the correct response for an unanswerable question."}
+{"jid": "f9356b71", "label": "correct", "cited_support": "yes", "reason": "Gives the add_ssh_keys step with the key fingerprint from the UI, as the cited chunk states."}
+{"jid": "0c6e5460", "label": "partial", "cited_support": "yes", "reason": "Covers Profiler events and the plan cache but omits sys.dm_exec_query_stats and the baseline; the named sys.dm_exec_cached_plans DMV is not in the cited text."}
+{"jid": "3a1238b4", "label": "correct", "cited_support": "yes", "reason": "States verbatim copies may be copied and distributed but changes are not allowed, as the cited chunk quotes."}
+{"jid": "d53be6e5", "label": "correct", "cited_support": "yes", "reason": "Names bce and defbce and the October 2016 tmux implementation, both stated in the cited chunks."}
+{"jid": "fe82761d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "b0f43b0a", "label": "correct", "cited_support": "yes", "reason": "Gives apt-get install snmp-mibs-downloader and mibs +ALL in /etc/snmp/snmp.conf, as the cited chunk states."}
+{"jid": "005c38ec", "label": "correct", "cited_support": "yes", "reason": "Gives the daily cron sort -R -o and head -n 1 approach exactly as the reference and cited chunk."}
+{"jid": "47783a56", "label": "correct", "cited_support": "yes", "reason": "Identifies a Windows exploit attempt with no damage due to 404 and probes for compromise or error leakage, all in the cited chunks."}

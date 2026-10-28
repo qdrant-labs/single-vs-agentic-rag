@@ -1,0 +1,40 @@
+{"jid": "4687a97e", "label": "correct", "cited_support": "yes", "reason": "States unicast via known MAC with yiaddr as IP destination and chaddr as link-layer destination; broadcast-flag detail is supported by chunk 979203."}
+{"jid": "1f4d667c", "label": "correct", "cited_support": "yes", "reason": "States the child must copy the whole Execute(String parameter) method and change one case, as cited."}
+{"jid": "4282ccb4", "label": "correct", "cited_support": "yes", "reason": "Names contexts creating virtual ASAs with each VLAN interface assigned to a context, as the cited chunk says."}
+{"jid": "f9c3d308", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "cdcf4f7b", "label": "correct", "cited_support": "yes", "reason": "Gives gridsite-clients, urlencode -m and prepending file://, all stated in the cited chunk."}
+{"jid": "8340f185", "label": "partial", "cited_support": "yes", "reason": "Gets Caviggia's stig-fix ISO script but omits the RedHatGov GitHub organization, substituting stig-fix-el6 from another chunk."}
+{"jid": "e85b5ba6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "d42463b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the length-extension and 2^128 answer."}
+{"jid": "241af0b4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "6a0eea9b", "label": "correct", "cited_support": "yes", "reason": "Matches the reference: arithmetic coercion allowed as the alternative is too annoying, string addition ambiguous."}
+{"jid": "20c52ce9", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "f1805aa1", "label": "partial", "cited_support": "yes", "reason": "Gives the 01_nodoc edit and reinstall steps but says the POSIX man section (1P) is not named."}
+{"jid": "441eab4a", "label": "correct", "cited_support": "yes", "reason": "Says no because containers share the host kernel and a virtual machine is needed, which the cited chunks support."}
+{"jid": "e32f5082", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "6083833c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the ownership chaining and consistency answer."}
+{"jid": "f0163ea6", "label": "correct", "cited_support": "yes", "reason": "Implicit bridge rule dropping fragmented packets, disabled under System > Advanced > Firewall/NAT, as cited."}
+{"jid": "14410f0e", "label": "correct", "cited_support": "yes", "reason": "Gives error 3910 Transaction context in use by another session, stated in the cited chunk."}
+{"jid": "3a6f6b9a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "baef8b04", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the 6000-iteration and extra-encryption answer."}
+{"jid": "6d8696c3", "label": "correct", "cited_support": "yes", "reason": "Covers subshell scope with source as the fix and the execute-bit difference, all supported by the cited chunks."}
+{"jid": "b616764f", "label": "correct", "cited_support": "yes", "reason": "Names nfdump plus nfsen on Linux and ntop on Windows limited to 1000 packets per session, as cited."}
+{"jid": "80631271", "label": "correct", "cited_support": "yes", "reason": "Gives MAKEDEV tty/pty and update-initramfs -c -k $(uname -r), all in the cited chunks."}
+{"jid": "e83ba6af", "label": "correct", "cited_support": "yes", "reason": "Verbatim copies may be copied and distributed but changes are not allowed, quoted from the cited chunk."}
+{"jid": "8d974114", "label": "correct", "cited_support": "yes", "reason": "Yes in v7.4 and enabling LAG needs a WLC reboot, as cited; the not-in-7.2 aside is unsupported but minor."}
+{"jid": "83291190", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "d4419770", "label": "correct", "cited_support": "yes", "reason": "Install snmp-mibs-downloader and set mibs +ALL in /etc/snmp/snmp.conf, as the cited chunk says."}
+{"jid": "2ab5ce6d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the cp -ax, dd risk and LVM snapshot answer."}
+{"jid": "575243db", "label": "correct", "cited_support": "yes", "reason": "Use an add_ssh_keys step with the key fingerprint from the UI, as the cited chunk says."}
+{"jid": "4b82ffad", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the allowed-VLANs consistency answer."}
+{"jid": "583d52dd", "label": "correct", "cited_support": "yes", "reason": "No, allowed VLANs is neither a Type 1 nor Type 2 parameter so the vPC is not suspended, as cited."}
+{"jid": "7ed1b1b2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "a7bde5e0", "label": "correct", "cited_support": "yes", "reason": "Created a chrooted environment following the Media Temple noexec /tmp guide, as cited."}
+{"jid": "fdd158c6", "label": "correct", "cited_support": "yes", "reason": "Unicast via known MAC at layer 2 with yiaddr and chaddr destinations; broadcast-flag detail supported by chunk 979203."}
+{"jid": "1a6002d0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "78c59d43", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "3ca503af", "label": "correct", "cited_support": "yes", "reason": "Gives MAKEDEV tty/pty and update-initramfs -c -k $(uname -r), both in the cited chunks."}
+{"jid": "d8b278a8", "label": "correct", "cited_support": "yes", "reason": "A perfmon alert with Run This Program on the Action tab setting the program path, as cited."}
+{"jid": "7d04dc95", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "a7afc78b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the right response for this unanswerable question."}
+{"jid": "79a73aa9", "label": "correct", "cited_support": "yes", "reason": "--help output to stdout for piping and invalid-option usage to stderr, as the cited chunks say."}

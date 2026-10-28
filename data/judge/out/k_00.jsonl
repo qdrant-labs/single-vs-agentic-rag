@@ -1,0 +1,40 @@
+{"jid": "db10e358", "label": "correct", "cited_support": "yes", "reason": "States languages want to use the native stack on OSes that don't support growing/non-contiguous stacks, as the cited chunk says."}
+{"jid": "f200e5e2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "4687a97e", "label": "correct", "cited_support": "yes", "reason": "Gives chaddr as link-layer destination and yiaddr as IP destination; BROADCAST-flag extra is supported by cited chunk 979203."}
+{"jid": "08a970dd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5fd90ab1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "b1a2b6a1", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge part is right, but it describes WhatsApp's AES-GCM-256 backup encryption instead of Google's server-side encryption that Google can decrypt."}
+{"jid": "011d666c", "label": "correct", "cited_support": "yes", "reason": "Names the GDI+ crafted-image bug and explains content sniffing of fake_image.jpg as HTML enabling XSS, both stated in cited chunks."}
+{"jid": "5cf8e7af", "label": "correct", "cited_support": "yes", "reason": "Function piping printf %s \"$READLINE_LINE\" to xsel -ib, bound with bind -x to \\eW, guarded by $DISPLAY, matches reference and cited code."}
+{"jid": "899326bc", "label": "correct", "cited_support": "yes", "reason": "Lists all steps: enable advanced BWM, activate on WAN with speed, Per-IP bandwidth object, apply on any->any rule for ingress and egress."}
+{"jid": "27f9b9b1", "label": "correct", "cited_support": "yes", "reason": "Explains length extension lets the attacker already compute h(P+B) from h(P), as the cited chunk states."}
+{"jid": "40a07fc1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "c582b7df", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "08d914ad", "label": "correct", "cited_support": "yes", "reason": "Identifies workloads with frequent kernel entries hit hardest due to KPTI address-space switching, matching the reference; cited chunks state this."}
+{"jid": "96539f7b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "8dab1838", "label": "correct", "cited_support": "yes", "reason": "Users, local-permissions (user, channel, permission) and global-permissions tables with string permission column, all in cited chunks."}
+{"jid": "77539bba", "label": "correct", "cited_support": "yes", "reason": "LATERAL JOIN from the smaller sessionlatest table with limit 500 and index on session(session_id, update_id); extra status-column tip is cited."}
+{"jid": "eaae8190", "label": "correct", "cited_support": "yes", "reason": "Vagrant, Ansible, GitLab or Jenkins, and Docker, exactly as in the cited chunk."}
+{"jid": "21fbba9b", "label": "correct", "cited_support": "yes", "reason": "Create a v8.0.15 instance and minor-upgrade with reboot; the AWS support extra is supported by cited chunk 819821."}
+{"jid": "4d6eb0b0", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table and that separate id/name tables add no value unless extra data exists; omits the 3NF wording but conveys the conclusion."}
+{"jid": "758b9955", "label": "correct", "cited_support": "yes", "reason": "Says no, it is a blacklist patch, and gives the code review, logs, log analysis, reporting and IDS/IPS alternative from the cited chunks."}
+{"jid": "a80af936", "label": "correct", "cited_support": "yes", "reason": "Chrooted environment per the Media Temple noexec /tmp guide, as the cited chunk says."}
+{"jid": "308f3db6", "label": "correct", "cited_support": "yes", "reason": "Self-built gcc goes to /usr/local and squeeze is pinned at 900, wheezy at 200, all in cited chunks."}
+{"jid": "99027742", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "eb30a150", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing plan-cache queries without a trace or XE session, as in the cited chunk."}
+{"jid": "fc0edc46", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3ecd8fc0", "label": "correct", "cited_support": "yes", "reason": "-annotate with the %t escape, positioned by -gravity north-east, as stated in the cited chunks."}
+{"jid": "c3ce5f34", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "c3c44a03", "label": "correct", "cited_support": "yes", "reason": "systemd-run --scope --user [command], as in the cited chunk."}
+{"jid": "895d408a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "353aa245", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "40a4f4d9", "label": "correct", "cited_support": "yes", "reason": "dotnet build in DotNetCoreCLI@2 rather than VSBuild is stated in the cited chunk; the dotnet publish extra is not in the cited text."}
+{"jid": "3f792703", "label": "correct", "cited_support": "yes", "reason": "Supported from v7.4 and enabling requires a WLC reboot; mode-on extra is cited, though the 'not in 7.2' claim is not in the cited text."}
+{"jid": "f105de0f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "80407325", "label": "partial", "cited_support": "yes", "reason": "Gives ~/.profile but never names csh and tcsh as the shells that don't read it."}
+{"jid": "5048fdfb", "label": "correct", "cited_support": "yes", "reason": "LATERAL JOIN from sessionlatest on session_id and update_id with limit 500 and the (session_id, update_id) index, as in cited chunks."}
+{"jid": "52a632cd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference has an answer."}
+{"jid": "6f311e5d", "label": "correct", "cited_support": "yes", "reason": "LZF default with Snappy later (experimental in 0.19.9), as in the cited chunk."}
+{"jid": "091d58fb", "label": "correct", "cited_support": "yes", "reason": "nfdump+nfsen on Linux and ntop on Windows needing recompile due to the 1000-packet limit, both in cited chunks."}
+{"jid": "55d7edeb", "label": "correct", "cited_support": "yes", "reason": "Needs the database/table-level INSERT permission besides ADMINISTER BULK OPERATIONS, as the cited chunks state."}
+{"jid": "ca13b4b4", "label": "correct", "cited_support": "yes", "reason": "Launch with the keypair, stop, detach root EBS, mount on another instance and copy the key; user-data alternative is cited too."}

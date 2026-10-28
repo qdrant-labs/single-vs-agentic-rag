@@ -1,0 +1,40 @@
+{"jid": "425c823e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "78acfe72", "label": "partial", "cited_support": "yes", "reason": "Join-error behavior is right, but the check omits comparing execution times alongside the plans."}
+{"jid": "35ca1902", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "f34c72f9", "label": "correct", "cited_support": "yes", "reason": "States rewriting the https Destination header to http and passing it via proxy_set_header Destination."}
+{"jid": "f47f288c", "label": "correct", "cited_support": "yes", "reason": "Says the leaked code stays valid and to regenerate it by toggling 2FA off and on."}
+{"jid": "d33f40a6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "45ac4406", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "0239ebaa", "label": "partial", "cited_support": "yes", "reason": "Quoting the variable is right, but the eval alternative is a here-document rather than the reference's function approach."}
+{"jid": "e263095b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "acff6864", "label": "correct", "cited_support": "yes", "reason": "Says the blacklist is not a good policy and gives the admin's code review, logs, reporting and IDS/IPS approach."}
+{"jid": "4b358e96", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "6fb8df92", "label": "correct", "cited_support": "yes", "reason": "Names MVC Mini Profiler."}
+{"jid": "9cf8fad6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "dcb0fc43", "label": "correct", "cited_support": "yes", "reason": "Gives 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz."}
+{"jid": "3ec54335", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "26871d13", "label": "correct", "cited_support": "yes", "reason": "Explains the shared password unlocked the outer volume, which was then formatted."}
+{"jid": "f2df1f0c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "28fd32f3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "a91f60df", "label": "correct", "cited_support": "yes", "reason": "States firmware goes into volatile device storage each power-on and the kernel driver loads it."}
+{"jid": "bc186ab7", "label": "correct", "cited_support": "yes", "reason": "Gives access port in SVID4 and SVID5 with dot1q-tunneling customer-vlans 41-42 and 51-52."}
+{"jid": "493c51b4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "f31f0c4e", "label": "correct", "cited_support": "yes", "reason": "States unicast to yiaddr as IP destination and chaddr as link-layer destination."}
+{"jid": "9ce4fc2c", "label": "correct", "cited_support": "yes", "reason": "Gives the wrapped random key approach and the 384-bit split into AES key, IV and HMAC key."}
+{"jid": "342ce231", "label": "partial", "cited_support": "yes", "reason": "Names ksh93r but does not state the avoided problem that a hard-coded descriptor may already be in use."}
+{"jid": "608c63cd", "label": "partial", "cited_support": "yes", "reason": "Explains 0x000 but does not say 0xFFF must not be configured or transmitted."}
+{"jid": "9331cde6", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table since separate address or church tables add no value here."}
+{"jid": "ea53e2b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "d96cfef8", "label": "correct", "cited_support": "yes", "reason": "States adding rows beats altering columns, keeping the schema stable as languages change."}
+{"jid": "6fd7353a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "5b40e70a", "label": "correct", "cited_support": "yes", "reason": "States the client would discard a response from an untrusted IP."}
+{"jid": "3a6f6b9a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "18b8ec48", "label": "correct", "cited_support": "yes", "reason": "Gives 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz."}
+{"jid": "ccbe1c30", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "e8d1e25a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "9d60edb2", "label": "correct", "cited_support": "yes", "reason": "Explains the reply to the client's random port is not permitted by the outbound ACL."}
+{"jid": "95edf94d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "da12c077", "label": "correct", "cited_support": "yes", "reason": "States --help goes to stdout and invalid-option usage goes to stderr."}
+{"jid": "42e24934", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "1574e292", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "def13e17", "label": "partial", "cited_support": "yes", "reason": "Explains 0x000 but does not say 0xFFF must not be configured or transmitted."}

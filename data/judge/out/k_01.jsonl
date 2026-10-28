@@ -1,0 +1,40 @@
+{"jid": "eecfa947", "label": "correct", "cited_support": "yes", "reason": "States verbatim copying and distribution is permitted but changing the document is not, as in the reference and cited chunks."}
+{"jid": "cdf38dc9", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module num power in global config, matching the reference and cited chunk."}
+{"jid": "781d3538", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "10e741d8", "label": "correct", "cited_support": "yes", "reason": "Says to use ~/.profile and that csh/tcsh do not read it; the extra zsh detail is supported by the cited chunk."}
+{"jid": "b5186429", "label": "correct", "cited_support": "yes", "reason": "Says no, it is a blacklist giving false security, and lists code review, logs, analysis, reporting and IDS/IPS, all in cited chunks."}
+{"jid": "e6de22ff", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "905ac2d5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "dd78613d", "label": "incorrect", "cited_support": "yes", "reason": "Talks about abstractions in general (functions, arrays) and misses web APIs/protocols and guaranteed exposed behavior; cited chunks do say what it claims."}
+{"jid": "f09efae1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "3367ccba", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "d11ab7cf", "label": "partial", "cited_support": "yes", "reason": "XSS content-sniffing part is right, but it names the GDI+ bug, which neither the reference nor the cited text ties to the 2004 GDI JPEG vulnerability."}
+{"jid": "d9c00dcd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "59acc8d4", "label": "correct", "cited_support": "yes", "reason": "Says no: some telemetry uses a unique ID and some is completely anonymous, as in the reference and cited chunk."}
+{"jid": "649b8423", "label": "correct", "cited_support": "yes", "reason": "Lists all the reference steps (advanced BWM, WAN with speed, per-IP object, any->any rule ingress/egress) from the cited chunks."}
+{"jid": "7730e279", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "088c8f94", "label": "correct", "cited_support": "yes", "reason": "Identifies -f flushing per file with slower output and lower IO, as in the reference and cited chunks."}
+{"jid": "5d013e32", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "8040752b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "821abc36", "label": "correct", "cited_support": "yes", "reason": "Gives ignorespace and ignoreboth, matching the reference and cited man page text."}
+{"jid": "070b139d", "label": "partial", "cited_support": "yes", "reason": "Captures public behavior over implementation but omits the key point that the advice applies to web APIs and Internet protocols."}
+{"jid": "0a9da684", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "18296b63", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "80631271", "label": "correct", "cited_support": "yes", "reason": "Gives MAKEDEV tty/pty and sudo update-initramfs -c -k $(uname -r), all stated in the cited chunks."}
+{"jid": "e97a9250", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "f1c7864a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "f7b8ab50", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "7b6cb29f", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module num power in global config, matching the reference and cited chunk."}
+{"jid": "993ddae6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "f216b7d6", "label": "partial", "cited_support": "no", "reason": "Has the Caviggia stig-fix ISO script but omits RedHatGov on GitHub, and the apply.sh/cat1-cat4 detail is not in the cited chunks."}
+{"jid": "e5bcdccb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "884017e7", "label": "correct", "cited_support": "yes", "reason": "Gives explicit CONVERT to a fixed DECIMAL and the pre-cap division scale max(6, s1+p2+1), both asked parts, from cited chunks."}
+{"jid": "8c262edd", "label": "correct", "cited_support": "yes", "reason": "Gives apt-get install snmp-mibs-downloader and mibs +ALL in /etc/snmp/snmp.conf, as in the cited chunk."}
+{"jid": "d6648db6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "1d9c57bc", "label": "correct", "cited_support": "no", "reason": "Gives xargs batching under the limit and device mapper sizes as multiples of 512, but the find -exec cat {} + alternative is not in the cited chunks."}
+{"jid": "d894e151", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "23ff8d3b", "label": "correct", "cited_support": "yes", "reason": "Names contexts as virtual ASAs with each VLAN interface assigned to a context, as in the cited chunk."}
+{"jid": "65fa53fe", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "168160bf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "20b21c62", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND for an unanswerable question."}
+{"jid": "a0d7b22b", "label": "correct", "cited_support": "yes", "reason": "Gives one CASE per column and direction keyed on the parameter and explains data type precedence conversion, all in the cited chunks."}

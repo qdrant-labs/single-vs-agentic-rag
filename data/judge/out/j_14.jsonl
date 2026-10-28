@@ -1,0 +1,40 @@
+{"jid": "a867c28d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "f6912148", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "af91c871", "label": "partial", "cited_support": "yes", "reason": "C assert part matches, but the exception part (let it bubble up to error logging so someone is notified) is missing; the system says the text does not cover it."}
+{"jid": "f65ac47b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "9af32061", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "ef8c2c6e", "label": "correct", "cited_support": "yes", "reason": "States lost ownership chaining with permissions needed on both objects, and that referentially consistent (FK) data must share one database; cited chunks support both."}
+{"jid": "5db6bd4c", "label": "partial", "cited_support": "yes", "reason": "Gives ~/.profile but omits that csh and tcsh never read it."}
+{"jid": "0f30d0e0", "label": "correct", "cited_support": "yes", "reason": "Artifact repository, with Nexus and Artifactory both free open source, as in the reference and cited chunk."}
+{"jid": "3f10ef9a", "label": "correct", "cited_support": "yes", "reason": "States lost ownership chaining and that data needing transactional integrity must share one database; cited chunks state both."}
+{"jid": "02652cd9", "label": "incorrect", "cited_support": "yes", "reason": "The question has no answer in the knowledge base, but the system answered anyway (NTLM workaround from the cited chunk)."}
+{"jid": "2f47ef1a", "label": "correct", "cited_support": "yes", "reason": "No, the host kernel is shared, so hardware virtualization (VirtualBox, VMware, Xen, KVM) is needed; matches the reference."}
+{"jid": "db10e358", "label": "correct", "cited_support": "yes", "reason": "To use the native stack on OSes that lack growable (non-contiguous) stacks; matches the reference and cited chunk."}
+{"jid": "81bcb93d", "label": "correct", "cited_support": "yes", "reason": "Yes from v7.4, and enabling it needs a WLC reboot; the extra mode-on details come from the cited chunks."}
+{"jid": "6fdbcf57", "label": "correct", "cited_support": "yes", "reason": "Needs the database/table-level INSERT permission in addition to ADMINISTER BULK OPERATIONS; matches the reference."}
+{"jid": "554606cb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "7379e298", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "20914dca", "label": "correct", "cited_support": "yes", "reason": "Perfmon alert with Run This Program on the Action tab; matches the reference."}
+{"jid": "5c5f717f", "label": "correct", "cited_support": "yes", "reason": "Both parts present: remove the 01_nodoc lines and reinstall (cp in coreutils), with POSIX pages in section 1P; cited chunks support both."}
+{"jid": "7bdeefa0", "label": "correct", "cited_support": "yes", "reason": "Swap must be initialized at boot, and hibernating then booting the other risks a lost resume and filesystem corruption; supported by the cited chunks."}
+{"jid": "8c93647d", "label": "correct", "cited_support": "yes", "reason": "Load the binary and set it as the entry point; the container lives until the entry point ends; matches the reference."}
+{"jid": "f7b8ab50", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "86f17ac0", "label": "partial", "cited_support": "yes", "reason": "The dpkg 01_nodoc fix is correct, but it says the text does not give the POSIX man section (1P)."}
+{"jid": "1574e292", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "ceb1a962", "label": "partial", "cited_support": "yes", "reason": "The 512-byte multiple for device mapper is right, but the xargs/ARG_MAX method is missing (it offers nbd instead)."}
+{"jid": "b9318606", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "30234af6", "label": "correct", "cited_support": "yes", "reason": "Split into atomic units, the smallest group of steps someone might run alone, each its own job; matches the reference."}
+{"jid": "3f792703", "label": "correct", "cited_support": "yes", "reason": "Yes from v7.4, and enabling LAG needs a WLC reboot; extra mode-on detail is in the cited chunk."}
+{"jid": "2eb9487c", "label": "correct", "cited_support": "yes", "reason": "Daily cron sort -R -o on the file, then head -n 1; matches the reference."}
+{"jid": "1f052e3d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "fd016cd3", "label": "correct", "cited_support": "yes", "reason": "SRP plus tests first let patterns emerge, and names help communication (Strategy, FooBuilder); matches the reference."}
+{"jid": "fb6f6bfc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "2187d1d0", "label": "correct", "cited_support": "yes", "reason": "Same password unlocked the outer volume, which was then formatted instead of the hidden one; matches the reference."}
+{"jid": "04849150", "label": "correct", "cited_support": "yes", "reason": "Without the rewrite, the client gets a packet from an untrusted IP and discards it; matches the reference."}
+{"jid": "11fc4807", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "31b67ac8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "1ae8a9e3", "label": "correct", "cited_support": "yes", "reason": "Split into atomic units, the smallest group of steps someone might run alone, each its own job; matches the reference."}
+{"jid": "67d32671", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "20cc320c", "label": "partial", "cited_support": "yes", "reason": "The total pipeline matches, but for directories it gives a different du -sk | sort -nr | xargs du -sh pipeline, not the reference's du -sh -- */ | sort -rh."}
+{"jid": "51a0090d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "e4d00d36", "label": "correct", "cited_support": "yes", "reason": "ksh93r, and the shell picks a free fd of 10 or more and stores it in a variable, avoiding hand-picked single-digit fds; supported by the cited chunks."}

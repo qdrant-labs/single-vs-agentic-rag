@@ -1,0 +1,40 @@
+{"jid": "fc89121d", "label": "partial", "cited_support": "yes", "reason": "States it is safe to disclose the hash but explicitly omits the private-repository alternative."}
+{"jid": "97f1473a", "label": "correct", "cited_support": "yes", "reason": "Recommends completely separate databases per user, matching the reference."}
+{"jid": "353aa245", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f200e5e2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3d426d7a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "cdeba659", "label": "correct", "cited_support": "yes", "reason": "Loopback Adapter virtual network with its own DHCP scope and dual-homing, as in the reference."}
+{"jid": "4de10981", "label": "correct", "cited_support": "yes", "reason": "Add an add_ssh_keys step with the key fingerprint from the UI, matching the reference."}
+{"jid": "6b3955df", "label": "correct", "cited_support": "yes", "reason": "Run terraform console and ask for type(...) of the value, matching the reference."}
+{"jid": "4d2b48a6", "label": "incorrect", "cited_support": "yes", "reason": "Blames stale yum metadata instead of leftover files from an aborted previous install."}
+{"jid": "e9287856", "label": "partial", "cited_support": "yes", "reason": "Covers flow-control stop and Ctrl-Q resume but gives no actual Ctrl-S save mapping."}
+{"jid": "fdb34fee", "label": "correct", "cited_support": "yes", "reason": "Gives MAKEDEV tty/pty and sudo update-initramfs -c -k $(uname -r), matching the reference."}
+{"jid": "1a0f7a1e", "label": "correct", "cited_support": "yes", "reason": "Names the CRIME attack on compressed headers and cookies, the key fact asked for."}
+{"jid": "d3749ceb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "bbdc504e", "label": "correct", "cited_support": "yes", "reason": "Says a child cannot change the parent's environment and gives the gdb attach, putenv, detach sequence."}
+{"jid": "2020d2ff", "label": "partial", "cited_support": "yes", "reason": "Explains flow control and Ctrl-Q but never gives the Ctrl-S to :w mapping."}
+{"jid": "e99ef323", "label": "correct", "cited_support": "yes", "reason": "Says not without a cooperating workaround and gives the gdb attach, putenv, detach sequence."}
+{"jid": "6119b3a9", "label": "correct", "cited_support": "yes", "reason": "Languages added as rows rather than columns so table structure stays unchanged, matching the reference."}
+{"jid": "3aa903ed", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d6648db6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "43b1b011", "label": "correct", "cited_support": "yes", "reason": "Sector 128 alignment for 70 vs 29 MB/s and NILFS2 in kernel 2.6.30, both parts present."}
+{"jid": "431b2c9e", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module num power in global config, matching the reference."}
+{"jid": "ad3a36a2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "19fbe047", "label": "correct", "cited_support": "yes", "reason": "Recommends a separate database per user; mentioned alternatives are harmless extra detail."}
+{"jid": "1454d520", "label": "correct", "cited_support": "yes", "reason": "Data builds up and a long delay can fill transaction log space, matching the reference."}
+{"jid": "46e6f675", "label": "correct", "cited_support": "yes", "reason": "hp-vsa driver for the Gen8 and inst.dd modprobe.blacklist=ahci on the linuxefi line, both parts present."}
+{"jid": "4a225dc2", "label": "correct", "cited_support": "yes", "reason": "Frequent user-kernel context switches such as databases and hypervisors, due to kernel page table flushing."}
+{"jid": "b05040b3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "2948563a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "44207b17", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "36f9d236", "label": "correct", "cited_support": "yes", "reason": "Recommends a separate database for each user, matching the reference."}
+{"jid": "60470609", "label": "correct", "cited_support": "yes", "reason": "Lists protected main, required PRs, PR templates with checklists and approvals via GitHub teams."}
+{"jid": "f35ecf35", "label": "correct", "cited_support": "yes", "reason": "Create on 8.0.15 then minor-upgrade with reboot; the AWS support alternative is harmless extra."}
+{"jid": "4bd020ab", "label": "correct", "cited_support": "yes", "reason": "Proxmox runs on Debian, so nearly every Ubuntu package gets replaced, leaving a broken mostly-Debian install."}
+{"jid": "c2c8b625", "label": "correct", "cited_support": "yes", "reason": "Query the Deprecated Features counters in sys.dm_os_performance_counters with cntr_value > 0, same method as the reference."}
+{"jid": "de63ece1", "label": "correct", "cited_support": "yes", "reason": "xargs runs dirname with no arguments, and export -f with find -exec bash -c 'foo \"$@\"' bash {} +."}
+{"jid": "0cf0aab9", "label": "correct", "cited_support": "yes", "reason": "Identifies the -f flush option with slower progress and lower IO load."}
+{"jid": "ccbe1c30", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "580dc14f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3f2c6834", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "fa1a0d22", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}

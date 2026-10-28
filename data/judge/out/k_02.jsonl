@@ -1,0 +1,40 @@
+{"jid": "7dbe0b1c", "label": "correct", "cited_support": "yes", "reason": "States the token sits in text declaring the function and an XSS payload can read it via XHR, as the cited chunk says."}
+{"jid": "1945f699", "label": "correct", "cited_support": "yes", "reason": "Gives tcp mss, matching the reference and the cited chunk."}
+{"jid": "95106b9c", "label": "correct", "cited_support": "yes", "reason": "Gives the users, local-permissions and global-permissions tables with a string permission column; extras are supported by chunk 573742."}
+{"jid": "ea9de52b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the answer."}
+{"jid": "885ab44c", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions and the session_id > 50 filter, as the cited chunk states."}
+{"jid": "f975d4f2", "label": "correct", "cited_support": "yes", "reason": "Explains it as input redirection from a process substitution, equivalent to curl -s URL | bash, as cited."}
+{"jid": "4a225dc2", "label": "correct", "cited_support": "yes", "reason": "Names workloads with frequent user-to-kernel switches like databases and hypervisors, citing kernel page-table flushing under KPTI."}
+{"jid": "b0c20919", "label": "correct", "cited_support": "yes", "reason": "States principal change inside a session, primarily login, to prevent session fixation leading to CSRF."}
+{"jid": "d9a55043", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "dc1a75fa", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "c988c564", "label": "correct", "cited_support": "yes", "reason": "Uses length extension to explain that h(P+B) was already computable from h(P), as chunk 886542 states."}
+{"jid": "076dea2e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "3bd48d07", "label": "partial", "cited_support": "yes", "reason": "Explains the dirname usage message correctly but omits export -f and the bash -c find -exec pattern."}
+{"jid": "0cff666f", "label": "correct", "cited_support": "yes", "reason": "Covers the Windows exploit attempt, the 404 meaning no damage, and the probing for compromise or error leaks; extras are supported by chunk 891871."}
+{"jid": "231673d1", "label": "correct", "cited_support": "yes", "reason": "States that built-in CRUD hurts unit testing and that IDatabaseService goes into each data access class constructor via DI."}
+{"jid": "8d6daeef", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the overview that put the developer site in context."}
+{"jid": "c3fd9b05", "label": "partial", "cited_support": "yes", "reason": "Names a stig-fix hardening project but misses RedHatGov on GitHub and the ISO-building stig-fix script at people.redhat.com."}
+{"jid": "718793f4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the answer."}
+{"jid": "d8c5a66b", "label": "correct", "cited_support": "yes", "reason": "Gives the exact sys.dm_os_performance_counters Deprecated query from the cited chunk."}
+{"jid": "14ece8b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "2c14df51", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and minimal graphics; the 2-4GB view is accurately attributed to another cited answer."}
+{"jid": "bf9ef46a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "8bb6ef54", "label": "correct", "cited_support": "yes", "reason": "States that LZF was the default with Snappy planned later, as the cited chunk says."}
+{"jid": "c9f35c6b", "label": "correct", "cited_support": "yes", "reason": "States LZF as the default with Snappy later, including experimental Snappy in 0.19.9."}
+{"jid": "af94db43", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "736f70e5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the answer."}
+{"jid": "e1dc8016", "label": "correct", "cited_support": "yes", "reason": "Identifies a pppd version bug in the distro absent in earlier and later versions; version details are supported by chunk 342646."}
+{"jid": "ef6ed548", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "9af32061", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "41923860", "label": "correct", "cited_support": "yes", "reason": "Covers the subshell losing exports, sourcing instead, and execute-bit versus read-only permission, all in the cited chunks."}
+{"jid": "47783a56", "label": "correct", "cited_support": "yes", "reason": "Covers the Windows exploit attempt, the 404 meaning no damage, and probing for compromise or error-based info leaks."}
+{"jid": "816b2342", "label": "partial", "cited_support": "yes", "reason": "The dd corruption risk and LVM snapshot parts match, but it gives rsync -x or bind-mount cp -a instead of cp -ax / /mnt/sda1."}
+{"jid": "f31e4b48", "label": "partial", "cited_support": "yes", "reason": "The du -c | tail -n 1 total matches, but the directory listing uses a different pipeline instead of du -sh -- */ | sort -rh."}
+{"jid": "7ebd1f57", "label": "correct", "cited_support": "yes", "reason": "Explains that an aborted prior install left files behind and rpm attributes the conflict to the same package."}
+{"jid": "44bc710f", "label": "correct", "cited_support": "yes", "reason": "States that Proxmox runs on Debian, so dependencies replace almost every Ubuntu package and leave a broken, mostly-Debian install."}
+{"jid": "b3984ff3", "label": "correct", "cited_support": "yes", "reason": "Names an artifact repository, Sonatype Nexus and JFrog Artifactory, both with free open source editions."}
+{"jid": "4abb0d4c", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and minimal graphics; the 2-4GB view is accurately attributed to another cited answer."}
+{"jid": "fe82761d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the answer."}
+{"jid": "d4f4ad5f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for an unanswerable question."}
+{"jid": "f1805aa1", "label": "partial", "cited_support": "yes", "reason": "Gives the 01_nodoc edit and reinstall steps but omits man section 1P for the POSIX pages."}

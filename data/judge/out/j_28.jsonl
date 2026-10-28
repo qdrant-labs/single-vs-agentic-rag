@@ -1,0 +1,40 @@
+{"jid": "1c2d23b7", "label": "correct", "cited_support": "yes", "reason": "States 0x000 (priority tag, no VLAN ID) and 0xFFF (must not be configured or transmitted) are reserved, leaving 4,094, as the cited chunks say."}
+{"jid": "1d9c57bc", "label": "correct", "cited_support": "yes", "reason": "Gives xargs batching to stay under the command-line limit and the multiple-of-512 size constraint for device mapper, both in the cited chunks."}
+{"jid": "52238a4a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "b02f91d4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d9af8431", "label": "correct", "cited_support": "yes", "reason": "Gives nnoremap <c-s> :w<cr>, Ctrl-S stopping terminal output (flow control), and Ctrl-Q undoing it, supported by the cited chunks."}
+{"jid": "7874b646", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3b6a18a8", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing plan-cache resource hogs without a trace, exactly as the cited chunk says."}
+{"jid": "a6212aea", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "0c095ebf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "90b59108", "label": "correct", "cited_support": "yes", "reason": "Rewrites the Destination header from https to http in Nginx and sets it with proxy_set_header, matching the reference and the cited chunks."}
+{"jid": "9bc25618", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "342ce231", "label": "partial", "cited_support": "yes", "reason": "Gets ksh93r and the shell storing a descriptor of 10 or higher in a variable, but never states the problem avoided: a hand-picked number may already be in use."}
+{"jid": "edf59a71", "label": "correct", "cited_support": "yes", "reason": "Gives the daily sort -R -o cron job and head -n 1, as in the cited chunk."}
+{"jid": "f815f09c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "21b84536", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f922532d", "label": "correct", "cited_support": "yes", "reason": "Adds an add_ssh_keys step with the key fingerprint from the UI, as the cited chunk says."}
+{"jid": "da753f40", "label": "correct", "cited_support": "yes", "reason": "Excludes the original loop device in lvm.conf via scan or filter and checks fullness with dmsetup status, both in the cited chunks."}
+{"jid": "bc186ab7", "label": "correct", "cited_support": "yes", "reason": "Access port in both SVID4 and SVID5, with dot1q-tunneling customer-vlans 41-42 and 51-52, matching the cited config."}
+{"jid": "17a2d828", "label": "correct", "cited_support": "yes", "reason": "Identifies PrivateTmp=yes and a systemctl edit override in /etc/systemd/system/apache2.service.d setting PrivateTmp=false, all in the cited chunks."}
+{"jid": "4c8d034d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "896757b9", "label": "correct", "cited_support": "yes", "reason": "Says to use ~/.profile and that csh and tcsh do not read it, both in the cited chunks."}
+{"jid": "e97a9250", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "bf9ef46a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "28ea2118", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "84a00379", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "20947759", "label": "correct", "cited_support": "yes", "reason": "States the certificate authenticates the site's identity and that a non-bank site should buy the cheapest (DV) certificate, which the cited chunks support."}
+{"jid": "035a24e5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "17aceeed", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "03bc6f1f", "label": "correct", "cited_support": "yes", "reason": "Answers no, a newer-version database cannot be attached to an older version and compatibility level does not change that, as the cited chunks say."}
+{"jid": "911d233b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "50eafc17", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "b05bf138", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "44c50d2a", "label": "correct", "cited_support": "yes", "reason": "Identifies PrivateTmp=yes and a systemctl edit drop-in override setting PrivateTmp=false, all in the cited chunks."}
+{"jid": "f2df1f0c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "16ca5da7", "label": "correct", "cited_support": "yes", "reason": "Loopback Adapter virtual network with its own DHCP scope, dual-homing the box, as in the cited chunks."}
+{"jid": "a1cff92e", "label": "correct", "cited_support": "yes", "reason": "Gives the hp-vsa driver for the Gen8 and inst.dd modprobe.blacklist=ahci for the Gen9 B140i, both in the cited chunks."}
+{"jid": "8895b27d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "b82c159e", "label": "correct", "cited_support": "yes", "reason": "Answers yes, with all six log entries still written in the test, as the cited chunk says."}
+{"jid": "e8ac5484", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "41c34f19", "label": "correct", "cited_support": "yes", "reason": "Names -f, which flushes each file before the next and gives slower output and lower IO load, as the cited chunks say."}

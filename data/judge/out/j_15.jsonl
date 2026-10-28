@@ -1,0 +1,40 @@
+{"jid": "8581c635", "label": "correct", "cited_support": "yes", "reason": "States principal change inside a session, primarily at login, to prevent session fixation leading to CSRF, as the cited chunk says."}
+{"jid": "18296b63", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d27ce3cd", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge part is right, but it never says Google applies only server-side encryption it can decrypt, citing WhatsApp's AES-GCM-256 instead."}
+{"jid": "51e5cc57", "label": "partial", "cited_support": "yes", "reason": "dd corruption risk and LVM snapshot match, but it gives rsync -x instead of the reference's cp -ax / /mnt/sda1."}
+{"jid": "f4ea5c1e", "label": "correct", "cited_support": "yes", "reason": "Separate CASE per column/direction keyed on the parameter, and the single-datatype precedence conversion explanation, both match and are cited."}
+{"jid": "08374fad", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "7cf03a26", "label": "correct", "cited_support": "yes", "reason": "Access port in both SVID4 and SVID5 with dot1q-tunneling customer-vlans 41-42 and 51-52, matching the cited config."}
+{"jid": "438e6425", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor, as the reference and cited chunk do."}
+{"jid": "08d3dfcd", "label": "partial", "cited_support": "yes", "reason": "Safe-to-disclose part matches, but the alternative for an uneasy owner should be a private repository, not switching to bcrypt."}
+{"jid": "8bb6ef54", "label": "correct", "cited_support": "yes", "reason": "LZF default with Snappy planned later, as the cited chunk states."}
+{"jid": "1aaaca21", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "06ddf7c2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "7a5627d6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "99aa8e7f", "label": "partial", "cited_support": "yes", "reason": "Mentions Profiler and cached plans but omits sys.dm_exec_query_stats and adds Replay/DTA from a different thread."}
+{"jid": "2ecb2ad6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "809e5ded", "label": "correct", "cited_support": "yes", "reason": "States principal change inside a session, primarily at login, to prevent session fixation leading to CSRF."}
+{"jid": "03cc8500", "label": "correct", "cited_support": "yes", "reason": "Removing /usr/share/man and /usr/share/groff lines from 01_nodoc, reinstalling packages, and section 1P all match."}
+{"jid": "901cad8c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "f31e4b48", "label": "partial", "cited_support": "yes", "reason": "Grand-total pipeline matches, but the directory listing uses du -sk | sort -nr | cut | xargs du -sh over all entries instead of du -sh -- */ | sort -rh."}
+{"jid": "e9ec0172", "label": "correct", "cited_support": "yes", "reason": "Copy the binary in and set it as CMD/entry point; container lives until that process exits, supported by the cited Dockerfile and lifecycle chunks."}
+{"jid": "a80af936", "label": "correct", "cited_support": "yes", "reason": "Chrooted environment per the Media Temple noexec /tmp guide, as cited."}
+{"jid": "884017e7", "label": "correct", "cited_support": "yes", "reason": "Explicit CONVERT of every operand and result to DECIMAL(15,6) plus division scale max(6, s1 + p2 + 1) before capping, both cited."}
+{"jid": "7b517312", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "ecdb402f", "label": "correct", "cited_support": "yes", "reason": "-annotate with %t, positioned with -gravity north-east, matching the cited chunks."}
+{"jid": "7f37c35f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "32cb0f03", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "cd4dc70f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "622b4854", "label": "correct", "cited_support": "yes", "reason": "dotnet build in DotNetCoreCLI@2, not VSBuild, as the cited chunk states."}
+{"jid": "8d6daeef", "label": "correct", "cited_support": "yes", "reason": "Android Boot Camp 2012 as the overview before the developer site, as cited."}
+{"jid": "4bb76533", "label": "correct", "cited_support": "yes", "reason": "if and then are shell reserved words, not programs, and = is more portable than ==, both stated in the cited chunks."}
+{"jid": "3e8f7b92", "label": "correct", "cited_support": "yes", "reason": "Function piping printf %s \"$READLINE_LINE\" to xsel -ib bound with bind -x to \\eW, matching the cited code."}
+{"jid": "7b92e7c4", "label": "correct", "cited_support": "yes", "reason": "Vagrant, Ansible, GitLab or Jenkins, and Docker, exactly as cited."}
+{"jid": "475679ad", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "23127e12", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "8d8af85c", "label": "correct", "cited_support": "yes", "reason": "Security contexts creating virtual ASAs with each VLAN interface assigned to a context, as cited."}
+{"jid": "4adea736", "label": "correct", "cited_support": "yes", "reason": "--help to stdout so it can be piped, and invalid-option usage to stderr, as cited."}
+{"jid": "8a28bed9", "label": "correct", "cited_support": "yes", "reason": "-f flushes each file before the next, with slower output and lower IO load, as cited."}
+{"jid": "4df331e8", "label": "correct", "cited_support": "yes", "reason": "Firmware sits in volatile memory and must be reloaded each power-on by the host OS/kernel, supported by the cited chunks."}
+{"jid": "4b9e359d", "label": "correct", "cited_support": "yes", "reason": "Disable logins on the primary plus a per-minute Agent job on each replica toggling them, as cited."}
+{"jid": "75f18b90", "label": "correct", "cited_support": "yes", "reason": "A bug in the distro's pppd version, with the extra 2.4.5 detail supported by a cited chunk."}

@@ -1,0 +1,40 @@
+{"jid": "a7c9280a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "5e5484f3", "label": "correct", "cited_support": "yes", "reason": "Names Vagrant, Ansible, GitLab or Jenkins, and Docker exactly as the reference and cited chunk do."}
+{"jid": "425c823e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference answer exists in chunk 997902."}
+{"jid": "1e77adf3", "label": "correct", "cited_support": "yes", "reason": "Gives 'no hw-module module <num> power', matching the reference command and the cited chunk."}
+{"jid": "48c9084d", "label": "correct", "cited_support": "no", "reason": "Recommends the Monitoring plugin with memory charts and per-node reports (URL omitted), but the per-node claim is only in uncited chunks 993841/993842."}
+{"jid": "e6eda935", "label": "correct", "cited_support": "yes", "reason": "States the hp-vsa driver via USB driver disk and inst.dd modprobe.blacklist=ahci on the linuxefi line, both in the cited chunks."}
+{"jid": "4b250f74", "label": "correct", "cited_support": "yes", "reason": "Says no: PR-driven deployment is GitOps, a process, while DevOps is a culture and either can exist without the other."}
+{"jid": "06195b0e", "label": "correct", "cited_support": "yes", "reason": "Gives ksh93r and above and explains the shell picks a free descriptor (>=10) instead of a hard-coded one that may be in use."}
+{"jid": "2c5b5abc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "fd97e8d1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "abadd9e1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "57978476", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "2a790fc4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the 300 up / 250 down figures exist in chunk 938346."}
+{"jid": "f2aea927", "label": "correct", "cited_support": "yes", "reason": "Gives about 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz, matching the reference and cited chunk."}
+{"jid": "3bd40834", "label": "correct", "cited_support": "yes", "reason": "Assert compiled in during development and left out of production for C; generic exception bubbling to error logging for exception languages."}
+{"jid": "7730e279", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "e8d1e25a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "bc39fdcb", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing resource-intensive plan-cache queries without a trace or XE session."}
+{"jid": "b2ea3ef0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "9b9d811d", "label": "partial", "cited_support": "yes", "reason": "Windows exploit attempt and harmless 404 are right, but the second part gives blind bot scanning instead of checking for prior compromise or provoking info-leaking errors."}
+{"jid": "02d01826", "label": "correct", "cited_support": "yes", "reason": "Says a child cannot change the parent's environment and gives the gdb attach, call putenv, detach sequence; omits the may-not-work caveat."}
+{"jid": "43b29bdd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "55a3d917", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "0596eb6e", "label": "partial", "cited_support": "yes", "reason": "Overlaps only on cached plans; omits sys.dm_exec_query_stats and steers away from the Profiler events the reference recommends."}
+{"jid": "f1c7864a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "d66c70ca", "label": "correct", "cited_support": "yes", "reason": "An aborted prior install left files behind and rpm attributes the conflict to the same package, as in the reference."}
+{"jid": "87d13412", "label": "correct", "cited_support": "yes", "reason": "Set focus stealing prevention to none under Window Management > Window Behavior, matching the reference."}
+{"jid": "39a1da6e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "2d97c571", "label": "correct", "cited_support": "yes", "reason": "On principal change inside a session, primarily at login, to prevent session fixation leading to CSRF."}
+{"jid": "34c2dd9b", "label": "correct", "cited_support": "yes", "reason": "Gives background loading by browser prefetch and antivirus and the check-the-page-renders guard, plus extras supported by cited chunks."}
+{"jid": "5b5e16ff", "label": "partial", "cited_support": "yes", "reason": "Communication benefit is right, but the habits given (write code, gain experience) omit the Single Responsibility Principle and writing tests first."}
+{"jid": "163ce6d4", "label": "correct", "cited_support": "yes", "reason": "dotnet build in the DotNetCoreCLI@2 task rather than VSBuild, as in the reference."}
+{"jid": "9738c95d", "label": "correct", "cited_support": "yes", "reason": "A perfmon alert with the Run This Program action on the Action tab, matching the reference."}
+{"jid": "76df2751", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the routing-protocol answer exists in chunk 973727."}
+{"jid": "7b304e11", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the SHA1-versus-bcrypt answer exists in chunks 856387-856388."}
+{"jid": "51f2dff4", "label": "correct", "cited_support": "yes", "reason": "To use the native stack on OSes that cannot grow stacks (non-contiguous extents), matching the reference."}
+{"jid": "42e24934", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "361d9cbd", "label": "correct", "cited_support": "yes", "reason": "Covers blocking the tracker's servers, tracking-like or tiny images, and all images, plus a supported tip on links."}
+{"jid": "f6d3b675", "label": "incorrect", "cited_support": "no", "reason": "The question has no KB answer, yet the system answered by applying an IPv6 workaround from an unrelated openssl-certificates thread."}
+{"jid": "4d344577", "label": "partial", "cited_support": "yes", "reason": "Gets the compile-time error versus silent CROSS JOIN part but omits comparing EXPLAIN plans and execution times."}

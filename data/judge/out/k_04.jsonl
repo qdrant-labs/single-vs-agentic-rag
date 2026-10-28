@@ -1,0 +1,40 @@
+{"jid": "aed8faf8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "8accbafa", "label": "correct", "cited_support": "yes", "reason": "States that letting mongod fork itself is intended and allows optimization, and nohup is for software without a fork option."}
+{"jid": "f9d800ac", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "323582f0", "label": "correct", "cited_support": "yes", "reason": "Names Vagrant, Ansible, GitLab or Jenkins, and Docker exactly as the reference does."}
+{"jid": "858b8f06", "label": "correct", "cited_support": "yes", "reason": "Gives explicit CONVERT to DECIMAL(15,6) and the max(6, s1 + p2 + 1) scale capped at 38, all stated in cited chunks."}
+{"jid": "57c16e4d", "label": "correct", "cited_support": "yes", "reason": "Says no: some telemetry uses a unique ID and some is completely anonymous, as the cited chunk states."}
+{"jid": "e9f2f858", "label": "incorrect", "cited_support": "no", "reason": "Answer is the non-answer token NOT_FINAL, which neither answers the question nor is NOT_FOUND."}
+{"jid": "507ed2b3", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "71b8c0af", "label": "correct", "cited_support": "yes", "reason": "Recommends a completely separate database per user, matching the reference and cited chunk."}
+{"jid": "208a25f8", "label": "correct", "cited_support": "yes", "reason": "Says no: DevOps is a culture, GitOps a specific process, and GitOps use does not imply DevOps culture."}
+{"jid": "20f8231c", "label": "correct", "cited_support": "no", "reason": "Key facts present, but the added claim that hex display case can differ is not stated in the cited chunks."}
+{"jid": "fd986d33", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "5bf6a477", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the configuration."}
+{"jid": "a87c5f59", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and minimal graphics; the extra 2-4GB view is accurately attributed to another cited answer."}
+{"jid": "5b5e16ff", "label": "partial", "cited_support": "yes", "reason": "Communication benefit is right, but the habits omit the Single Responsibility Principle and writing tests first."}
+{"jid": "f7e8953b", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "12b99abe", "label": "correct", "cited_support": "yes", "reason": "Covers detailed request logs, user complaints of altered data, and scripts reading cookies to impersonate users."}
+{"jid": "de2d697a", "label": "partial", "cited_support": "yes", "reason": "Explains the xargs/dirname usage message but explicitly does not give the export -f and bash -c answer."}
+{"jid": "7b517312", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "78c59d43", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "0be9f839", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the shebang."}
+{"jid": "2b57be3f", "label": "correct", "cited_support": "yes", "reason": "Names ignorespace and ignoreboth, with ignoreboth as shorthand for ignorespace plus ignoredups."}
+{"jid": "23ab526e", "label": "correct", "cited_support": "yes", "reason": "Identifies contexts as virtual ASAs with each VLAN interface assigned to its own context."}
+{"jid": "db9c4132", "label": "correct", "cited_support": "yes", "reason": "Adding another pair of disks and expanding to RAID 1+0, as the reference states."}
+{"jid": "17b2fb92", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "32cb0f03", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "9d7525fd", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "113b7269", "label": "correct", "cited_support": "yes", "reason": "Firmware goes into volatile storage on the device each power-on and the kernel loads it onto the hardware."}
+{"jid": "06ddf7c2", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "9bfa5e3f", "label": "correct", "cited_support": "yes", "reason": "bb is 10111011 so the I/G bit is 1, making it a group address."}
+{"jid": "bea95573", "label": "incorrect", "cited_support": "yes", "reason": "Gives a TTY-detachment argument from other chunks, not the reference point that the server may work before forking and optimize."}
+{"jid": "14410f0e", "label": "correct", "cited_support": "yes", "reason": "Error 3910: Transaction context in use by another session."}
+{"jid": "8a8e1c17", "label": "correct", "cited_support": "yes", "reason": "Names the MVC Mini Profiler."}
+{"jid": "ae400b0b", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "6576f2b6", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "bb8aa18e", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "0a2b51a7", "label": "correct", "cited_support": "yes", "reason": "Explains process substitution read as bash input and equates it to curl -s url | bash."}
+{"jid": "2c45783a", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "7e5554ba", "label": "not_found", "cited_support": "n/a", "reason": "No answer in the knowledge base and the system correctly answered NOT_FOUND."}
+{"jid": "5a1f440d", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions grouped by database and the session_id > 50 filter."}

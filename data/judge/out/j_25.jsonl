@@ -1,0 +1,40 @@
+{"jid": "feadfbbd", "label": "correct", "cited_support": "yes", "reason": "States refactoring as an unspoken part of every estimate and larger changes on a separate branch, both answered in the cited chunks."}
+{"jid": "b3dcd3ab", "label": "correct", "cited_support": "yes", "reason": "Names the Monitoring plugin charting memory with per-node reports; the Groovy console tip is harmless extra from the cited text."}
+{"jid": "1c70c47c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "55a6b773", "label": "correct", "cited_support": "yes", "reason": "Says no, blacklist with false sense of security, and gives the admin's code review plus logs, analysis, reporting and IDS/IPS policy, all in cited chunks."}
+{"jid": "c4922208", "label": "correct", "cited_support": "yes", "reason": "Gives the LATERAL JOIN from the smaller sessionlatest table on session_id and update_id with LIMIT 500, as the cited chunks show."}
+{"jid": "45ac4406", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "550f77b9", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table and calls separate id-and-name tables overkill, supported by the cited chunks."}
+{"jid": "87092b44", "label": "correct", "cited_support": "yes", "reason": "Says no because containers share the host kernel and a virtual machine is needed, which the cited chunks state."}
+{"jid": "f0db71c1", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "7a2df184", "label": "correct", "cited_support": "yes", "reason": "Gives ESC [ c for device attributes and ESC [ 5 n replied as ESC [ 0 n bound with bash bind, all in cited chunks."}
+{"jid": "77e2d9eb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "781d3538", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f3f65069", "label": "partial", "cited_support": "yes", "reason": "Captures interface as a client-facing API or contract but misses the reference's application to web APIs and Internet protocols."}
+{"jid": "407a1ea0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "220e5ef2", "label": "correct", "cited_support": "yes", "reason": "Names nfdump+nfsen on Linux and ntop on Windows with the 1000-packet build limit, as the cited chunks state."}
+{"jid": "97c3b35b", "label": "partial", "cited_support": "yes", "reason": "Gets the compile error versus silent CROSS JOIN but says to compare only execution plans, omitting execution times."}
+{"jid": "b06a7cea", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "298e4b3b", "label": "partial", "cited_support": "yes", "reason": "Both my.cnf settings are right, but the cleanup omits deleting all database folders except the mysql schema."}
+{"jid": "5ec2e673", "label": "correct", "cited_support": "yes", "reason": "Matches the reference: arithmetic coercion allowed as the alternative is too annoying, 1 + \"1\" ambiguous, as the cited chunk says."}
+{"jid": "8a8e1c17", "label": "correct", "cited_support": "yes", "reason": "Names the MVC Mini Profiler, stated in the cited chunk."}
+{"jid": "5098a228", "label": "correct", "cited_support": "yes", "reason": "Easy to implement and debug with the version clearly visible, as the cited chunk states."}
+{"jid": "4c398e00", "label": "correct", "cited_support": "yes", "reason": "Loopback Adapter virtual network with its own DHCP scope, dual-homing the box, as in the cited chunks."}
+{"jid": "f7121d46", "label": "correct", "cited_support": "yes", "reason": "Includes the Monitoring plugin reporting memory per node; the Groovy console tip is harmless extra from the cited text."}
+{"jid": "0617f968", "label": "correct", "cited_support": "yes", "reason": "Gives grep io_uring_setup /proc/kallsyms and the sys_ prefix, supported by the cited grep and sed sys_ listing."}
+{"jid": "5cf8e7af", "label": "correct", "cited_support": "yes", "reason": "Function piping READLINE_LINE to xsel -ib bound with bind -x to \\eW under a DISPLAY check, as in the cited chunk."}
+{"jid": "c3fd9b05", "label": "partial", "cited_support": "yes", "reason": "Names a stig-fix hardening project but misses RedHatGov and the script that builds a compliant RHEL 6.4 ISO."}
+{"jid": "27d8c5ab", "label": "correct", "cited_support": "yes", "reason": "Distinguishes nscd caching from sssd auth and advises not running both except nscd for hosts only, as cited."}
+{"jid": "9950b727", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "e263095b", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "28fd32f3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "dcd2d2ed", "label": "correct", "cited_support": "yes", "reason": "Recommends mirroring with 3 servers, one small free one, as the cited chunk states."}
+{"jid": "4cf1c705", "label": "partial", "cited_support": "no", "reason": "Zero-knowledge part is right, but it never says Google uses server-side encryption and presents a WhatsApp-held key that the cited text calls only theoretical."}
+{"jid": "0cff666f", "label": "correct", "cited_support": "yes", "reason": "Windows exploit attempt, 404 means the vulnerable page is absent, and probes check compromise or provoke revealing errors, all cited."}
+{"jid": "63bb0368", "label": "correct", "cited_support": "yes", "reason": "Perfmon alert with Run This Program on the Action tab and the full path, as the cited chunks state."}
+{"jid": "015f4f9b", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}
+{"jid": "56486313", "label": "correct", "cited_support": "yes", "reason": "Says no: GitOps is a specific technique and DevOps a culture, and one can exist without the other, as cited."}
+{"jid": "bac5f6bd", "label": "correct", "cited_support": "yes", "reason": "Says a newer-version database cannot be attached to an older version regardless of compatibility level, supported by the cited chunk."}
+{"jid": "f5f57352", "label": "correct", "cited_support": "yes", "reason": "Gives ignorespace and ignoreboth (ignorespace plus ignoredups), as the cited chunks state."}
+{"jid": "b9ca1eb5", "label": "correct", "cited_support": "yes", "reason": "Gives the LATERAL JOIN from sessionlatest on session_id and update_id ordered by session_id with LIMIT 500, as cited."}
+{"jid": "412e5a46", "label": "not_found", "cited_support": "n/a", "reason": "System correctly answered NOT_FOUND for a question with no answer in the knowledge base."}

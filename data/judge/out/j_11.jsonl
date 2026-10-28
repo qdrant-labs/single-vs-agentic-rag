@@ -1,0 +1,40 @@
+{"jid": "edb4d776", "label": "correct", "cited_support": "yes", "reason": "Names nfdump+nfsen on Linux and ntop on Windows with the 1000-packet build limit requiring recompilation, as cited."}
+{"jid": "40a07fc1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5353672c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3ecd8fc0", "label": "correct", "cited_support": "yes", "reason": "States -annotate with %t and -gravity north-east for the corner, all in the cited chunks."}
+{"jid": "0395d41e", "label": "partial", "cited_support": "yes", "reason": "SQL Server 2008 is right, but it says DAC can recover access while the reference says DAC still requires credentials; cited chunks do state its claims."}
+{"jid": "f0e8f61e", "label": "partial", "cited_support": "yes", "reason": "Shebang decides the interpreter is right, but it proposes #!/bin/false instead of the reference's #! /bin/echo Please-source notice; cited chunks support the /bin/false trick and shebang mechanism."}
+{"jid": "2f203db0", "label": "correct", "cited_support": "yes", "reason": "Chrooted environment per the Media Temple noexec /tmp guide, as in the cited chunk."}
+{"jid": "818f1e21", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "0561076f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "1746fb58", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "7a900ae7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "6be16447", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "c1f4d44b", "label": "correct", "cited_support": "yes", "reason": "Names ignorespace and ignoreboth (ignorespace plus ignoredups), as in the cited man page text."}
+{"jid": "fd986d33", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "9501694d", "label": "correct", "cited_support": "yes", "reason": "Yes in v7.4 and enabling LAG requires a reboot, both cited; the 7.2 release-notes aside is not in the cited text but is harmless."}
+{"jid": "13808c65", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "aba5e027", "label": "correct", "cited_support": "yes", "reason": "Token lives in the text declaring the function and XSS can read it via XHR, as cited."}
+{"jid": "63a2ff06", "label": "correct", "cited_support": "yes", "reason": "Length extension lets the attacker compute h(P+B) from h(P) already, as cited."}
+{"jid": "c7eeb49d", "label": "partial", "cited_support": "yes", "reason": "Gives the device mapper 512-multiple constraint but not the find/sort/xargs cat method for ARG_MAX."}
+{"jid": "d7c229a7", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor, as in the cited chunk."}
+{"jid": "b5bc04a7", "label": "correct", "cited_support": "yes", "reason": "Easy to implement and debug and the version is clearly visible, as cited."}
+{"jid": "795bf8e6", "label": "correct", "cited_support": "yes", "reason": "Function piping printf %s \"$READLINE_LINE\" to xsel -ib bound with bind -x to \\eW, as cited; omits only the $DISPLAY guard detail."}
+{"jid": "18970955", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "7e16883e", "label": "correct", "cited_support": "yes", "reason": "Create an 8.0.15 instance then minor-upgrade with a reboot; the extra AWS support option is also in a cited chunk."}
+{"jid": "994c91fd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "10744504", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "79ce4c7b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "4a5bf6a0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}
+{"jid": "f0e1357e", "label": "partial", "cited_support": "yes", "reason": "Says the reply goes to the client's MAC address but omits the yiaddr IP destination part of the reference."}
+{"jid": "01e87e13", "label": "correct", "cited_support": "yes", "reason": "Swap must be initialized at boot and filesystem changes while hibernated corrupt the hibernated system, supported by cited chunks."}
+{"jid": "b19f5756", "label": "correct", "cited_support": "yes", "reason": "Code bomb, a patch too large for anyone to review, as cited."}
+{"jid": "92d12498", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "401202f2", "label": "correct", "cited_support": "yes", "reason": "Swap initialized at each boot and filesystem changes corrupt the hibernated system's state, as in cited chunks."}
+{"jid": "fb177423", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "a8ce9f61", "label": "correct", "cited_support": "yes", "reason": "Mirroring with 3 servers, one small free tiebreaker, and clustering/VMware leave a weak point, as cited."}
+{"jid": "87870f74", "label": "correct", "cited_support": "yes", "reason": "Must copy the whole Execute(String parameter) method and change one case, as cited."}
+{"jid": "3bd48d07", "label": "partial", "cited_support": "yes", "reason": "Explains xargs running dirname with no arguments but omits export -f with bash -c for the function part."}
+{"jid": "7d31d1af", "label": "correct", "cited_support": "yes", "reason": "Deterministic for the same bytes but string-to-byte encoding differences change the hash; BOM/normalization examples are not in the cited chunks but the core claim is."}
+{"jid": "eaabe980", "label": "correct", "cited_support": "yes", "reason": "Artifact repository; Nexus and Artifactory both have free open source versions, as cited."}
+{"jid": "82cf04a6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for a no-answer question."}

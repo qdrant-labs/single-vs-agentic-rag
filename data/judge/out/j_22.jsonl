@@ -1,0 +1,40 @@
+{"jid": "10d489b7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "23b39e0c", "label": "partial", "cited_support": "yes", "reason": "Total pipeline matches, but it gives du -sh -- * (files and directories) instead of du -sh -- */ for directories only."}
+{"jid": "5633530b", "label": "partial", "cited_support": "yes", "reason": "Gives GLOBIGNORE and the .??* meaning but omits unsetting dotglob with shopt -u dotglob."}
+{"jid": "3e9d8fed", "label": "correct", "cited_support": "yes", "reason": "States it cannot go back to an older version even with the same compatibility level."}
+{"jid": "d3a4a291", "label": "correct", "cited_support": "yes", "reason": "Gives docker.io/library/<image>:<tag> with the library namespace and tag."}
+{"jid": "8dab1838", "label": "correct", "cited_support": "yes", "reason": "Users, local-permissions and global-permissions tables with a string permission column."}
+{"jid": "9bc11b62", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "7993d605", "label": "correct", "cited_support": "yes", "reason": "Aborted prior install left files; rpm refuses and attributes the conflict to the same package."}
+{"jid": "3ec54335", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "68751098", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "899326bc", "label": "correct", "cited_support": "yes", "reason": "All steps present: advanced BWM, WAN with speed, per-IP object, any->any rule ingress and egress."}
+{"jid": "ff5e9121", "label": "correct", "cited_support": "yes", "reason": "Implicit bridge rule dropping fragmented packets, disabled under System > Advanced > Firewall/NAT."}
+{"jid": "6fcc4b0e", "label": "correct", "cited_support": "yes", "reason": "Identifies atomic units, the smallest group of steps run on their own, each as its own job."}
+{"jid": "df4686f2", "label": "correct", "cited_support": "yes", "reason": "Must copy the whole Execute(String parameter) method and change the one case statement."}
+{"jid": "bd9ae104", "label": "partial", "cited_support": "yes", "reason": "Gives ksh93r and the shell picking a free fd >= 10, but frames the avoided problem only as the single-digit limit, not having to pick a number and hope it is unused."}
+{"jid": "80fc0fab", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "35ca1902", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "4048d8fa", "label": "correct", "cited_support": "yes", "reason": "Debian base forces replacing almost every Ubuntu package, leaving a broken mostly-Debian install."}
+{"jid": "9ea59cf7", "label": "incorrect", "cited_support": "yes", "reason": "The knowledge base has no answer but the system answered; the cited chunks do describe the nmap DHCP discovery it proposed."}
+{"jid": "7666e052", "label": "partial", "cited_support": "yes", "reason": "Gives refactoring as an unspoken part of estimates but not small iterative changes on a separate branch."}
+{"jid": "c9f35c6b", "label": "correct", "cited_support": "yes", "reason": "LZF default with Snappy later, experimental in 0.19.9."}
+{"jid": "328ac3f6", "label": "correct", "cited_support": "yes", "reason": "6000 iterations by default and encrypting the cloud copy with a separate key so two compromises are needed."}
+{"jid": "8b459585", "label": "correct", "cited_support": "yes", "reason": "Data builds up until distribution restarts and a long delay can fill the transaction log space."}
+{"jid": "715d2f44", "label": "correct", "cited_support": "yes", "reason": "LZF default with Snappy planned later; the 0.19.9 detail is parenthetical."}
+{"jid": "69d99814", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "a16a20bc", "label": "partial", "cited_support": "yes", "reason": "Gives the MAC (layer-2) destination but omits the offered address yiaddr as the IP destination."}
+{"jid": "208a25f8", "label": "correct", "cited_support": "yes", "reason": "No: GitOps is a specific process, DevOps a culture, and either can exist without the other."}
+{"jid": "dd171804", "label": "partial", "cited_support": "yes", "reason": "Mentions Profiler but for Replay/Tuning Advisor, and misses sys.dm_exec_query_stats and elapsed-time/cached-plan events."}
+{"jid": "23ff8d3b", "label": "correct", "cited_support": "yes", "reason": "Security contexts as virtual ASAs with each VLAN interface assigned to a context."}
+{"jid": "397a4e35", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "b22468b5", "label": "correct", "cited_support": "yes", "reason": "Distinguishes nscd caching from sssd auth, says not to run both, and nscd only for hosts if needed."}
+{"jid": "3273ea3e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "7f248eee", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "7392c022", "label": "correct", "cited_support": "yes", "reason": "Names CRIME, targeting cookies through compression of headers."}
+{"jid": "1ac7fab5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "acff6864", "label": "correct", "cited_support": "yes", "reason": "No, it is only a blacklist patch; the admin preferred code review, logs, analysis, reporting and IDS/IPS."}
+{"jid": "0a9e7364", "label": "correct", "cited_support": "yes", "reason": "sys.dm_exec_sessions counted per database with session_id > 50."}
+{"jid": "4446e972", "label": "correct", "cited_support": "yes", "reason": "Protected main, required PRs, PR templates with checklists, approvals via GitHub teams."}
+{"jid": "7ebd1f57", "label": "correct", "cited_support": "yes", "reason": "Aborted prior install left files; rpm refuses and reports the conflict against the same package."}
+{"jid": "5895f94e", "label": "correct", "cited_support": "yes", "reason": "Debian base forces replacing almost every Ubuntu package, leaving a broken mostly-Debian install."}

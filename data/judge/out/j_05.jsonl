@@ -1,0 +1,40 @@
+{"jid": "7e6d6749", "label": "partial", "cited_support": "yes", "reason": "Names PrivateTmp=yes but says it cannot tell how to override it without editing the unit, missing the systemctl edit drop-in part."}
+{"jid": "d4f4ad5f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "53aaa71b", "label": "correct", "cited_support": "yes", "reason": "States Windows exploit attempt, 404 means vulnerable file absent so no damage, and probes check for compromise or provoke info-leaking errors."}
+{"jid": "0b8e392d", "label": "correct", "cited_support": "yes", "reason": "Gives MAKEDEV tty/pty and sudo update-initramfs -c -k $(uname -r) as in the reference."}
+{"jid": "bd7cb85c", "label": "partial", "cited_support": "yes", "reason": "Covers re-encrypting only a password-wrapped random key but omits the 384-bit PBKDF2 split into K1/K2/K3."}
+{"jid": "518843c1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "ae89aedd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "23b5eacd", "label": "partial", "cited_support": "yes", "reason": "Correctly says ~/.profile but never names csh and tcsh as the shells that do not read it."}
+{"jid": "dce46d79", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "eb5c132d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "736f70e5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "13c67d70", "label": "correct", "cited_support": "yes", "reason": "Identifies the GDI(+) image vulnerability and explains content-sniffing of fake_image.jpg as HTML leading to XSS."}
+{"jid": "5b1271b4", "label": "correct", "cited_support": "yes", "reason": "Says yes, all log entries including the finally block were written when the site was stopped mid-request."}
+{"jid": "30fb7a62", "label": "correct", "cited_support": "yes", "reason": "States tr lacks multi-byte support and Perl needs use utf8/-Mutf8 because -C only covers IO."}
+{"jid": "01e22cee", "label": "correct", "cited_support": "yes", "reason": "Recommends a completely separate database per user."}
+{"jid": "f3739458", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "993ddae6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d5dcf59a", "label": "correct", "cited_support": "yes", "reason": "Gives the aborted previous install leaving files behind, making rpm report a self-conflict."}
+{"jid": "4439ffd0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "59bbf5df", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "9331cde6", "label": "correct", "cited_support": "yes", "reason": "Says keep a single table since address/church tables add no value without more data about them."}
+{"jid": "dc301825", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5c39f3e1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "7da3d2dd", "label": "correct", "cited_support": "yes", "reason": "Says built-in CRUD hurts unit testing and IDatabaseService should be injected via each data access class constructor."}
+{"jid": "33367817", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge part is right, but it gives WhatsApp's AES-GCM-256 instead of Google's server-side encryption that Google can decrypt."}
+{"jid": "24083c55", "label": "correct", "cited_support": "yes", "reason": "Explains bb is 10111011 so the I/G bit is 1, making it a group address."}
+{"jid": "95edf94d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "7b6cb29f", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module <num> power in global config."}
+{"jid": "ebfebb81", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "b61a5ee5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d96ed697", "label": "correct", "cited_support": "yes", "reason": "Names the GDI+ image bug and explains content-sniffed fake_image.jpg rendering as HTML for XSS."}
+{"jid": "a721dff4", "label": "correct", "cited_support": "yes", "reason": "Says no, containers share the host kernel so hardware virtualization like VirtualBox/VMware/Xen/KVM is needed."}
+{"jid": "3b930878", "label": "partial", "cited_support": "yes", "reason": "Ownership chaining part is right, but the data requirement covers only referential integrity and omits transactional consistency."}
+{"jid": "e9c81e36", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "0fe60970", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "71b41237", "label": "correct", "cited_support": "yes", "reason": "Recommends mirroring with three servers, one a small free tiebreaker, and notes clustering/VMware weak point."}
+{"jid": "bdcd15e8", "label": "correct", "cited_support": "yes", "reason": "Says dotnet build in DotNetCoreCLI@2, not VSBuild."}
+{"jid": "2521de87", "label": "correct", "cited_support": "yes", "reason": "Says the code stays valid and can be cloned, fix by regenerating via turning 2FA off and on."}
+{"jid": "9d60edb2", "label": "correct", "cited_support": "yes", "reason": "Explains the reply to the client's random port is not permitted by the outbound ACL so the router drops it."}
+{"jid": "cf130078", "label": "correct", "cited_support": "yes", "reason": "Gives users, local-permissions and global-permissions tables with a string permission column."}

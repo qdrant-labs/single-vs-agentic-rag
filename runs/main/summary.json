@@ -1,0 +1,526 @@
+{
+ "definitions": "Combine runs, judge labels, transcripts and latency estimates into the comparison report.\n\n    python -I scripts/latency.py && python -I scripts/analyze.py\n    # writes runs/main/report.md and runs/main/summary.json\n\nDefinitions (fixed before results were read):\n- answerable types: correct = judge \"correct\"; unsupported = \"incorrect\" or \"partial\";\n  missed = NOT_FOUND (including an exhausted search budget)\n- unanswerable: correct refusal = NOT_FOUND; unsupported = any answer\n- per question and pipeline, a trial-majority label is used for paired McNemar tests\n- latency: Qdrant per call (exact, server-side); per-question latency = model time + Qdrant time\n  rebuilt from transcripts (scripts/latency.py), because batch sub-agents worked on several\n  questions at once and their wall clock overlaps\n- tokens per question: each batch sub-agent's total tokens divided by its questions (inflated by\n  batching), and the retrieved text each run put in front of the model (per question, exact)\nAdded after the runs, as descriptive extras: evidence retrieval (were the reference chunks shown),\ncited-support rate, judge agreement (kappa), trial consistency, and two sensitivity checks.\n",
+ "pipelines": {
+  "single": {
+   "straightforward": {
+    "runs": 150,
+    "correct": 147,
+    "unsupported": 3,
+    "label_correct": 147,
+    "label_partial": 3,
+    "per_trial": [
+     {
+      "correct": 49,
+      "unsupported": 1
+     },
+     {
+      "correct": 49,
+      "unsupported": 1
+     },
+     {
+      "correct": 49,
+      "unsupported": 1
+     }
+    ]
+   },
+   "semantic": {
+    "runs": 150,
+    "missed": 59,
+    "correct": 71,
+    "unsupported": 20,
+    "label_not_found": 59,
+    "label_correct": 71,
+    "label_incorrect": 8,
+    "label_partial": 12,
+    "per_trial": [
+     {
+      "missed": 19,
+      "correct": 24,
+      "unsupported": 7
+     },
+     {
+      "correct": 23,
+      "missed": 21,
+      "unsupported": 6
+     },
+     {
+      "correct": 24,
+      "missed": 19,
+      "unsupported": 7
+     }
+    ]
+   },
+   "multi": {
+    "runs": 150,
+    "unsupported": 44,
+    "missed": 72,
+    "correct": 34,
+    "label_partial": 44,
+    "label_not_found": 72,
+    "label_correct": 34,
+    "per_trial": [
+     {
+      "unsupported": 17,
+      "missed": 22,
+      "correct": 11
+     },
+     {
+      "missed": 26,
+      "unsupported": 13,
+      "correct": 11
+     },
+     {
+      "missed": 24,
+      "correct": 12,
+      "unsupported": 14
+     }
+    ]
+   },
+   "unanswerable": {
+    "runs": 150,
+    "correct_refusal": 150,
+    "label_not_found": 150,
+    "per_trial": [
+     {
+      "correct_refusal": 50
+     },
+     {
+      "correct_refusal": 50
+     },
+     {
+      "correct_refusal": 50
+     }
+    ]
+   },
+   "answerable": {
+    "missed": 131,
+    "correct": 252,
+    "unsupported": 67
+   }
+  },
+  "agentic": {
+   "straightforward": {
+    "runs": 150,
+    "correct": 145,
+    "unsupported": 5,
+    "label_correct": 145,
+    "label_partial": 5,
+    "per_trial": [
+     {
+      "correct": 48,
+      "unsupported": 2
+     },
+     {
+      "correct": 48,
+      "unsupported": 2
+     },
+     {
+      "correct": 49,
+      "unsupported": 1
+     }
+    ]
+   },
+   "semantic": {
+    "runs": 150,
+    "correct": 138,
+    "unsupported": 9,
+    "missed": 3,
+    "label_correct": 138,
+    "label_partial": 6,
+    "label_incorrect": 3,
+    "label_not_found": 3,
+    "per_trial": [
+     {
+      "correct": 47,
+      "unsupported": 3
+     },
+     {
+      "correct": 45,
+      "missed": 2,
+      "unsupported": 3
+     },
+     {
+      "correct": 46,
+      "unsupported": 3,
+      "missed": 1
+     }
+    ]
+   },
+   "multi": {
+    "runs": 150,
+    "correct": 104,
+    "unsupported": 35,
+    "missed": 11,
+    "label_correct": 104,
+    "label_partial": 34,
+    "label_not_found": 11,
+    "label_incorrect": 1,
+    "per_trial": [
+     {
+      "correct": 34,
+      "unsupported": 13,
+      "missed": 3
+     },
+     {
+      "correct": 34,
+      "unsupported": 10,
+      "missed": 6
+     },
+     {
+      "correct": 36,
+      "unsupported": 12,
+      "missed": 2
+     }
+    ]
+   },
+   "unanswerable": {
+    "runs": 150,
+    "correct_refusal": 147,
+    "unsupported": 3,
+    "label_not_found": 147,
+    "label_incorrect": 3,
+    "per_trial": [
+     {
+      "correct_refusal": 50
+     },
+     {
+      "correct_refusal": 48,
+      "unsupported": 2
+     },
+     {
+      "correct_refusal": 49,
+      "unsupported": 1
+     }
+    ]
+   },
+   "answerable": {
+    "correct": 387,
+    "unsupported": 49,
+    "missed": 14
+   }
+  }
+ },
+ "paired": {
+  "straightforward": {
+   "n": 50,
+   "single": 49,
+   "agentic": 49,
+   "only_single": 0,
+   "only_agentic": 0,
+   "p": 1.0
+  },
+  "semantic": {
+   "n": 50,
+   "single": 24,
+   "agentic": 47,
+   "only_single": 0,
+   "only_agentic": 23,
+   "p": 2.384185791015625e-07
+  },
+  "multi": {
+   "n": 50,
+   "single": 11,
+   "agentic": 37,
+   "only_single": 2,
+   "only_agentic": 28,
+   "p": 8.67992639541626e-07
+  },
+  "unanswerable": {
+   "n": 50,
+   "single": 50,
+   "agentic": 50,
+   "only_single": 0,
+   "only_agentic": 0,
+   "p": 1.0
+  },
+  "answerable": {
+   "n": 150,
+   "single": 84,
+   "agentic": 133,
+   "only_single": 2,
+   "only_agentic": 51,
+   "p": 3.1796787425264483e-13
+  }
+ },
+ "evidence": {
+  "straightforward/single": {
+   "shown": {
+    "all": 141,
+    "none": 3,
+    "some": 6
+   },
+   "correct_given": {
+    "all": [
+     141,
+     141
+    ],
+    "none": [
+     0,
+     3
+    ]
+   }
+  },
+  "straightforward/agentic": {
+   "shown": {
+    "all": 139,
+    "some": 8,
+    "none": 3
+   },
+   "correct_given": {
+    "all": [
+     137,
+     139
+    ],
+    "none": [
+     0,
+     3
+    ]
+   }
+  },
+  "semantic/single": {
+   "shown": {
+    "none": 84,
+    "all": 48,
+    "some": 18
+   },
+   "correct_given": {
+    "all": [
+     48,
+     48
+    ],
+    "none": [
+     12,
+     84
+    ]
+   }
+  },
+  "semantic/agentic": {
+   "shown": {
+    "all": 116,
+    "none": 20,
+    "some": 14
+   },
+   "correct_given": {
+    "all": [
+     115,
+     116
+    ],
+    "none": [
+     11,
+     20
+    ]
+   }
+  },
+  "multi/single": {
+   "shown": {
+    "some": 81,
+    "all": 21,
+    "none": 48
+   },
+   "correct_given": {
+    "all": [
+     21,
+     21
+    ],
+    "none": [
+     3,
+     48
+    ]
+   }
+  },
+  "multi/agentic": {
+   "shown": {
+    "some": 75,
+    "none": 18,
+    "all": 57
+   },
+   "correct_given": {
+    "all": [
+     53,
+     57
+    ],
+    "none": [
+     6,
+     18
+    ]
+   }
+  }
+ },
+ "pairs_by_single_evidence": {
+  "miss|missed|correct": 72,
+  "hit|correct|correct": 225,
+  "hit|unsupported|unsupported": 11,
+  "miss|unsupported|correct": 19,
+  "miss|correct|correct": 15,
+  "hit|missed|correct": 30,
+  "hit|unsupported|correct": 26,
+  "hit|correct|unsupported": 11,
+  "hit|missed|unsupported": 9,
+  "miss|missed|unsupported": 9,
+  "miss|missed|missed": 9,
+  "miss|unsupported|unsupported": 9,
+  "miss|unsupported|missed": 2,
+  "hit|missed|missed": 2,
+  "hit|correct|missed": 1
+ },
+ "cost": {
+  "single": {
+   "retrieval calls per question (mean)": 1,
+   "retrieval calls per question (p95)": 1,
+   "searches / opens per question (mean)": [
+    1,
+    0
+   ],
+   "runs closed by the 6-call budget": 0,
+   "sequential model rounds per question (mean / p95)": [
+    1.9866666666666666,
+    2
+   ],
+   "retrieved context tokens per question (mean / p95)": [
+    996.82625,
+    1147.0
+   ],
+   "sub-agent tokens per question, in / out (batched, inflated)": [
+    62435.21666666667,
+    462.20166666666665
+   ],
+   "Qdrant ms per query (p50 / p95)": [
+    71.28830000874586,
+    173.4025999903679
+   ],
+   "Qdrant ms per question (p50 / p95)": [
+    71.28830000874586,
+    173.4025999903679
+   ],
+   "latency s, model + Qdrant, shared-turn split (p50 / p95)": [
+    3.0957321359601337,
+    6.907787747419206
+   ],
+   "latency s, model + Qdrant, full-turn charge (p50 / p95)": [
+    14.511183097289177,
+    39.62495167329325
+   ],
+   "wall clock s incl. Claude Code tool overhead (p50 / p95)": [
+    16.364999890327454,
+    52.414500176906586
+   ]
+  },
+  "agentic": {
+   "retrieval calls per question (mean)": 2.973333333333333,
+   "retrieval calls per question (p95)": 6,
+   "searches / opens per question (mean)": [
+    2.5533333333333332,
+    0.42
+   ],
+   "runs closed by the 6-call budget": 10,
+   "sequential model rounds per question (mean / p95)": [
+    3.973333333333333,
+    7
+   ],
+   "retrieved context tokens per question (mean / p95)": [
+    2736.91,
+    6119.5
+   ],
+   "sub-agent tokens per question, in / out (batched, inflated)": [
+    146683.765,
+    1038.3416666666667
+   ],
+   "Qdrant ms per query (p50 / p95)": [
+    87.86270002019592,
+    171.53029999462888
+   ],
+   "Qdrant ms per question (p50 / p95)": [
+    187.36040001385845,
+    666.7408999928739
+   ],
+   "latency s, model + Qdrant, shared-turn split (p50 / p95)": [
+    4.86958727817234,
+    20.540834402869223
+   ],
+   "latency s, model + Qdrant, full-turn charge (p50 / p95)": [
+    18.66880066867452,
+    75.69730421874556
+   ],
+   "wall clock s incl. Claude Code tool overhead (p50 / p95)": [
+    28.703999876976013,
+    96.20141700903574
+   ]
+  }
+ },
+ "cost_by_type": {
+  "straightforward": {
+   "agentic_calls": 1.12,
+   "agentic_lat": [
+    2.782240816003953,
+    5.225530534196878
+   ],
+   "single_lat": [
+    2.868524707388133,
+    5.1021062109794
+   ],
+   "agentic_ret_tok": 1055.8083333333334
+  },
+  "semantic": {
+   "agentic_calls": 1.6933333333333334,
+   "agentic_lat": [
+    3.3801883808046114,
+    9.868001505470602
+   ],
+   "single_lat": [
+    3.020141666609561,
+    6.938731240777997
+   ],
+   "agentic_ret_tok": 1620.2416666666666
+  },
+  "multi": {
+   "agentic_calls": 3.1533333333333333,
+   "agentic_lat": [
+    6.433339953055838,
+    23.941797866631532
+   ],
+   "single_lat": [
+    3.538162839919096,
+    7.2061493581859395
+   ],
+   "agentic_ret_tok": 2788.2616666666668
+  },
+  "unanswerable": {
+   "agentic_calls": 5.926666666666667,
+   "agentic_lat": [
+    15.192587153898787,
+    24.22481577716812
+   ],
+   "single_lat": [
+    2.934280507877702,
+    6.113291416084394
+   ],
+   "agentic_ret_tok": 5483.328333333333
+  }
+ },
+ "judges": {
+  "n": 240,
+  "exact": 0.9958333333333333,
+  "kappa": 0.9929507137402338,
+  "binary_correct_agreement": 0.9958333333333333,
+  "answered_items": 145,
+  "answered_exact": 0.993103448275862,
+  "answered_kappa": 0.9776785714285714,
+  "confusion": {
+   "correct->partial": 1
+  }
+ },
+ "trial_consistency": {
+  "single": 0.91,
+  "agentic": 0.84
+ },
+ "cited_support": {
+  "single": {
+   "yes": 313,
+   "no": 6
+  },
+  "agentic": {
+   "yes": 427,
+   "no": 12
+  }
+ }
+}

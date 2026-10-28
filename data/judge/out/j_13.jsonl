@@ -1,0 +1,40 @@
+{"jid": "242bb1a7", "label": "correct", "cited_support": "yes", "reason": "Names the CRIME attack targeting HTTP cookies via header compression, matching the reference."}
+{"jid": "1444428a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "2bfdb2c1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "f4c7b03c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "9632b0ab", "label": "correct", "cited_support": "yes", "reason": "States bb is 10111011 with I/G bit 1, making it a group address, as in the reference."}
+{"jid": "bc1a3512", "label": "correct", "cited_support": "yes", "reason": "Recommends the Monitoring plugin that charts memory; the extra Script Console workaround is from a cited chunk."}
+{"jid": "8009f055", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "1ff6d501", "label": "correct", "cited_support": "yes", "reason": "Token sits in the text declaring the function and an XSS payload can read it via XHR, matching the reference."}
+{"jid": "2fa39100", "label": "correct", "cited_support": "yes", "reason": "Lists all three blocking options from the reference; extra link advice is in a cited chunk."}
+{"jid": "9d7525fd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "d96cfef8", "label": "correct", "cited_support": "yes", "reason": "Rows vs columns and a stable schema as languages change, matching the reference."}
+{"jid": "a47d505f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference answer exists (focus stealing prevention to none)."}
+{"jid": "8bd2ceea", "label": "correct", "cited_support": "yes", "reason": "Gives tcp mss, the reference command."}
+{"jid": "f4471feb", "label": "correct", "cited_support": "yes", "reason": "Add an add_ssh_keys step with the key fingerprint from the UI, matching the reference."}
+{"jid": "f3dacbd7", "label": "correct", "cited_support": "yes", "reason": "Lists all four practices: protected main, required PRs, PR templates with checklists, approvals via GitHub teams."}
+{"jid": "24abfdc1", "label": "correct", "cited_support": "yes", "reason": "Gives the 8.0.15 instance plus minor upgrade workaround; AWS support alternative is in a cited chunk."}
+{"jid": "e8d883cb", "label": "correct", "cited_support": "yes", "reason": "Launch, stop, attach root EBS volume to another instance, copy key; alternative method is in cited chunks."}
+{"jid": "d8f8a87c", "label": "correct", "cited_support": "yes", "reason": "States bb is 10111011 with I/G bit 1, making it a group address, as in the reference."}
+{"jid": "a0d7b22b", "label": "correct", "cited_support": "yes", "reason": "Separate CASE per column/direction keyed on a parameter, and datatype precedence conversion requiring a CASE per type."}
+{"jid": "3db6f657", "label": "correct", "cited_support": "yes", "reason": "Token is in the text declaring the function and XSS can read it via XHR, matching the reference."}
+{"jid": "d40ed44f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "18b8ec48", "label": "correct", "cited_support": "yes", "reason": "Gives about 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz, matching the reference."}
+{"jid": "77ddc150", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "ef440fca", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module <num> power in global config, matching the reference."}
+{"jid": "26d9d6d7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference answer exists (GET, avoid caching metadata)."}
+{"jid": "022a3d8e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; the question has no answer in the knowledge base."}
+{"jid": "088c8f94", "label": "correct", "cited_support": "yes", "reason": "Identifies the -f option that flushes per file, with slower output and lower IO load."}
+{"jid": "4c841345", "label": "correct", "cited_support": "yes", "reason": "Covers all reference steps; the extra App Rule mapping is in a cited chunk."}
+{"jid": "26871d13", "label": "correct", "cited_support": "yes", "reason": "Same password unlocked the outer volume, which was formatted instead of the hidden one, matching the reference."}
+{"jid": "c9f9f09c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference answer exists (~/.profile; csh and tcsh)."}
+{"jid": "83282720", "label": "correct", "cited_support": "yes", "reason": "Not safe since the code stays valid and can be cloned; regenerate by toggling 2FA off and on."}
+{"jid": "043d4b16", "label": "correct", "cited_support": "yes", "reason": "--help to stdout for piping, invalid-option usage to stderr, matching the reference."}
+{"jid": "2b985a82", "label": "correct", "cited_support": "yes", "reason": "Kernel-entry-heavy workloads hit hardest because each entry forces a page-table address-space switch; same fact without the database/hypervisor examples."}
+{"jid": "84e849d7", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the overview source, matching the reference."}
+{"jid": "c3c44a03", "label": "correct", "cited_support": "yes", "reason": "Gives systemd-run --scope --user [command], matching the reference."}
+{"jid": "ac048307", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the reference answer exists (/usr/local; pins 900 and 200)."}
+{"jid": "23bcaec1", "label": "correct", "cited_support": "yes", "reason": "Gives --backup with --backup-dir and the find -exec rm ../new/{} command, covering both parts."}
+{"jid": "943ac95b", "label": "partial", "cited_support": "yes", "reason": "LVM filter/scan exclusion is right, but it says to monitor the overlay file instead of using dmsetup status."}
+{"jid": "218e63ef", "label": "correct", "cited_support": "yes", "reason": "Rows vs altering columns as languages change, matching the reference; extras are from cited chunks."}
+{"jid": "23ab526e", "label": "correct", "cited_support": "yes", "reason": "Security contexts as virtual ASAs with each VLAN interface assigned to a context, matching the reference."}

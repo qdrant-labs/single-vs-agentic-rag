@@ -1,0 +1,40 @@
+{"jid": "f98b3f58", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "2ed28071", "label": "correct", "cited_support": "yes", "reason": "States that the reply to the client's random source port is not permitted by the outbound ACL and is dropped, as the cited chunks say."}
+{"jid": "01618f1d", "label": "correct", "cited_support": "yes", "reason": "Gives the exact env -S shebang from the reference, quoted in the cited chunk."}
+{"jid": "dde681f7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "011d666c", "label": "correct", "cited_support": "yes", "reason": "Names the GDI+ image bug as the example and explains the content-sniffing XSS via fake_image.jpg; both are in the cited chunks."}
+{"jid": "e464f268", "label": "partial", "cited_support": "yes", "reason": "The double-quote expansion part is right, but the tcsh fix (a .tcshrc exec-bash snippet) is not one of the reference's options: sh -c, sh ./script.sh, or chsh."}
+{"jid": "c3ce5f34", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "e4e9df51", "label": "correct", "cited_support": "yes", "reason": "Answers tcp mss, as the reference and the cited chunk state."}
+{"jid": "f34c72f9", "label": "correct", "cited_support": "yes", "reason": "Rewrites the Destination header from https to http and passes it with proxy_set_header Destination, as the cited config shows."}
+{"jid": "014ab9f5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer (binary as the entry point, lives until it ends)."}
+{"jid": "6cd868a8", "label": "correct", "cited_support": "yes", "reason": "States the client would get a packet from an untrusted IP and discard the response, matching the reference and the cited chunk."}
+{"jid": "ee3f4a99", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "7cb02dc4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer (ESC[c and ESC[5n replying ESC[0n)."}
+{"jid": "7a40a111", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "09b8ffc7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "78fc22de", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer (OSPF/RIP or static routes)."}
+{"jid": "5e6b9703", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "78feff78", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer (GLOBIGNORE plus shopt -u dotglob; .??* semantics)."}
+{"jid": "f216b7d6", "label": "partial", "cited_support": "no", "reason": "Gives the Caviggia stig-fix ISO script but omits the RedHatGov GitHub organization, and the apply.sh/cat1-cat4 detail is not in the cited chunk."}
+{"jid": "a64e5f4e", "label": "correct", "cited_support": "yes", "reason": "Names sp_BlitzCache analyzing plan-cache queries without a trace, as the cited chunk states."}
+{"jid": "9613f768", "label": "correct", "cited_support": "yes", "reason": "Queries sys.dm_os_performance_counters for the deprecated features object with cntr_value > 0, ordered descending, as the cited chunk shows."}
+{"jid": "3c9405e7", "label": "correct", "cited_support": "yes", "reason": "A single I/O Functions box, or a separate diagram, matching the reference and the cited chunk."}
+{"jid": "531452ac", "label": "correct", "cited_support": "yes", "reason": "Gives the hp-vsa driver for the Gen8 and inst.dd modprobe.blacklist=ahci for the Gen9, both in the cited chunks."}
+{"jid": "3c598f1b", "label": "correct", "cited_support": "yes", "reason": "Gives rsync --backup --backup-dir and the find -exec rm ../new/{} command, both in the cited chunks."}
+{"jid": "fb6a5f84", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer (docker.io/library/<image>:<tag>)."}
+{"jid": "8c6be06f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "45341f90", "label": "correct", "cited_support": "yes", "reason": "Gives systemd-run --scope --user [command], which the cited chunk names as the workaround."}
+{"jid": "e75d5f8a", "label": "correct", "cited_support": "yes", "reason": "Gives systemd-run --scope --user [command], which the cited chunk names as the workaround."}
+{"jid": "de5c411a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "17b2fb92", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "3a8f2156", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "705110f8", "label": "partial", "cited_support": "no", "reason": "The interpreter-by-shebang part is right, but #!/bin/false does not print a notice like /bin/echo Please-source; the cited text says it only returns an error with an unclear message."}
+{"jid": "0c000111", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the guided overview, as the cited chunk states."}
+{"jid": "2c73b0d8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "aa811c9d", "label": "correct", "cited_support": "yes", "reason": "Makes refactoring an unspoken part of every estimate and does larger changes on a separate refactoring branch, as the cited chunks state."}
+{"jid": "ff2fa81b", "label": "partial", "cited_support": "yes", "reason": "The lvm.conf exclusion is right, but it says to monitor the overlay file instead of using dmsetup status on the new device."}
+{"jid": "3200d0fa", "label": "correct", "cited_support": "yes", "reason": "Says no, a newer-version database cannot go back to an older version whatever the compatibility level, as the cited chunks support."}
+{"jid": "1f8c2386", "label": "partial", "cited_support": "yes", "reason": "Gets the CROSS JOIN versus compile-error part right, but compares only the execution plans and omits execution times."}
+{"jid": "55d7edeb", "label": "correct", "cited_support": "yes", "reason": "Names the database/table-level INSERT permission as also required, as the cited chunk states."}
+{"jid": "071a5cee", "label": "correct", "cited_support": "yes", "reason": "Splits the work into atomic units, the smallest group of steps someone might run alone, each as its own job, as the cited chunks state."}

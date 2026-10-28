@@ -1,0 +1,40 @@
+{"jid": "8c152139", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the KB has RedHatGov and the stig-fix script."}
+{"jid": "dc3fdc1d", "label": "correct", "cited_support": "yes", "reason": "States about 300 up and 250 down, up from 20, matching the reference and chunk 938346."}
+{"jid": "68878c45", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the KB gives kernel 2.6.38, xorg.conf and Xorg.0.log."}
+{"jid": "b03df820", "label": "partial", "cited_support": "yes", "reason": "Gets xsel -ib, bind -x to \\eW and the DISPLAY guard, but the piped value is empty instead of $READLINE_LINE."}
+{"jid": "168160bf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "6882e9a9", "label": "correct", "cited_support": "yes", "reason": "Gives /usr/local vs /usr and squeeze 900, wheezy 200, all stated in the cited chunks."}
+{"jid": "9c9341ff", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the KB names gridsite-clients and urlencode -m."}
+{"jid": "49c9bc94", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "78d0d848", "label": "correct", "cited_support": "yes", "reason": "Names the Monitoring plugin charting node memory and CPU, plus a KB-supported Script Console extra."}
+{"jid": "101ef7df", "label": "correct", "cited_support": "yes", "reason": "Adding another pair of disks for RAID 1+0 matches the reference and the cited chunk."}
+{"jid": "bd97523c", "label": "correct", "cited_support": "yes", "reason": "Rewrites the https Destination header to http and sets it with proxy_set_header, as in the cited config."}
+{"jid": "de950486", "label": "partial", "cited_support": "yes", "reason": "Quote explanation is right, but the tcsh fix suggests ssh host csh instead of sh -c, a sh script, or chsh."}
+{"jid": "47844b61", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "9cb496ef", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "4b358e96", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "6a1b685d", "label": "incorrect", "cited_support": "yes", "reason": "Proposes a second NIC on a shared subnet instead of OSPF/RIP or static routes; the cited chunk does say this."}
+{"jid": "8e32030b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the KB covers scrypt and private repos."}
+{"jid": "a87fbc0b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "3d42f79e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "f3bc6681", "label": "correct", "cited_support": "yes", "reason": "Code bomb, a patch too large to review, matches the reference and chunk 581680."}
+{"jid": "acb92e41", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "20f8231c", "label": "correct", "cited_support": "yes", "reason": "Deterministic on bytes but string-to-byte encoding varies, as the reference and cited chunks state."}
+{"jid": "ee5c107a", "label": "correct", "cited_support": "yes", "reason": "Same password made TrueCrypt open and format the outer volume, matching chunk 848792."}
+{"jid": "4e5af8ad", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "9a848195", "label": "partial", "cited_support": "yes", "reason": "6000 iterations is right, but the extra step is a KeePass keyfile rather than encrypting the cloud file with a separate key."}
+{"jid": "44555499", "label": "correct", "cited_support": "yes", "reason": "libxml_disable_entity_loader(true) matches the reference and the cited chunk."}
+{"jid": "600caccd", "label": "correct", "cited_support": "yes", "reason": "libxml_disable_entity_loader(true) matches the reference and the cited chunk."}
+{"jid": "e3589e38", "label": "correct", "cited_support": "yes", "reason": "Gives --backup with --backup-dir and the find -exec rm -f ../new/{} command, both in the cited chunks."}
+{"jid": "c17725aa", "label": "correct", "cited_support": "yes", "reason": "SHA1 is too fast for GPUs regardless of salt and bcrypt should be used, as the cited chunks state."}
+{"jid": "1e1eb321", "label": "correct", "cited_support": "yes", "reason": "GNU tr lacks multibyte support and Perl needs use utf8 or -Mutf8, matching the cited chunks."}
+{"jid": "ffcdc17f", "label": "correct", "cited_support": "yes", "reason": "Explicit CONVERT of operands and max(6, s1 + p2 + 1) capped at 38 match the reference and cited chunks."}
+{"jid": "d894e151", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the KB explains layer-2 trunks and SVI ACLs."}
+{"jid": "def13e17", "label": "partial", "cited_support": "yes", "reason": "Explains 0x000 as a priority tag but does not say 0xFFF must never be configured or transmitted."}
+{"jid": "32d5235a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "41923860", "label": "correct", "cited_support": "yes", "reason": "Subshell exports vanish so source it, and direct run needs the execute bit; all in the cited chunks."}
+{"jid": "2d55c4a8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "cce77438", "label": "correct", "cited_support": "yes", "reason": "ignorespace and ignoreboth match the reference and the cited man page text."}
+{"jid": "7c41081b", "label": "correct", "cited_support": "yes", "reason": "Deterministic on bytes but encoding and normalization of the string change the hash, matching the reference."}
+{"jid": "5efc00ee", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "db4dcb0f", "label": "correct", "cited_support": "yes", "reason": "Names gridsite-clients and urlencode -m, the package and command asked for, as the cited chunks state."}

@@ -1,0 +1,40 @@
+{"jid": "ef5e5e80", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "d48446af", "label": "correct", "cited_support": "yes", "reason": "States the distro's pppd version bug with earlier and later versions unaffected; version details are in cited chunk 342646."}
+{"jid": "a637e5d1", "label": "correct", "cited_support": "yes", "reason": "Gives the generate_series(1,1000) cross join with ORDER BY random() LIMIT 10, the approximation, and the poor performance."}
+{"jid": "97001e2f", "label": "correct", "cited_support": "yes", "reason": "States the whole Execute(String parameter) method must be copied to change one case statement."}
+{"jid": "821abc36", "label": "correct", "cited_support": "yes", "reason": "Names ignorespace and ignoreboth (ignorespace plus ignoredups)."}
+{"jid": "c121e897", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "3fd997a5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "2b55255b", "label": "correct", "cited_support": "yes", "reason": "The shared password let TrueCrypt open the outer volume and format it in place of the hidden one."}
+{"jid": "da12c077", "label": "correct", "cited_support": "yes", "reason": "--help goes to stdout for piping; the invalid-option usage message goes to stderr."}
+{"jid": "6fc8d300", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "74c88b84", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "6f3887d9", "label": "correct", "cited_support": "yes", "reason": "Rewrites the Destination header from https to http via an Nginx set/regex and proxy_set_header Destination, plus cited alternatives."}
+{"jid": "7456f52e", "label": "correct", "cited_support": "yes", "reason": "bb is 10111011, and its last bit (the I/G bit) is 1, so it is a group address."}
+{"jid": "4d6eb0b0", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table because separate address or church tables add no value; omits the 3NF remark, but the key recommendation matches."}
+{"jid": "7e44efdd", "label": "correct", "cited_support": "yes", "reason": "The reply goes to the client's random port and is filtered by the outbound ACL; the cited chunk gives this as the reason."}
+{"jid": "36302497", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor."}
+{"jid": "3b461f14", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "8d59906c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "bb743fb1", "label": "correct", "cited_support": "yes", "reason": "Gives ESC [ c for Primary DA and ESC [ 5 n with the ESC [ 0 n reply bound in bash; all are in the cited chunks."}
+{"jid": "2db6db3e", "label": "correct", "cited_support": "yes", "reason": "Gives systemd-run --scope --user [command]."}
+{"jid": "e886c75b", "label": "correct", "cited_support": "yes", "reason": "Names it a code bomb: a patch too large for anyone to review."}
+{"jid": "fcfca478", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions and the session_id > 50 filter, which answers both asked parts."}
+{"jid": "0fece4ac", "label": "correct", "cited_support": "yes", "reason": "Names the -f option, which flushes per file."}
+{"jid": "034d75cf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "6fb8df92", "label": "correct", "cited_support": "yes", "reason": "Names MVC Mini Profiler."}
+{"jid": "dbbc5e1c", "label": "correct", "cited_support": "yes", "reason": "The return traffic to the client's random port is not matched by the outbound filter and is dropped; the core claim is in cited chunk 972963."}
+{"jid": "144a7a62", "label": "correct", "cited_support": "yes", "reason": "The trunk is layer 2 and ignores IP addressing, so the ACL belongs on a layer-3 SVI."}
+{"jid": "8447d243", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "14ece8b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "3bfdf0f8", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor."}
+{"jid": "45013c96", "label": "correct", "cited_support": "yes", "reason": "An implicit bridge rule drops fragmented packets and is disabled under System > Advanced > Firewall/NAT; scrubbing is named in cited chunk 164698."}
+{"jid": "009889b1", "label": "correct", "cited_support": "yes", "reason": "Gives the RedHatGov GitHub stig-fix-el6 scripts and Caviggia's stig-fix, which modifies the RHEL 6.4 ISO."}
+{"jid": "cc53048a", "label": "correct", "cited_support": "yes", "reason": "Run terraform console and ask for type(...) of the value."}
+{"jid": "c20dd7d0", "label": "correct", "cited_support": "yes", "reason": "Disable the logins on the primary and run a per-minute Agent job on every replica that toggles them by role."}
+{"jid": "1fcaebf6", "label": "correct", "cited_support": "yes", "reason": "Rewrites the Destination header from https to http in Nginx (if/set or map) with proxy_set_header Destination; all variants are in the cited chunks."}
+{"jid": "c7d28033", "label": "correct", "cited_support": "yes", "reason": "Quote \"$user_agent\" in the wget call, and use a fill_template function in place of eval."}
+{"jid": "74969b87", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "6cdf674d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "46503018", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "daf8c028", "label": "correct", "cited_support": "yes", "reason": "Lists every step: Advanced BWM, WAN activation with interface speed, a Per-IP object, and the any->any rule for ingress and egress."}

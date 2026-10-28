@@ -1,0 +1,40 @@
+{"jid": "11b74f27", "label": "correct", "cited_support": "yes", "reason": "States disabling logins on the primary plus the every-minute Agent job that disables on primary and enables on secondary."}
+{"jid": "258a04ff", "label": "correct", "cited_support": "yes", "reason": "States the client would get a packet from an untrusted IP and discard it."}
+{"jid": "38e91117", "label": "correct", "cited_support": "yes", "reason": "Names the tcp mss command, same as IPv4."}
+{"jid": "9bfa5e3f", "label": "correct", "cited_support": "yes", "reason": "Gives bb = 10111011 with the I/G bit set to 1, making it a group address."}
+{"jid": "f105de0f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "96fcb1ae", "label": "correct", "cited_support": "yes", "reason": "Names GET and says response metadata must not encourage caching, with the short-circuit reason."}
+{"jid": "7af54fc9", "label": "correct", "cited_support": "yes", "reason": "Same password unlocked the outer volume, which was then formatted instead of the hidden one."}
+{"jid": "37654300", "label": "partial", "cited_support": "yes", "reason": "Gives Ctrl-S as flow-control stop and Ctrl-Q to undo, but omits the nnoremap <c-s> :w<cr> save mapping."}
+{"jid": "74925020", "label": "partial", "cited_support": "yes", "reason": "Gives the client MAC as the destination but omits the offered yiaddr as the IP destination."}
+{"jid": "86088eb3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "6508c9fb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "83e55039", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "01b9be61", "label": "partial", "cited_support": "yes", "reason": "Names stig-fix hardening scripts but misses RedHatGov and does not identify the ISO-building script."}
+{"jid": "6375b4a8", "label": "correct", "cited_support": "yes", "reason": "Gives SQL Server 2008 and says DAC still needs credentials; single-user-mode extra is supported by cited text."}
+{"jid": "a4871038", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "16e6dc83", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "d9a55043", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "6c5367cf", "label": "correct", "cited_support": "yes", "reason": "Artifact repository manager; Sonatype Nexus and JFrog Artifactory with free open source editions."}
+{"jid": "9610e27b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "aed8faf8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "ea525a04", "label": "correct", "cited_support": "yes", "reason": "Names the code bomb, a patch too large to review."}
+{"jid": "e23815d8", "label": "correct", "cited_support": "yes", "reason": "Loopback Adapter virtual network with its own DHCP scope, dual-homing the box."}
+{"jid": "4051ee9a", "label": "correct", "cited_support": "yes", "reason": "Says the certificate establishes site identity/ownership and an ordinary site should buy the cheapest certificate."}
+{"jid": "03ec1a12", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "83d775a9", "label": "partial", "cited_support": "yes", "reason": "Double-quote expansion and single quotes are right, but the tcsh advice drifts to csh :q syntax instead of running under sh, a script, or chsh."}
+{"jid": "95106b9c", "label": "correct", "cited_support": "yes", "reason": "Users, local-permissions and global-permissions tables with a string permission column."}
+{"jid": "73c6d333", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "544aa82b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "475d0f81", "label": "correct", "cited_support": "yes", "reason": "About 300 Mbps up and 250 Mbps down, up from 20 Mbps."}
+{"jid": "d9c00dcd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND though the reference has an answer."}
+{"jid": "eaae8190", "label": "correct", "cited_support": "yes", "reason": "Vagrant, Ansible, GitLab or Jenkins, and Docker."}
+{"jid": "dc1a75fa", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "1e71969b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "b2f402b3", "label": "correct", "cited_support": "yes", "reason": "SRP and test-first let patterns emerge; names give quick shared communication."}
+{"jid": "9cf8fad6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "7dbe0b1c", "label": "correct", "cited_support": "yes", "reason": "Token lives in the function's declaring text, which an XSS payload can fetch via XHR."}
+{"jid": "ac33f841", "label": "correct", "cited_support": "no", "reason": "States at least 1GB with a caching plugin and few images, but the 8GB web plus 4GB database figure is not in the cited chunks."}
+{"jid": "cdf38dc9", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module num power in global config."}
+{"jid": "f69509b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND; question has no answer in the knowledge base."}
+{"jid": "70c17927", "label": "correct", "cited_support": "yes", "reason": "Create a v8.0.15 instance and do the minor upgrade, which needs a reboot."}

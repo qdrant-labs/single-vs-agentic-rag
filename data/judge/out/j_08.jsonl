@@ -1,0 +1,40 @@
+{"jid": "120ea862", "label": "correct", "cited_support": "yes", "reason": "States yes, the in-flight request finishes, citing the test where all log entries still appeared."}
+{"jid": "9f628323", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d79d15e0", "label": "correct", "cited_support": "yes", "reason": "Gives the bind with a trailing \\r exactly as in the reference."}
+{"jid": "b8a3e254", "label": "correct", "cited_support": "yes", "reason": "Names error 3910, transaction context in use by another session."}
+{"jid": "b96d3121", "label": "correct", "cited_support": "yes", "reason": "Recommends keeping one table and says separate tables only pay off with extra data, matching the reference; omits the 3NF wording."}
+{"jid": "0cf639a3", "label": "correct", "cited_support": "yes", "reason": "Gives find -print0 piped to xargs -0 cat to stay within the argument limit and the multiple-of-512 device mapper constraint."}
+{"jid": "fdfe3748", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "b1a2b6a1", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge part is right, but it says WhatsApp applies AES-GCM-256 instead of stating Google only applies server-side encryption it can decrypt."}
+{"jid": "e1df6508", "label": "correct", "cited_support": "yes", "reason": "Gives systemd-run --scope --user [command] and explains it stops systemd killing the process."}
+{"jid": "2b9650d0", "label": "correct", "cited_support": "yes", "reason": "Help to stdout for piping, invalid-option usage to stderr, as in the reference."}
+{"jid": "dd252099", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "abc6face", "label": "partial", "cited_support": "yes", "reason": "Quoting explanation is right, but the tcsh fixes (tcshrc exec, authorized_keys command) differ from the reference's sh -c, sh ./script.sh, or chsh."}
+{"jid": "544fada5", "label": "correct", "cited_support": "yes", "reason": "Cross join with generate_series(1, 1000), ORDER BY random() LIMIT 10, approximates replacement, poor performance."}
+{"jid": "ece066b6", "label": "correct", "cited_support": "yes", "reason": "Names gridsite-clients and urlencode -m, then prepending file:// manually."}
+{"jid": "f61cdf4d", "label": "partial", "cited_support": "yes", "reason": "Cause (browser or antivirus background fetch) is right, but the guard offered is a login confirmation, not checking that the page actually renders."}
+{"jid": "fae54b75", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "9ec68684", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the overview source."}
+{"jid": "acbb9203", "label": "partial", "cited_support": "yes", "reason": "Explains 0x000 as a priority tag but gives no purpose for 0xFFF, missing that it must never be configured or transmitted."}
+{"jid": "7253eeac", "label": "correct", "cited_support": "yes", "reason": "SHA1 too fast with or without salt, GPU tens of thousands per second, bcrypt reduces to tens per second."}
+{"jid": "4644a702", "label": "correct", "cited_support": "yes", "reason": "Aborted prior install left files, rpm refuses and blames the same package."}
+{"jid": "8312b027", "label": "correct", "cited_support": "yes", "reason": "0x000 is a priority tag without VLAN ID and 0xFFF must not be configured or transmitted, leaving 4,094."}
+{"jid": "21fbba9b", "label": "correct", "cited_support": "yes", "reason": "Create a v8.0.15 instance and minor-upgrade with reboot; extra AWS support option is supported by a cited chunk."}
+{"jid": "396dc378", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "31cc113b", "label": "correct", "cited_support": "yes", "reason": "States yes, the request completed, based on the test that logged every entry."}
+{"jid": "f31f0c4e", "label": "correct", "cited_support": "yes", "reason": "States the server unicasts to yiaddr at IP and chaddr at the link layer; the BROADCAST bit detail is supported by the cited RFC text."}
+{"jid": "c6d39343", "label": "partial", "cited_support": "yes", "reason": "Gives the gdb attach/putenv/detach sequence but hedges the no instead of stating env vars only flow parent to child, and omits the may-not-work caveat."}
+{"jid": "5048fdfb", "label": "correct", "cited_support": "yes", "reason": "LATERAL JOIN from sessionlatest on session_id and update_id with LIMIT 500, plus the (session_id, update_id) index."}
+{"jid": "0239ebaa", "label": "partial", "cited_support": "yes", "reason": "Quoting the variable is right, but the eval alternative is a here-document with parameter expansion rather than the reference's template-filling function."}
+{"jid": "85b4c96a", "label": "correct", "cited_support": "yes", "reason": "Separate CASE per column and direction keyed on the parameter, and the datatype-precedence conversion explanation with a CASE per type."}
+{"jid": "98414a4b", "label": "correct", "cited_support": "yes", "reason": "Adding another pair of disks for RAID 1+0 is named as the greatest benefit."}
+{"jid": "9c11cc7f", "label": "correct", "cited_support": "yes", "reason": "Bug in the distro's pppd version; extra version detail is supported by a cited chunk."}
+{"jid": "43e99203", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "cc4f44b2", "label": "partial", "cited_support": "yes", "reason": "Gets the behavior-not-implementation meaning but misses the broader application to web APIs and Internet protocols."}
+{"jid": "1980726e", "label": "correct", "cited_support": "yes", "reason": "About 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz."}
+{"jid": "f19e0828", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "1ba6faa7", "label": "correct", "cited_support": "yes", "reason": "Lists protected main branches, required PRs, PR templates with checklists, and approvals via GitHub teams."}
+{"jid": "45fea507", "label": "correct", "cited_support": "yes", "reason": "Kernel 2.6.38 via Fedora 15, delete xorg.conf, check /var/log/Xorg.0.log."}
+{"jid": "b5fcc188", "label": "correct", "cited_support": "yes", "reason": "bb is 10111011 so the I/G bit is 1, making it a group address."}
+{"jid": "f47f288c", "label": "correct", "cited_support": "yes", "reason": "Not safe since the code stays valid and can be cloned; regenerate by toggling 2FA off and on."}
+{"jid": "a64855e5", "label": "correct", "cited_support": "yes", "reason": "Subshell loses exports so source it; direct run needs the execute bit, interpreter path does not."}

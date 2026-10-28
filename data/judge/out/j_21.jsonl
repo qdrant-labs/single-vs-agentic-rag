@@ -1,0 +1,40 @@
+{"jid": "58449eae", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions and the session_id > 50 filter, both stated in the cited chunk."}
+{"jid": "86807e28", "label": "correct", "cited_support": "yes", "reason": "Covers request logs, user complaints and scripts reading the session cookie to hijack it, all in the cited chunks."}
+{"jid": "57c16e4d", "label": "correct", "cited_support": "yes", "reason": "Says no, some telemetry uses a unique ID and some is fully anonymous, exactly as the chunk states."}
+{"jid": "36806a6a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "ddc15654", "label": "incorrect", "cited_support": "yes", "reason": "Recommends fetching Cisco MIBs instead of installing snmp-mibs-downloader and setting 'mibs +ALL'; the cited chunks do say this."}
+{"jid": "507ed2b3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "96539f7b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "82326727", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "60f4f556", "label": "correct", "cited_support": "yes", "reason": "Gives SQL Server 2008 and says the DAC still needs credentials; the single-user-mode extra is supported by the cited chunks."}
+{"jid": "9a3ae9b3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the focus stealing prevention answer."}
+{"jid": "89806cef", "label": "correct", "cited_support": "yes", "reason": "States error 3910, Transaction context in use by another session, as the chunk does."}
+{"jid": "bcc53ba9", "label": "correct", "cited_support": "yes", "reason": "Names Android Boot Camp 2012 as the guided overview, as the chunk states."}
+{"jid": "33af3e37", "label": "correct", "cited_support": "yes", "reason": "Says firmware goes into volatile device memory each boot and the host kernel driver loads it; the chunks state both."}
+{"jid": "fa69ad70", "label": "correct", "cited_support": "yes", "reason": "Says to let the server fork itself so it can optimize, with nohup only for software that cannot fork, matching the chunk."}
+{"jid": "fcf377be", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the single 'I/O Functions' box answer."}
+{"jid": "efe509c8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "42278df1", "label": "correct", "cited_support": "yes", "reason": "Gives mirroring on 3 servers, one a small free tiebreaker, which answers both parts of the question as the chunk states."}
+{"jid": "076dea2e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "7dac4fb6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "9ce4fc2c", "label": "correct", "cited_support": "yes", "reason": "Covers the password-wrapped random key and the 384-bit split into K1 key, K2 IV and K3 HMAC key, all in the cited chunks."}
+{"jid": "82cc6810", "label": "correct", "cited_support": "yes", "reason": "Says Proxmox is Debian-based and installing it would swap nearly all Ubuntu packages, leaving a broken system, as the chunks state."}
+{"jid": "63688f61", "label": "correct", "cited_support": "yes", "reason": "Names adding a disk pair and expanding to RAID 1+0 as the biggest gain, as the chunk states."}
+{"jid": "24fdd0c1", "label": "correct", "cited_support": "yes", "reason": "Says to add an add_ssh_keys step with the UI fingerprint, as the chunk states."}
+{"jid": "08d914ad", "label": "correct", "cited_support": "yes", "reason": "Names kernel-entry-heavy workloads and the costly address-space switch on each entry, matching the reference; the chunks state this."}
+{"jid": "99027742", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the cp -ax, dd and LVM snapshot answer."}
+{"jid": "f3b5c7ae", "label": "correct", "cited_support": "yes", "reason": "Recommends a separate database per user, as the cited chunks state."}
+{"jid": "99600c8c", "label": "correct", "cited_support": "yes", "reason": "Blames a bug in the distro's pppd version that earlier and later versions lack; the version details come from a cited chunk."}
+{"jid": "089819a0", "label": "partial", "cited_support": "no", "reason": "The content-sniffing XSS part is right, but it gives bulletin MS04-028 rather than the GDI JPEG vulnerability, and the cited chunk is only a link list."}
+{"jid": "29a64f36", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "3853c897", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "78acfe72", "label": "partial", "cited_support": "yes", "reason": "The error versus CROSS JOIN behavior is right, but it compares execution plans only and leaves out execution times."}
+{"jid": "6fd7353a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "146138e3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "80685357", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}
+{"jid": "6f4ba6be", "label": "correct", "cited_support": "yes", "reason": "States error 3910, Transaction context in use by another session, as the chunk does."}
+{"jid": "c55cae19", "label": "correct", "cited_support": "yes", "reason": "Says to reissue on a principal change, mainly login, to stop session fixation leading to CSRF, as the chunk states."}
+{"jid": "d49cbf36", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base holds the key-wrapping and PBKDF2 answer."}
+{"jid": "36ba6024", "label": "correct", "cited_support": "yes", "reason": "Gives docker.io/library/<image>:<tag> with the ctr example, as the chunks state."}
+{"jid": "649b8423", "label": "correct", "cited_support": "yes", "reason": "Lists every configuration step in the reference, and the cited chunks state each one."}
+{"jid": "5dedfd7c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is right for this unanswerable question."}

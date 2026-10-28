@@ -1,0 +1,40 @@
+{"jid": "44ff4bc1", "label": "correct", "cited_support": "yes", "reason": "Names the same tcp mss command used for IPv4, as the cited chunk states."}
+{"jid": "af94db43", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "32361a78", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "f07ed98c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "e42ee6c7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the PrivateTmp and drop-in answer."}
+{"jid": "248150a7", "label": "correct", "cited_support": "yes", "reason": "States terraform console with type(...) as the reference does; the caveat is in cited chunk 999750."}
+{"jid": "1cff6e3b", "label": "correct", "cited_support": "yes", "reason": "States that rows are easier to change than columns, so the structure stays fixed as languages change."}
+{"jid": "8942c6e3", "label": "partial", "cited_support": "yes", "reason": "Explains the GNU tr multi-byte limit but explicitly leaves out the use utf8 / -Mutf8 fix."}
+{"jid": "113b7269", "label": "correct", "cited_support": "yes", "reason": "States that firmware goes into volatile device storage at every power-on and that the kernel loads it."}
+{"jid": "a4499aba", "label": "partial", "cited_support": "yes", "reason": "SQL Server 2008 is right, but it says DAC can recover, while the reference says DAC still needs credentials."}
+{"jid": "0e17ee3d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "21cda27b", "label": "correct", "cited_support": "no", "reason": "Gives the LATERAL JOIN from the smaller table, but the status-column suggestion is not in the cited chunks."}
+{"jid": "00434d54", "label": "correct", "cited_support": "yes", "reason": "Names artifact repositories, Sonatype Nexus and JFrog Artifactory, both with free open source editions."}
+{"jid": "8accbafa", "label": "correct", "cited_support": "yes", "reason": "States that the server forking itself allows pre-fork work and optimizations, and that nohup is for software without a fork option."}
+{"jid": "ce86a4b8", "label": "correct", "cited_support": "yes", "reason": "Says no because it is a blacklist patch, and gives the code review plus logs, reporting, and IDS/IPS alternative."}
+{"jid": "3d180982", "label": "correct", "cited_support": "yes", "reason": "Matches the reference: arithmetic coercion is allowed to avoid annoyance, and 1 + \"1\" is ambiguous."}
+{"jid": "ddd77189", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "52a632cd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the implicit fragment-drop rule answer."}
+{"jid": "b5186429", "label": "correct", "cited_support": "yes", "reason": "Says no (a blacklist giving false security) and gives the code review, logs, and IDS/IPS alternative."}
+{"jid": "8390ab41", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "ac561102", "label": "correct", "cited_support": "yes", "reason": "Lists blocking tracker servers, tracking-like or tiny images, or all images; the extra link advice is cited."}
+{"jid": "ac4c49b6", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge is right, but it gives WhatsApp AES-GCM backup encryption instead of Google's server-side encryption."}
+{"jid": "de2d697a", "label": "partial", "cited_support": "yes", "reason": "Explains the dirname usage message but leaves out the export -f / bash -c function answer."}
+{"jid": "f14492a8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "7ba86080", "label": "correct", "cited_support": "yes", "reason": "States GET as the simplest method and that response metadata must not encourage caching."}
+{"jid": "0e70ba2d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "c03483b7", "label": "correct", "cited_support": "yes", "reason": "Gives the LATERAL JOIN from sessionlatest, ORDER BY session_id LIMIT 500, and the suggested index."}
+{"jid": "bbdca2e0", "label": "correct", "cited_support": "yes", "reason": "Names dotnet build in DotNetCoreCLI@2 rather than VSBuild; the publish detail is in a cited chunk."}
+{"jid": "e063ee9a", "label": "correct", "cited_support": "yes", "reason": "Gives focus stealing prevention set to none under Window Management > Window Behavior."}
+{"jid": "8a0f241e", "label": "correct", "cited_support": "yes", "reason": "States that letting mongod fork allows pre-fork work and optimizations, and that nohup is for software without a fork option."}
+{"jid": "6f6752fd", "label": "correct", "cited_support": "yes", "reason": "States that changing rows is easier than altering columns, so the structure stays unchanged."}
+{"jid": "13ec3550", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "e6574490", "label": "correct", "cited_support": "yes", "reason": "Names bce and defbce, and October 2016 for tmux."}
+{"jid": "ae400b0b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "68bf8245", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the xargs cat and 512-multiple answer."}
+{"jid": "319c9952", "label": "correct", "cited_support": "yes", "reason": "Says to quote \"$user_agent\" (or use an array) and to define a function instead of eval, all in the cited chunks."}
+{"jid": "83bd3494", "label": "correct", "cited_support": "yes", "reason": "Gives all the steps: advanced BWM, WAN speed, a per-IP object, and the any-to-any rule for ingress and egress."}
+{"jid": "f958a342", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "905ac2d5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "cf1ea620", "label": "correct", "cited_support": "yes", "reason": "Says languages use the native stack, which is contiguous and cannot be moved, matching the reference."}

@@ -1,0 +1,40 @@
+{"jid": "b35b1f56", "label": "correct", "cited_support": "yes", "reason": "Names logs with malicious script parameters and user complaints, and session-ID theft to hijack the session; cited chunks state each."}
+{"jid": "c6a008f9", "label": "correct", "cited_support": "yes", "reason": "Verbatim copying and distribution allowed, changes not allowed, exactly as the cited GPL header says."}
+{"jid": "16536625", "label": "correct", "cited_support": "yes", "reason": "Layer-2 trunk ignores layer-3 addressing; apply the ACL to the SVI, as the cited chunk states."}
+{"jid": "231673d1", "label": "correct", "cited_support": "yes", "reason": "Built-in CRUD hurts unit testing; inject IDatabaseService via each data access class constructor, as cited."}
+{"jid": "dd78613d", "label": "incorrect", "cited_support": "yes", "reason": "Talks about functions and data structures as abstractions and never mentions web APIs/protocols or guaranteed exposed behavior."}
+{"jid": "f2732492", "label": "correct", "cited_support": "yes", "reason": "Mirroring with 3 servers, one small free tiebreaker, clustering/VMware a weak point; matches the cited chunk."}
+{"jid": "f975d4f2", "label": "correct", "cited_support": "yes", "reason": "Input redirection from a process substitution, equivalent to curl -s URL | bash, as the cited chunk explains."}
+{"jid": "a6ae43b5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "718793f4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "ee8bf26b", "label": "correct", "cited_support": "yes", "reason": "Data builds up until distribution restarts and a long delay can fill log space; stated in the cited chunk."}
+{"jid": "04e14311", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "493c51b4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "59ddfa9f", "label": "correct", "cited_support": "yes", "reason": "Append \\r to the macro, bind '\"\\ee\": \"g++ !$\\r\"', exactly as cited."}
+{"jid": "65fa53fe", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "562449d0", "label": "correct", "cited_support": "yes", "reason": "grep io_uring_setup /proc/kallsyms and the sys_ prefix; cited chunks show the grep and the sys_ syscall listing."}
+{"jid": "31344fc2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "c5c820d9", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "539c499c", "label": "correct", "cited_support": "yes", "reason": "nfdump+nfsen on Linux and ntop on Windows needing a recompile due to the 1000-packet limit, as cited."}
+{"jid": "5a77b26d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "76f667de", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "dfb7cb7e", "label": "correct", "cited_support": "yes", "reason": "Function piping printf %s \"$READLINE_LINE\" to xsel -ib, bound with bind -x to \\eW and guarded by $DISPLAY, as cited."}
+{"jid": "3a09e2df", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "57b45ee1", "label": "correct", "cited_support": "yes", "reason": "systemd-run --scope --user [command] so systemd does not kill it, as the cited chunks state."}
+{"jid": "7c5dd9e1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "0d46c6b4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "4fec3846", "label": "correct", "cited_support": "yes", "reason": "GLOBIGNORE=.:.. plus shopt -u dotglob, and .??* as dot, two characters, then zero or more; both stated in the cited chunks."}
+{"jid": "f7701bd6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "1501ea60", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "d9603f75", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "2410e06f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND on an unanswerable question."}
+{"jid": "5c39452b", "label": "correct", "cited_support": "yes", "reason": "Local expansion inside double quotes, so use single quotes, and explicitly invoke a sh-like shell under tcsh; cited chunks support both."}
+{"jid": "b5ce31aa", "label": "correct", "cited_support": "yes", "reason": "Deterministic for the same bytes, but string-to-byte encoding differences change the hash, as the cited chunks state."}
+{"jid": "fc669cc3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "340a8542", "label": "correct", "cited_support": "yes", "reason": "nnoremap <c-s> :w<cr>, Ctrl-S stops terminal output and Ctrl-Q undoes it; cited chunks state these (XOFF name and stty -ixon are harmless extras)."}
+{"jid": "0ab3ea72", "label": "correct", "cited_support": "yes", "reason": "Allowed VLANs is neither Type 1 nor Type 2, so a mismatch does not suspend the vPC, as cited."}
+{"jid": "c5ed63a4", "label": "correct", "cited_support": "yes", "reason": "Data builds up until distribution restarts and a long delay can fill log space; stated in the cited chunk."}
+{"jid": "723f789b", "label": "correct", "cited_support": "yes", "reason": "Logs with malicious script parameters, user complaints, and scripts reading cookies to forward session info; all in the cited chunks."}
+{"jid": "1c4e3807", "label": "correct", "cited_support": "yes", "reason": "Set focus stealing prevention to none under Window Management > Window Behavior, as cited."}
+{"jid": "394e0a7c", "label": "correct", "cited_support": "yes", "reason": "Rewrite the https Destination header to http in Nginx and set it with proxy_set_header; cited chunks show this and the Apache alternative."}
+{"jid": "99c7f4dc", "label": "correct", "cited_support": "yes", "reason": "Run terraform console and ask for type(...) of the value, as the cited chunks state."}

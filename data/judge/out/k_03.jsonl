@@ -1,0 +1,40 @@
+{"jid": "7a5627d6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "90b59108", "label": "correct", "cited_support": "yes", "reason": "States rewriting the https Destination header to http in Nginx and passing it via proxy_set_header; extras are supported by cited chunks."}
+{"jid": "1fd817e8", "label": "correct", "cited_support": "yes", "reason": "Says swap must be initialized at boot and that hibernating then booting the other OS corrupts filesystems/state, matching the reference."}
+{"jid": "1f8c2386", "label": "partial", "cited_support": "yes", "reason": "Gets the CROSS JOIN vs compile-error difference but only says compare execution plans, omitting execution times."}
+{"jid": "a2744d55", "label": "correct", "cited_support": "yes", "reason": "Covers the wrapped random key for password change and 384 bits split into K1 AES-128-CBC key, K2 IV, K3 HMAC key."}
+{"jid": "ce86a4b8", "label": "correct", "cited_support": "yes", "reason": "Says no, it is a blacklist patch, and gives the preferred code review, logs, analysis, reporting and IDS/IPS policy."}
+{"jid": "46503018", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "fec7bc3d", "label": "correct", "cited_support": "yes", "reason": "Names SRP and test-first habits and communication as the lasting benefit of pattern names."}
+{"jid": "f3f65069", "label": "partial", "cited_support": "yes", "reason": "Captures interface as a client-facing contract but omits the key point that it applies to web APIs and Internet protocols."}
+{"jid": "37654300", "label": "partial", "cited_support": "yes", "reason": "Explains Ctrl-S flow control and Ctrl-Q but does not give the nnoremap <c-s> :w<cr> mapping."}
+{"jid": "41c34f19", "label": "correct", "cited_support": "yes", "reason": "Identifies the -f flush option with its described behavior."}
+{"jid": "8895b27d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "3bd2b4f6", "label": "partial", "cited_support": "yes", "reason": "LVM filter part is right, but checking fullness by watching the overlay file size replaces the reference's dmsetup status."}
+{"jid": "8c152139", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "a4499aba", "label": "partial", "cited_support": "yes", "reason": "SQL Server 2008 is right, but it claims DAC can recover sysadmin access whereas the reference says DAC still needs credentials."}
+{"jid": "398f2af4", "label": "incorrect", "cited_support": "yes", "reason": "Gives a generic definition of abstraction and misses web APIs/protocols and the guaranteed-exposed-behavior meaning."}
+{"jid": "7ae28dc4", "label": "correct", "cited_support": "yes", "reason": "Gives the #! /bin/echo Please-source shebang and says the shebang, not the extension, decides the interpreter."}
+{"jid": "02d01826", "label": "correct", "cited_support": "yes", "reason": "Says children cannot change the parent's environment and gives the gdb attach, call putenv, detach sequence."}
+{"jid": "cf130078", "label": "correct", "cited_support": "yes", "reason": "Gives users, local-permissions and global-permissions tables with a string permission column."}
+{"jid": "e886c75b", "label": "correct", "cited_support": "yes", "reason": "Names it a code bomb, a patch too large to review."}
+{"jid": "810688cb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "13dfe02e", "label": "correct", "cited_support": "yes", "reason": "Uses find -print0 | xargs -0 cat to avoid the argument limit and states the 512-byte multiple constraint."}
+{"jid": "8d59906c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "3db6f657", "label": "correct", "cited_support": "yes", "reason": "Explains the token sits in the function's declaring text, readable by an XSS payload via XHR."}
+{"jid": "f35ecf35", "label": "correct", "cited_support": "yes", "reason": "Gives create-on-8.0.15-then-minor-upgrade with reboot; the AWS support alternative is supported by a cited chunk."}
+{"jid": "881bd0db", "label": "correct", "cited_support": "yes", "reason": "Cites following the Media Temple noexec /tmp guide to create a chrooted environment."}
+{"jid": "e8d883cb", "label": "correct", "cited_support": "yes", "reason": "Describes launching, stopping, attaching the root EBS volume elsewhere and copying the key; the extra user-data method is supported."}
+{"jid": "0ab3ea72", "label": "correct", "cited_support": "yes", "reason": "Says no, allowed VLANs are neither Type 1 nor Type 2, so a mismatch does not suspend the vPC."}
+{"jid": "b84b03bc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "723f789b", "label": "correct", "cited_support": "yes", "reason": "Covers request logs, user complaints, and cookie/session theft enabling impersonation."}
+{"jid": "d53be6e5", "label": "correct", "cited_support": "yes", "reason": "Names bce and defbce and October 2016 for tmux."}
+{"jid": "8312b027", "label": "correct", "cited_support": "yes", "reason": "Identifies 0x000 as a priority tag with no VLAN ID and 0xFFF as never configured or transmitted."}
+{"jid": "7c5dd9e1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "9ea59cf7", "label": "incorrect", "cited_support": "yes", "reason": "The question has no answer in the knowledge base but the system answered anyway."}
+{"jid": "cc8c81ad", "label": "correct", "cited_support": "yes", "reason": "Gives ignorespace and ignoreboth, with ignoreboth as shorthand for ignorespace plus ignoredups."}
+{"jid": "0ca7448e", "label": "correct", "cited_support": "yes", "reason": "Gives create-on-8.0.15-then-minor-upgrade with reboot."}
+{"jid": "e8ac5484", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "155bf6c1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "5b4fa55c", "label": "correct", "cited_support": "yes", "reason": "Covers request logs, user complaints, and cookie/session theft enabling impersonation."}
+{"jid": "911d233b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}

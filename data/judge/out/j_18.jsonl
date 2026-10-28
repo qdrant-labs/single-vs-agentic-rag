@@ -1,0 +1,40 @@
+{"jid": "f7b81fc3", "label": "correct", "cited_support": "yes", "reason": "States the users, local-permissions and global-permissions tables with a string permission column, as in chunk 573741."}
+{"jid": "a18af1c7", "label": "correct", "cited_support": "yes", "reason": "Gives separate CASE per column/direction keyed on @SortStyle and explains highest-precedence datatype conversion, both in the cited chunks."}
+{"jid": "5a1f440d", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions grouped by database and the session_id > 50 filter, matching the reference and chunk 766634."}
+{"jid": "55fe5f44", "label": "incorrect", "cited_support": "yes", "reason": "Recommends Cisco MIBs from FTP instead of installing snmp-mibs-downloader and setting mibs +ALL; the cited chunk does say what it answered."}
+{"jid": "9b129779", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f9d37257", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5cbefbdf", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "5b4fa55c", "label": "correct", "cited_support": "yes", "reason": "Covers request logs with malicious scripts, user complaints of altered data, and scripts reading cookies to impersonate users."}
+{"jid": "478a7d21", "label": "correct", "cited_support": "yes", "reason": "States the chrooted-environment workaround from the Media Temple noexec /tmp guide, as in chunk 91820."}
+{"jid": "23c1889d", "label": "partial", "cited_support": "yes", "reason": "Gets ksh93r but explicitly does not state the avoided problem of picking a descriptor number that may already be in use."}
+{"jid": "0ebcd785", "label": "correct", "cited_support": "yes", "reason": "Refactoring as an unspoken part of every estimate and larger changes on a separate branch, both stated in the cited chunks."}
+{"jid": "da7b3187", "label": "partial", "cited_support": "yes", "reason": "Initialize swap at boot and data loss are right, but the reason given is the swap image being overwritten, not filesystem changes between suspend and resume."}
+{"jid": "5b40e70a", "label": "correct", "cited_support": "yes", "reason": "Client would get a packet from an untrusted IP and discard it, matching the reference and chunk 645695."}
+{"jid": "0db59339", "label": "correct", "cited_support": "yes", "reason": "Names libxml_disable_entity_loader(true), as in chunk 910406."}
+{"jid": "8dd4a070", "label": "correct", "cited_support": "yes", "reason": "Queries sys.dm_os_performance_counters for Deprecated Features with cntr_value > 0, supported by the cited chunks."}
+{"jid": "89918010", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "a7296c74", "label": "correct", "cited_support": "yes", "reason": "Access port in SVID4 and SVID5 with dot1q-tunneling customer-vlans 41-42 and 51-52, matching chunk 979693."}
+{"jid": "4dc72cb4", "label": "correct", "cited_support": "yes", "reason": "Without the rewrite the client receives a packet from an untrusted IP and discards it, as in chunk 645695."}
+{"jid": "b8c14693", "label": "correct", "cited_support": "yes", "reason": "Lists blocking the tracker's servers, blocking tiny tracking-like images, and blocking images altogether, all in the cited chunks."}
+{"jid": "726672c8", "label": "correct", "cited_support": "yes", "reason": "SQL Server 2008, and DAC still requires login credentials so it cannot recover sysadmin, both in the cited chunks."}
+{"jid": "11e68f22", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5f6d8a0c", "label": "correct", "cited_support": "yes", "reason": "Data builds up until distribution restarts and a long delay can fill the log, matching chunk 770875."}
+{"jid": "09db282c", "label": "partial", "cited_support": "yes", "reason": "Quoting \"$user_agent\" is right, but the eval alternative given is a here-document rather than a function that assigns the template strings."}
+{"jid": "8c00be2e", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin; the 2-4GB growth advice is extra detail from cited chunk 63117, not a contradiction."}
+{"jid": "40a4f4d9", "label": "correct", "cited_support": "yes", "reason": "dotnet build in DotNetCoreCLI@2 rather than VSBuild, as in chunk 997509."}
+{"jid": "6d5666af", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f2437cbd", "label": "correct", "cited_support": "yes", "reason": "Identifies CRIME targeting cookies in compressed headers, which the cited chunks state."}
+{"jid": "3367ccba", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d3d53e61", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "c4ef52a5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "53249efd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "915fa4bc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "361c1c5c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "98360306", "label": "partial", "cited_support": "no", "reason": "Shebang-decides-interpreter is right, but it gives #!/bin/false instead of #! /bin/echo Please-source, and the cited chunk says /bin/false only returns an error, not that it prints the notice."}
+{"jid": "18dc4421", "label": "correct", "cited_support": "yes", "reason": "Without the rewrite the client receives a packet from an untrusted IP and discards it, as in chunk 645695."}
+{"jid": "8c262edd", "label": "correct", "cited_support": "yes", "reason": "Install snmp-mibs-downloader and set mibs +ALL in /etc/snmp/snmp.conf, matching chunk 188619."}
+{"jid": "fc0edc46", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d88c56a3", "label": "correct", "cited_support": "yes", "reason": "The reply to the client's random port is not permitted by the outbound ACL so the router drops it, as in the cited chunks."}
+{"jid": "e1dc8016", "label": "correct", "cited_support": "yes", "reason": "A bug in the distro's pppd version absent in earlier and later versions; version details come from cited chunk 342646."}
+{"jid": "31cdad39", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}

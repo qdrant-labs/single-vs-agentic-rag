@@ -1,0 +1,40 @@
+{"jid": "e9f2f858", "label": "incorrect", "cited_support": "no", "reason": "The system answered NOT_FINAL, which is not an answer and states none of the reference facts."}
+{"jid": "b404f22b", "label": "correct", "cited_support": "yes", "reason": "States adding a disk pair and expanding to RAID 1+0 gives the greatest benefit, as the cited chunk says."}
+{"jid": "88502d46", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "fa34bf68", "label": "correct", "cited_support": "yes", "reason": "Gives docker.io/library/<image>:<tag> with the ctr example, supported by the cited chunks."}
+{"jid": "40293b49", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "23dbcc96", "label": "correct", "cited_support": "yes", "reason": "Explains input redirection from a process substitution, not a here-doc, equivalent to curl | bash."}
+{"jid": "db9c4132", "label": "correct", "cited_support": "yes", "reason": "States adding a disk pair and expanding to RAID 1+0 gives the greatest benefit, as the cited chunk says."}
+{"jid": "4b46236b", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "4da3a1e3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "7b8d509e", "label": "correct", "cited_support": "yes", "reason": "Gives a CASE per column/direction keyed on @SortStyle and explains datatype precedence conversion, both in cited chunks."}
+{"jid": "700cd332", "label": "correct", "cited_support": "yes", "reason": "States the whole Execute(String parameter) method must be copied to change one case, as cited."}
+{"jid": "1f022a29", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "80407325", "label": "partial", "cited_support": "yes", "reason": "Gives ~/.profile but never says csh and tcsh do not read it."}
+{"jid": "7cc796f4", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "881bd0db", "label": "correct", "cited_support": "yes", "reason": "Names the chrooted environment from the Media Temple noexec /tmp guide, as cited."}
+{"jid": "c3e6bc95", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d6d28818", "label": "partial", "cited_support": "yes", "reason": "Gives GLOBIGNORE and the .??* meaning but omits unsetting dotglob with shopt -u dotglob."}
+{"jid": "ff93a0eb", "label": "partial", "cited_support": "yes", "reason": "Zero-knowledge part is right, but it describes WhatsApp's AES-GCM-256 instead of Google's server-side encryption."}
+{"jid": "220a336c", "label": "correct", "cited_support": "yes", "reason": "Names a code bomb, a patch too large to review, as cited."}
+{"jid": "28031983", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "6d8bb1c8", "label": "correct", "cited_support": "yes", "reason": "Names the MVC Mini Profiler, as cited."}
+{"jid": "49b0619f", "label": "correct", "cited_support": "yes", "reason": "Gives no hw-module module <num> power, as cited."}
+{"jid": "9e942dbd", "label": "correct", "cited_support": "yes", "reason": "Lists Vagrant, Ansible, GitLab or Jenkins, and Docker, as cited."}
+{"jid": "80c16631", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "ae145ab3", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "6fc5fbad", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5e1340ec", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "9c6b59a8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "a6c9d5f6", "label": "correct", "cited_support": "yes", "reason": "Gives -annotate with %t and -gravity north-east for the corner, as cited."}
+{"jid": "5d013e32", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "2fdefc0f", "label": "correct", "cited_support": "yes", "reason": "Gives the daily sort -R -o cron job and head -n 1, as cited."}
+{"jid": "e1d9c6e0", "label": "partial", "cited_support": "yes", "reason": "Communication benefit is right, but the habits given are refactoring and coding first, not SRP and tests first."}
+{"jid": "6a0adc18", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "885ab44c", "label": "correct", "cited_support": "yes", "reason": "Gives sys.dm_exec_sessions grouped by database_id with session_id > 50, as cited."}
+{"jid": "d747a26f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "36e41df4", "label": "correct", "cited_support": "yes", "reason": "Describes the users, local-permissions and global-permissions tables, as cited."}
+{"jid": "b7e101e9", "label": "correct", "cited_support": "yes", "reason": "Gives grep io_uring_setup /proc/kallsyms and the sys_/sys32_ prefix, as cited."}
+{"jid": "5081031f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "424ccdb4", "label": "correct", "cited_support": "yes", "reason": "Lists blocking tracker servers, tracking-like or small images, or all images; the extra link advice is cited too."}
+{"jid": "e6de22ff", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}

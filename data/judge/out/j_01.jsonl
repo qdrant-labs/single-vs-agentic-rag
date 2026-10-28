@@ -1,0 +1,40 @@
+{"jid": "456d3441", "label": "partial", "cited_support": "yes", "reason": "Gives the browser/antivirus background-load cause but replaces the reference guard (check the page actually renders, not just a GET) with a login requirement."}
+{"jid": "d2017ccb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "e85f838b", "label": "correct", "cited_support": "yes", "reason": "States assert compiled in for development and left out in production, and a generic exception bubbling up to error logging."}
+{"jid": "2c14df51", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and minimal graphics; the attributed 2-4GB recommendation is extra detail backed by a cited chunk."}
+{"jid": "75fe0cd6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "8f52dc6b", "label": "correct", "cited_support": "yes", "reason": "Gives both MAKEDEV tty/pty commands and sudo update-initramfs -c -k $(uname -r)."}
+{"jid": "08a970dd", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5b6aed28", "label": "correct", "cited_support": "yes", "reason": "States the database/table-level INSERT permission is also needed beyond the server-wide bulk right."}
+{"jid": "c582b7df", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "32fedd26", "label": "partial", "cited_support": "yes", "reason": "Gives ksh93r and the shell-assigned descriptor of 10 or higher, but explicitly does not state the avoided problem of a hard-coded descriptor already being in use."}
+{"jid": "b84b03bc", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "e8a1182a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "f398311e", "label": "correct", "cited_support": "yes", "reason": "Identifies the too-fast hash algorithm (not the salt) as the problem and bcrypt as the fix; the GPU rate figure differs but comes from the cited chunk."}
+{"jid": "858b8f06", "label": "correct", "cited_support": "yes", "reason": "Gives explicit CONVERT of every operand to DECIMAL(15,6) and the division scale max(6, s1 + p2 + 1) capped at 38."}
+{"jid": "9aebf77a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "0b5e6758", "label": "correct", "cited_support": "yes", "reason": "Gives launch with the key pair, stop, move the root EBS volume to another instance, and copy the public key."}
+{"jid": "6e096517", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "33cbdf81", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "5476f45b", "label": "correct", "cited_support": "yes", "reason": "Gives a Loopback Adapter virtual network with its own DHCP scope, dual-homing the box."}
+{"jid": "1461cff8", "label": "correct", "cited_support": "yes", "reason": "Names sys.dm_exec_sessions grouped by database_id and the session_id > 50 filter."}
+{"jid": "70a45785", "label": "correct", "cited_support": "yes", "reason": "States rows are easier to change than columns, so the table stays the same as languages change."}
+{"jid": "bb25f5b0", "label": "correct", "cited_support": "yes", "reason": "Gives launch with the key pair, stop, move the root EBS volume to another instance, and copy the public key."}
+{"jid": "38773368", "label": "incorrect", "cited_support": "no", "reason": "The shebang is corrupted ($0 became /usr/bin/bash and \"$@\" became \"\"), so it does not match the reference or the cited chunk."}
+{"jid": "d11ab7cf", "label": "correct", "cited_support": "yes", "reason": "Names the GDI(+) image exploit in Windows and explains content sniffing rendering fake_image.jpg as HTML for XSS."}
+{"jid": "b71e7c94", "label": "correct", "cited_support": "yes", "reason": "Names -f, which flushes each file's data before the next, with slower output and lower IO load."}
+{"jid": "5811d120", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "3f5e2054", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d6887666", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "3bc3bfb8", "label": "correct", "cited_support": "yes", "reason": "States firmware lives in volatile storage on the device, is reloaded each power-on, and is loaded by the host OS driver/kernel."}
+{"jid": "20cc4119", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "9967e0c6", "label": "correct", "cited_support": "yes", "reason": "States adding another pair of disks and expanding to RAID 1+0 gives the greatest benefit."}
+{"jid": "da5f98c5", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "2a47da2f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has an answer."}
+{"jid": "27f9b9b1", "label": "correct", "cited_support": "yes", "reason": "Explains length extension lets the attacker compute h(P+B) from h(P) already, so revealing it adds nothing."}
+{"jid": "215c1afd", "label": "correct", "cited_support": "yes", "reason": "States at least 1GB with a caching plugin and few local graphics; the attributed 2-4GB recommendation is extra detail backed by a cited chunk."}
+{"jid": "d1ba51f2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "896a8384", "label": "correct", "cited_support": "yes", "reason": "States LZF was the default store-level compression with Snappy planned later."}
+{"jid": "924eeab6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}
+{"jid": "d8c5a66b", "label": "correct", "cited_support": "yes", "reason": "Gives the sys.dm_os_performance_counters query filtered on '%Deprecated%' with cntr_value > 0."}
+{"jid": "0643eb92", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND."}

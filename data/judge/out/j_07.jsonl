@@ -1,0 +1,40 @@
+{"jid": "8298d999", "label": "correct", "cited_support": "yes", "reason": "States the 1000-fold cross join with generate_series, order by random() limit 10, approximating replacement, and the poor performance."}
+{"jid": "0ca7448e", "label": "correct", "cited_support": "yes", "reason": "Gives the v8.0.15 instance plus minor upgrade with reboot workaround, as the cited chunk states."}
+{"jid": "a2744d55", "label": "correct", "cited_support": "yes", "reason": "Covers re-encrypting only a random key wrapped by a password-derived key, and 384 bits split into K1 AES-128-CBC key, K2 IV, K3 HMAC key."}
+{"jid": "cb148b29", "label": "correct", "cited_support": "yes", "reason": "Gives about 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz, matching the cited chunk."}
+{"jid": "d33f40a6", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "895d408a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base says GitOps is a process and DevOps a culture."}
+{"jid": "04db59d6", "label": "incorrect", "cited_support": "yes", "reason": "Argues about TTY detachment instead of the reference point that the server may do work before forking and can optimize; nohup is for software without a fork option."}
+{"jid": "20b21c62", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "32daa38c", "label": "correct", "cited_support": "yes", "reason": "States --help goes to stdout for piping and the invalid-option usage message goes to stderr."}
+{"jid": "1ac89b25", "label": "correct", "cited_support": "yes", "reason": "Reports about 300 Mbps up and 250 Mbps down versus 20 Mb before, as in the cited chunk."}
+{"jid": "cdf51376", "label": "correct", "cited_support": "yes", "reason": "Names the QEMU monitor, which the cited chunk recommends."}
+{"jid": "078d5804", "label": "partial", "cited_support": "yes", "reason": "Says it is safe with a strong hash but omits the private repository alternative, claiming none is given."}
+{"jid": "9cee57d9", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "328a0aa1", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "810688cb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "6a464876", "label": "correct", "cited_support": "yes", "reason": "States Proxmox runs on Debian and the dependency chain replaces most Ubuntu packages, leaving a broken mostly-Debian install."}
+{"jid": "5ef896b3", "label": "correct", "cited_support": "yes", "reason": "Identifies if and then as shell reserved words, not programs, and single = as the more portable POSIX operator."}
+{"jid": "dcb0fc43", "label": "correct", "cited_support": "yes", "reason": "Gives about 0.36 dB at 2.3GHz and 0.93 dB at 5.25GHz, matching the cited chunk."}
+{"jid": "1196ad87", "label": "partial", "cited_support": "yes", "reason": "The gdb attach/putenv/detach sequence is right, but it hedges with only with great difficulty instead of the reference No, env vars pass only parent to child."}
+{"jid": "3fadc703", "label": "partial", "cited_support": "yes", "reason": "Gives the 01_nodoc edit and reinstall steps but omits man section 1P for the POSIX pages."}
+{"jid": "acc1dda8", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "b1eaa6b6", "label": "correct", "cited_support": "yes", "reason": "States data builds up until distribution restarts and a long delay can fill log space since replication reads the transaction log."}
+{"jid": "4e98b664", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base gives bce, defbce, and October 2016."}
+{"jid": "758b9955", "label": "correct", "cited_support": "yes", "reason": "Says no, it is a blacklist-style patch, and gives the preferred code review, logs, analysis, reporting, and IDS/IPS approach."}
+{"jid": "a7563008", "label": "correct", "cited_support": "yes", "reason": "Names PrivateTmp=yes and the systemctl edit drop-in under /etc/systemd/system/apache2.service.d setting PrivateTmp=no."}
+{"jid": "81e31a0f", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "ca13b4b4", "label": "correct", "cited_support": "yes", "reason": "Gives launch, stop, detach and mount root volume, copy key steps; the extra user-data method is in a cited chunk."}
+{"jid": "7e5554ba", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "ae4f54fd", "label": "correct", "cited_support": "yes", "reason": "Gives the function piping READLINE_LINE to xsel -ib bound with bind -x to \\eW; only the DISPLAY guard detail is omitted."}
+{"jid": "4eab4dc9", "label": "correct", "cited_support": "yes", "reason": "Gives grep io_uring_setup /proc/kallsyms and the sys_ (sys32_) prefix convention."}
+{"jid": "6a01c28e", "label": "correct", "cited_support": "yes", "reason": "Identifies input redirection from a process substitution, equivalent to curl -s URL | bash."}
+{"jid": "0a9da684", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "1c1bb3f3", "label": "correct", "cited_support": "yes", "reason": "Says no: some telemetry uses a unique ID, some is completely anonymous."}
+{"jid": "a040d68c", "label": "correct", "cited_support": "yes", "reason": "Gives terraform console with type(...) as in the chunks; the known-type caveat for resources is an unsupported extra."}
+{"jid": "09ce16f7", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base gives libxml_disable_entity_loader(true)."}
+{"jid": "c6299487", "label": "partial", "cited_support": "yes", "reason": "Quoting \"$user_agent\" is right, but the eval alternative omits the reference's define-a-function template approach."}
+{"jid": "2e9429d5", "label": "correct", "cited_support": "yes", "reason": "Gives the daily cron sort -R -o shuffle and head -n 1 in the script."}
+{"jid": "b577881e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "bb8aa18e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}
+{"jid": "91a6ae2c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is correct for an unanswerable question."}

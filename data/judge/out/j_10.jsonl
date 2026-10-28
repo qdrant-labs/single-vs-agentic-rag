@@ -1,0 +1,40 @@
+{"jid": "6c2a5ec8", "label": "correct", "cited_support": "yes", "reason": "States the token is in the declaring text and an XSS payload can read it via XHR; extra onsubmit point is supported by 868208."}
+{"jid": "ea53e2b0", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "eecfa947", "label": "correct", "cited_support": "yes", "reason": "Verbatim copies may be distributed but changes are not allowed, as the cited GPL text states."}
+{"jid": "1af71bd9", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "516a7939", "label": "correct", "cited_support": "yes", "reason": "Says no: some telemetry uses a unique ID, some is completely anonymous, matching the cited chunk."}
+{"jid": "d4986997", "label": "correct", "cited_support": "yes", "reason": "Says no, not all uses the unique ID and some is completely anonymous, matching the reference."}
+{"jid": "12a1834d", "label": "correct", "cited_support": "yes", "reason": "Gives -annotate with %t and -gravity NorthEast, all stated in the cited chunks."}
+{"jid": "0c567228", "label": "correct", "cited_support": "yes", "reason": "Gives kernel 2.6.38 in Fedora 15, delete xorg.conf, check /var/log/Xorg.0.log, all in cited chunks."}
+{"jid": "8745866d", "label": "correct", "cited_support": "yes", "reason": "Chrooted environment via the Media Temple noexec /tmp guide, as the cited chunk states."}
+{"jid": "3b61c75c", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "8408e2fd", "label": "correct", "cited_support": "yes", "reason": "Disable logins on the primary plus a per-minute Agent job on each replica, as cited."}
+{"jid": "1a2a9150", "label": "correct", "cited_support": "yes", "reason": "Queries sys.dm_os_performance_counters for the Deprecated Features object with cntr_value > 0 ordered descending; the cited chunk gives this query."}
+{"jid": "2a1f038d", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "ceb41c91", "label": "correct", "cited_support": "yes", "reason": "Windows exploit attempt, 404 means vulnerable file absent so no damage, probes check compromise or gather error info; all cited."}
+{"jid": "09ca5284", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "9891c8d8", "label": "correct", "cited_support": "yes", "reason": "No; allowed VLANs is neither Type 1 nor Type 2 so the vPC is not suspended, as cited."}
+{"jid": "9783a694", "label": "correct", "cited_support": "yes", "reason": "Append \\r: bind '\"\\ee\": \"g++ !$\\r\"', exactly as the cited chunk shows."}
+{"jid": "f5833da3", "label": "correct", "cited_support": "yes", "reason": "On principal change, primarily login, to prevent session fixation leading to CSRF, as cited."}
+{"jid": "a3697dd2", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "230e93cb", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "2c45783a", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "1881e45d", "label": "correct", "cited_support": "yes", "reason": "hp-vsa module for the Gen8 and inst.dd modprobe.blacklist=ahci on the linuxefi line, both cited."}
+{"jid": "7f1915da", "label": "correct", "cited_support": "yes", "reason": "Block tracker images, tracking-like or tiny images, or all images; extra link advice is supported by 864641."}
+{"jid": "357bbd51", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "3bd2b4f6", "label": "partial", "cited_support": "yes", "reason": "LVM filter/scan exclusion is right, but fullness check is monitoring the file size instead of dmsetup status."}
+{"jid": "13534bc2", "label": "correct", "cited_support": "yes", "reason": "Artifact repository; Sonatype Nexus and JFrog Artifactory with free open source versions, as cited."}
+{"jid": "d1083317", "label": "correct", "cited_support": "yes", "reason": "bce and defbce in screen, tmux implemented it in October 2016; both stated in cited chunks."}
+{"jid": "d78c2abb", "label": "correct", "cited_support": "yes", "reason": "They use the native stack, which on such OSes must be contiguous, so a size is reserved up front; cited chunks state this."}
+{"jid": "0dac0142", "label": "correct", "cited_support": "yes", "reason": "SRP and tests first let patterns emerge; names aid communication (Strategy, FooBuilder), as cited."}
+{"jid": "3dd41110", "label": "correct", "cited_support": "yes", "reason": "Browser prefetch or antivirus loads the link; ensure the page actually renders, with POST-form advice supported by 698785."}
+{"jid": "a960c95e", "label": "correct", "cited_support": "yes", "reason": "CSI c (ESC [ c) requests Primary DA and ESC [ 5 n gets ESC [ 0 n for bash bind, all in cited chunks."}
+{"jid": "13bd9a4e", "label": "correct", "cited_support": "yes", "reason": "Perfmon alert with the Action tab's Run This Program set to the program path, as cited."}
+{"jid": "c988c564", "label": "correct", "cited_support": "yes", "reason": "Length extension lets the attacker compute h(P+B) from h(P) already, as the cited chunk says."}
+{"jid": "e2afbf0e", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND although the knowledge base has the answer."}
+{"jid": "b3984ff3", "label": "correct", "cited_support": "yes", "reason": "Artifact repository; Sonatype Nexus and JFrog Artifactory with free open source editions, as cited."}
+{"jid": "480c9d89", "label": "correct", "cited_support": "yes", "reason": "Append \\r to the macro so it executes immediately, as the cited chunk shows."}
+{"jid": "989df732", "label": "correct", "cited_support": "yes", "reason": "Must copy the whole Execute(String parameter) method and change one case, as cited."}
+{"jid": "17608297", "label": "not_found", "cited_support": "n/a", "reason": "System answered NOT_FOUND, which is the expected response for this unanswerable question."}
+{"jid": "903de77b", "label": "correct", "cited_support": "yes", "reason": "Token sits in the declaring text, readable by an XSS payload via XHR, as cited."}
+{"jid": "070b139d", "label": "partial", "cited_support": "yes", "reason": "Gets behavior-not-implementation but misses the key fact that it applies to web APIs and Internet protocols."}
